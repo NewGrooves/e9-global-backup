@@ -1,13 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import Header from '../components/Header';
-import AboutSection from '../components/AboutSection';
-import StatsSection from '../components/StatsSection';
-import ProductModules from '../components/ProductModules';
-import ClosingCTA from '../components/ClosingCTA';
-import DemoButton from '../components/DemoButton';
-import DemoModal from '../components/DemoModal';
-import Footer from '../components/Footer';
 import SEOHead from '../components/SEOHead';
 import { ProductSchema, VideoSchema, BreadcrumbSchema } from '../components/StructuredData';
 
@@ -36,10 +29,12 @@ const IndexNew = () => {
 
   console.log('IndexNew rendering, buildId:', buildId);
 
-  // Test with minimal content first
+  // Test with incremental component addition
   return (
     <div className="min-h-screen bg-background text-foreground font-inter overflow-x-hidden">
-      <div className="p-8">
+      <Header />
+      
+      <div className="pt-24 p-8">
         <h1 className="text-4xl font-bold text-center">E9 Global Test Page</h1>
         <p className="text-center mt-4">Build ID: {buildId || 'Loading...'}</p>
         <div className="mt-8 text-center">
@@ -49,6 +44,9 @@ const IndexNew = () => {
           >
             Test Button
           </button>
+        </div>
+        <div className="mt-4 text-center text-sm text-muted-foreground">
+          Step 1: Header component added successfully
         </div>
       </div>
       
