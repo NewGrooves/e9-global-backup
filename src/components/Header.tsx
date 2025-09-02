@@ -21,12 +21,12 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
-            <Link to="/" className="text-foreground hover:text-primary transition-colors text-sm lg:text-base">Home</Link>
-            <Link to="/how-it-works" className="text-foreground hover:text-primary transition-colors text-sm lg:text-base">How It Works</Link>
-            <Link to="/beeep" className="text-foreground hover:text-primary transition-colors text-sm lg:text-base">BEEEP<span className="trademark-small">™</span></Link>
-            <Link to="/about" className="text-foreground hover:text-primary transition-colors text-sm lg:text-base">About</Link>
-            <Link to="/the-team" className="text-foreground hover:text-primary transition-colors text-sm lg:text-base">The Team</Link>
-            <Link to="/book-demo" className="text-foreground hover:text-primary transition-colors text-sm lg:text-base">Contact</Link>
+            <Link to="/" className="text-gray-700 hover:text-primary transition-colors text-sm lg:text-base">Home</Link>
+            <Link to="/how-it-works" className="text-gray-700 hover:text-primary transition-colors text-sm lg:text-base">How It Works</Link>
+            <Link to="/beeep" className="text-gray-700 hover:text-primary transition-colors text-sm lg:text-base">BEEEP<span className="trademark-small">™</span></Link>
+            <Link to="/about" className="text-gray-700 hover:text-primary transition-colors text-sm lg:text-base">About</Link>
+            <Link to="/the-team" className="text-gray-700 hover:text-primary transition-colors text-sm lg:text-base">The Team</Link>
+            <Link to="/book-demo" className="text-gray-700 hover:text-primary transition-colors text-sm lg:text-base">Contact</Link>
             <Link to="/book-demo" className="bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 text-white hover:from-blue-600 hover:via-purple-700 hover:to-pink-600 px-4 lg:px-6 py-2 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 text-sm lg:text-base">
               Book Demo
             </Link>
@@ -35,7 +35,7 @@ const Header = () => {
           {/* Mobile Menu Button - Aligned to right */}
           <div className="md:hidden">
             <button 
-              className="text-foreground p-1"
+              className="text-gray-700 p-1"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -49,42 +49,42 @@ const Header = () => {
             <div className="flex flex-col space-y-6 sm:space-y-4 items-center">
               <Link 
                 to="/" 
-                className="text-foreground hover:text-primary transition-colors text-base"
+                className="text-gray-700 hover:text-primary transition-colors text-base"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
               <Link 
                 to="/how-it-works" 
-                className="text-foreground hover:text-primary transition-colors text-base"
+                className="text-gray-700 hover:text-primary transition-colors text-base"
                 onClick={() => setIsMenuOpen(false)}
               >
                 How It Works
               </Link>
               <Link 
                 to="/beeep" 
-                className="text-foreground hover:text-primary transition-colors text-base"
+                className="text-gray-700 hover:text-primary transition-colors text-base"
                 onClick={() => setIsMenuOpen(false)}
               >
                 BEEEP<span className="trademark-small">™</span>
               </Link>
               <Link 
                 to="/about" 
-                className="text-foreground hover:text-primary transition-colors text-base"
+                className="text-gray-700 hover:text-primary transition-colors text-base"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
               </Link>
               <Link 
                 to="/the-team" 
-                className="text-foreground hover:text-primary transition-colors text-base"
+                className="text-gray-700 hover:text-primary transition-colors text-base"
                 onClick={() => setIsMenuOpen(false)}
               >
                 The Team
               </Link>
               <Link 
                 to="/book-demo" 
-                className="text-foreground hover:text-primary transition-colors text-base"
+                className="text-gray-700 hover:text-primary transition-colors text-base"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact

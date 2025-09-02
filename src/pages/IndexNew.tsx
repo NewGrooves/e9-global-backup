@@ -42,14 +42,13 @@ const IndexNew = () => {
       {/* Step 1: Basic content - WORKING */}
       <main className="pt-24">
         {/* Hero Section */}
-        <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6">
+        <section className="relative py-20 flex items-center justify-center px-4 sm:px-6">
           <div className="text-center max-w-4xl mx-auto">
             <img 
               src="/lovable-uploads/92326d7f-5c6a-4075-85f0-fd776e75240a.png" 
               alt="E9 Global - Monetizing Authentic Customer Experiences" 
-              className="mx-auto mb-8 max-w-full h-auto"
+              className="mx-auto max-w-full h-auto"
             />
-            <p className="text-center mt-4 mb-8 text-sm text-muted-foreground">Build ID: {buildId || 'Loading...'}</p>
           </div>
         </section>
         
