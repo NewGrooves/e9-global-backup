@@ -41,23 +41,17 @@ const IndexNew = () => {
       
       {/* Step 1: Basic content - WORKING */}
       <main className="pt-24">
-        {/* Step 2: Add Footer - Test basic layout */}
-        <div className="min-h-[60vh] flex flex-col justify-center items-center p-8">
-          <h1 className="text-4xl font-bold text-center mb-4">E9 Global Test Page</h1>
-          <p className="text-center mt-4 mb-8">Build ID: {buildId || 'Loading...'}</p>
-          
-          <div className="text-center space-y-4">
-            <button 
-              onClick={() => console.log('Button clicked')}
-              className="bg-primary text-primary-foreground px-6 py-2 rounded-lg"
-            >
-              Test Button
-            </button>
-            <div className="text-sm text-muted-foreground">
-              Step 2: Adding Footer component...
-            </div>
+        {/* Hero Section */}
+        <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6">
+          <div className="text-center max-w-4xl mx-auto">
+            <img 
+              src="/lovable-uploads/92326d7f-5c6a-4075-85f0-fd776e75240a.png" 
+              alt="E9 Global - Monetizing Authentic Customer Experiences" 
+              className="mx-auto mb-8 max-w-full h-auto"
+            />
+            <p className="text-center mt-4 mb-8 text-sm text-muted-foreground">Build ID: {buildId || 'Loading...'}</p>
           </div>
-        </div>
+        </section>
         
         {/* Step 3: Add StatsSection - Test gradients and icons */}
         <StatsSection />
