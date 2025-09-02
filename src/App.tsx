@@ -21,36 +21,37 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <ErrorBoundary>
-    <QueryClientProvider client={queryClient}>
-      <HelmetProvider>
-        <TooltipProvider>
-          <Toaster />
-          <Sonner />
-          {/* <CacheBreaker /> */}
-          {/* <GoogleAnalytics /> */}
-          <OrganizationSchema />
-          <WebsiteSchema />
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<IndexNew />} />
-              <Route path="/home-v2024" element={<Home2 />} />
-              <Route path="/home-2025" element={<Home2 />} />
-              <Route path="/home-fresh" element={<Home2 />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/the-team" element={<TheTeam />} />
-              <Route path="/how-it-works" element={<HowItWorks />} />
-              <Route path="/beeep" element={<Beeep />} />
-              <Route path="/book-demo" element={<BookDemo />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-            </Routes>
-          </BrowserRouter>
-        </TooltipProvider>
-      </HelmetProvider>
-    </QueryClientProvider>
-  </ErrorBoundary>
-);
+const App = () => {
+  console.log('App component rendering');
+  
+  return (
+    <ErrorBoundary>
+      <QueryClientProvider client={queryClient}>
+        <HelmetProvider>
+          <TooltipProvider>
+            <Toaster />
+            <Sonner />
+            <OrganizationSchema />
+            <WebsiteSchema />
+            <BrowserRouter>
+              <Routes>
+                <Route path="/" element={<IndexNew />} />
+                <Route path="/home-v2024" element={<Home2 />} />
+                <Route path="/home-2025" element={<Home2 />} />
+                <Route path="/home-fresh" element={<Home2 />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/the-team" element={<TheTeam />} />
+                <Route path="/how-it-works" element={<HowItWorks />} />
+                <Route path="/beeep" element={<Beeep />} />
+                <Route path="/book-demo" element={<BookDemo />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </BrowserRouter>
+          </TooltipProvider>
+        </HelmetProvider>
+      </QueryClientProvider>
+    </ErrorBoundary>
+  );
+};
 
 export default App;

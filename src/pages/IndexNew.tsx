@@ -16,14 +16,42 @@ const IndexNew = () => {
   const [buildId, setBuildId] = useState<string>('');
 
   useEffect(() => {
-    fetch('/build-id.txt')
-      .then(res => res.text())
-      .then(setBuildId)
-      .catch(() => setBuildId('Unknown'));
+    console.log('IndexNew component mounted');
+    try {
+      fetch('/build-id.txt')
+        .then(res => res.text())
+        .then(id => {
+          console.log('Build ID loaded:', id);
+          setBuildId(id);
+        })
+        .catch(err => {
+          console.log('Build ID fetch error:', err);
+          setBuildId('Unknown');
+        });
+    } catch (err) {
+      console.error('Error in build ID fetch:', err);
+      setBuildId('Error');
+    }
   }, []);
 
+  console.log('IndexNew rendering, buildId:', buildId);
+
+  // Test with minimal content first
   return (
     <div className="min-h-screen bg-background text-foreground font-inter overflow-x-hidden">
+      <div className="p-8">
+        <h1 className="text-4xl font-bold text-center">E9 Global Test Page</h1>
+        <p className="text-center mt-4">Build ID: {buildId || 'Loading...'}</p>
+        <div className="mt-8 text-center">
+          <button 
+            onClick={() => console.log('Button clicked')}
+            className="bg-primary text-primary-foreground px-6 py-2 rounded-lg"
+          >
+            Test Button
+          </button>
+        </div>
+      </div>
+      
       <SEOHead 
         title="E9 Global - Monetizing Authentic Customer Experiences."
         description="Transform product authentication and customer engagement with EncryptorSeal™ and BEEEP™. Secure, scalable solutions for brand protection and revenue growth."
@@ -36,39 +64,6 @@ const IndexNew = () => {
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://www.e9global.com/" }
       ]} />
-      <Header />
-      <main>
-        {/* Hero Section */}
-        <section className="relative bg-background py-8">
-          {buildId && (
-            <div className="absolute top-4 left-4 text-xs text-muted-foreground bg-muted px-2 py-1 rounded">
-              Build: {buildId}
-            </div>
-          )}
-          
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
-            <img 
-              src="/lovable-uploads/e0e0f792-81d8-4d56-b7fb-0a257675f19d.png" 
-              alt="E9 Global - Monetizing Authentic Customer Experiences"
-              className="max-w-full h-auto"
-            />
-          </div>
-        </section>
-
-        <section id="about-section">
-          <AboutSection />
-        </section>
-        <section>
-          <StatsSection />
-        </section>
-        <section>
-          <ProductModules />
-        </section>
-        <ClosingCTA />
-        <Footer />
-        <DemoButton onClick={() => setIsDemoOpen(true)} />
-        <DemoModal isOpen={isDemoOpen} onClose={() => setIsDemoOpen(false)} />
-      </main>
     </div>
   );
 };
