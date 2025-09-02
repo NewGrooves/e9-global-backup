@@ -53,14 +53,14 @@ const IndexNew = () => {
           </div>
         </section>
         
-        {/* Step 3: Add StatsSection - Test gradients and icons */}
-        <StatsSection />
+        {/* Step 3: Add AboutSection - Test iframe (highest risk) */}
+        <AboutSection />
         
         {/* Step 4: Add ProductModules - Test image assets */}
         <ProductModules />
         
-        {/* Step 5: Add AboutSection - Test iframe (highest risk) */}
-        <AboutSection />
+        {/* Step 5: Add StatsSection - Test gradients and icons */}
+        <StatsSection />
         
         {/* Step 6: Add ContactCTA */}
         <ContactCTA />
