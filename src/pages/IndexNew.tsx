@@ -47,7 +47,7 @@ const IndexNew = () => {
             <img 
               src="/lovable-uploads/92326d7f-5c6a-4075-85f0-fd776e75240a.png" 
               alt="E9 Global - Monetizing Authentic Customer Experiences" 
-              className="mx-auto max-w-full h-auto"
+              className="mx-auto max-w-full h-auto transform scale-[2]"
             />
           </div>
         </section>
