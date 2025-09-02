@@ -101,24 +101,27 @@
     </script>
     <script type="module" src="/src/main.tsx"></script>
     <script>
-      (function () {
-        const badge = document.createElement('div');
-        badge.textContent = 'Booting…';
-        badge.style.cssText = 'position:fixed;z-index:99999;top:8px;right:8px;background:#111;color:#fff;padding:8px 10px;font:12px/1.2 monospace;border-radius:6px';
-        document.addEventListener('DOMContentLoaded', () => { badge.textContent = 'DOM ready'; });
-        window.addEventListener('load', () => { badge.textContent = 'Window loaded'; setTimeout(()=>badge.remove(), 4000); });
-        document.body.appendChild(badge);
+      // Only show debug overlay in development
+      if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
+        (function () {
+          const badge = document.createElement('div');
+          badge.textContent = 'Booting…';
+          badge.style.cssText = 'position:fixed;z-index:99999;top:8px;right:8px;background:#111;color:#fff;padding:8px 10px;font:12px/1.2 monospace;border-radius:6px';
+          document.addEventListener('DOMContentLoaded', () => { badge.textContent = 'DOM ready'; });
+          window.addEventListener('load', () => { badge.textContent = 'Window loaded'; setTimeout(()=>badge.remove(), 4000); });
+          document.body.appendChild(badge);
 
-        function show(msg) {
-          const pre = document.createElement('pre');
-          pre.textContent = msg;
-          pre.style.cssText = 'position:fixed;left:8px;bottom:8px;right:8px;max-height:45vh;overflow:auto;background:#200;color:#f88;padding:10px;border-radius:6px;font:12px/1.4 monospace;z-index:99999';
-          document.body.appendChild(pre);
-        }
-        window.addEventListener('error', e => show('JS Error: ' + e.message + '\\n' + e.filename + ':' + e.lineno + ':' + e.colno));
-        window.addEventListener('unhandledrejection', e => show('Unhandled promise rejection: ' + (e.reason && e.reason.stack || e.reason)));
-        console.log('Debug overlay active');
-      })();
+          function show(msg) {
+            const pre = document.createElement('pre');
+            pre.textContent = msg;
+            pre.style.cssText = 'position:fixed;left:8px;bottom:8px;right:8px;max-height:45vh;overflow:auto;background:#200;color:#f88;padding:10px;border-radius:6px;font:12px/1.4 monospace;z-index:99999';
+            document.body.appendChild(pre);
+          }
+          window.addEventListener('error', e => show('JS Error: ' + e.message + '\\n' + e.filename + ':' + e.lineno + ':' + e.colno));
+          window.addEventListener('unhandledrejection', e => show('Unhandled promise rejection: ' + (e.reason && e.reason.stack || e.reason)));
+          console.log('Debug overlay active');
+        })();
+      }
     </script>
   </body>
 </html>

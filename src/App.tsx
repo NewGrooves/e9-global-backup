@@ -7,7 +7,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from 'react-helmet-async';
 // import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { OrganizationSchema, WebsiteSchema } from "@/components/StructuredData";
-import CacheBreaker from "@/components/CacheBreaker";
+// import CacheBreaker from "@/components/CacheBreaker";
+import ErrorBoundary from "@/components/ErrorBoundary";
 import IndexNew from "./pages/IndexNew";
 import Home2 from "./pages/Home2";
 import About from "./pages/About";
@@ -21,33 +22,35 @@ import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <HelmetProvider>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <CacheBreaker />
-        {/* <GoogleAnalytics /> */}
-        <OrganizationSchema />
-        <WebsiteSchema />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<IndexNew />} />
-            <Route path="/home-v2024" element={<Home2 />} />
-            <Route path="/home-2025" element={<Home2 />} />
-            <Route path="/home-fresh" element={<Home2 />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/the-team" element={<TheTeam />} />
-            <Route path="/how-it-works" element={<HowItWorks />} />
-            <Route path="/beeep" element={<Beeep />} />
-            <Route path="/book-demo" element={<BookDemo />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </TooltipProvider>
-    </HelmetProvider>
-  </QueryClientProvider>
+  <ErrorBoundary>
+    <QueryClientProvider client={queryClient}>
+      <HelmetProvider>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          {/* <CacheBreaker /> */}
+          {/* <GoogleAnalytics /> */}
+          <OrganizationSchema />
+          <WebsiteSchema />
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<IndexNew />} />
+              <Route path="/home-v2024" element={<Home2 />} />
+              <Route path="/home-2025" element={<Home2 />} />
+              <Route path="/home-fresh" element={<Home2 />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/the-team" element={<TheTeam />} />
+              <Route path="/how-it-works" element={<HowItWorks />} />
+              <Route path="/beeep" element={<Beeep />} />
+              <Route path="/book-demo" element={<BookDemo />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+            </Routes>
+          </BrowserRouter>
+        </TooltipProvider>
+      </HelmetProvider>
+    </QueryClientProvider>
+  </ErrorBoundary>
 );
 
 export default App;

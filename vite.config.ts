@@ -23,12 +23,9 @@ export default defineConfig(({ mode }) => ({
     emptyOutDir: true,
     rollupOptions: {
       output: {
-        // Force completely different bundle names with timestamp
-        entryFileNames: `assets/entry-${Date.now()}-[name]-[hash].js`,
-        chunkFileNames: `assets/chunk-${Date.now()}-[name]-[hash].js`,
-        assetFileNames: `assets/asset-${Date.now()}-[name]-[hash].[ext]`,
-        // Ensure no caching at bundle level
-        manualChunks: undefined
+        entryFileNames: `assets/[name]-[hash].js`,
+        chunkFileNames: `assets/[name]-[hash].js`,
+        assetFileNames: `assets/[name]-[hash].[ext]`
       }
     }
   }
