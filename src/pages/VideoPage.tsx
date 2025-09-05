@@ -32,7 +32,7 @@ const VideoPage = () => {
             <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 md:p-8 border border-white/20">
               <div className="relative w-full h-0 pb-[56.25%] rounded-lg overflow-hidden bg-black">
                 <iframe
-                  src="https://player.vimeo.com/video/YOUR_VIDEO_ID?h=HASH_IF_PRIVATE&title=0&byline=0&portrait=0"
+                  src="https://player.vimeo.com/video/1115525354?title=0&byline=0&portrait=0"
                   className="absolute top-0 left-0 w-full h-full"
                   allow="autoplay; fullscreen; picture-in-picture"
                   allowFullScreen
