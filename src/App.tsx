@@ -45,8 +45,8 @@ const App = () => {
                 <Route path="/how-it-works" element={<HowItWorks />} />
                 <Route path="/beeep" element={<Beeep />} />
                 <Route path="/book-demo" element={<BookDemo />} />
-                <Route path="*" element={<NotFound />} />
 <Route path="/video" element={<VideoPage />} />
+<Route path="*" element={<NotFound />} />
               </Routes>
             </BrowserRouter>
           </TooltipProvider>
