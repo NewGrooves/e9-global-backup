@@ -16,6 +16,7 @@ import TheTeam from "./pages/TheTeam";
 import HowItWorks from "./pages/HowItWorks";
 import Beeep from "./pages/Beeep";
 import BookDemo from "./pages/BookDemo";
+import VideoPage from "./pages/VideoPage";
 
 import NotFound from "./pages/NotFound";
 
@@ -45,6 +46,7 @@ const App = () => {
                 <Route path="/beeep" element={<Beeep />} />
                 <Route path="/book-demo" element={<BookDemo />} />
                 <Route path="*" element={<NotFound />} />
+<Route path="/video" element={<VideoPage />} />
               </Routes>
             </BrowserRouter>
           </TooltipProvider>
