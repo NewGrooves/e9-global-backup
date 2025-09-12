@@ -442,7 +442,7 @@ const HowItWorks = () => {
       <section className="py-12 sm:py-20 px-3 sm:px-8 lg:px-6 bg-background">
         <div className="container mx-auto">
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair font-bold gradient-text-investor mb-4 sm:mb-6 text-center" style={{ lineHeight: '1.2' }}>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair font-bold gradient-text-investor mb-4 sm:mb-6 text-center" style={{ lineHeight: '1.2' }}>
   Customer Authentication/Engagement Journey
 </h2>
             <p className="text-lg sm:text-xl md:text-2xl text-foreground/90 max-w-3xl mx-auto mb-6 sm:mb-8 text-center">
