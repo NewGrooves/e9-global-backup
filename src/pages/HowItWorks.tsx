@@ -151,7 +151,7 @@ const HowItWorks = () => {
               <div className="flex flex-col items-center text-center">
                 <div className="mb-6 flex justify-center">
                   <img 
-                    src="/lovable-uploads/dc3a7e17-3ec4-4ab0-baff-dc63953d857f.png" 
+                    src="/public/lovable-uploads/Latina-Cosmetics-BEEEP.png" 
                     alt="Customer scanning product with smartphone" 
                     className="h-80"
                   />
