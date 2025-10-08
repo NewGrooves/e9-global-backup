@@ -49,42 +49,42 @@ const Header = () => {
             <div className="flex flex-col space-y-6 sm:space-y-4 items-center">
               <Link 
                 to="/" 
-                className="text-gray-700 hover:text-primary transition-colors text-base"
+                className=className="text-white hover:text-primary transition-colors text-base"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
               <Link 
                 to="/how-it-works" 
-                className="text-gray-700 hover:text-primary transition-colors text-base"
+                className=className="text-white hover:text-primary transition-colors text-base"
                 onClick={() => setIsMenuOpen(false)}
               >
                 How It Works
               </Link>
               <Link 
                 to="/beeep" 
-                className="text-gray-700 hover:text-primary transition-colors text-base"
+                className=className="text-white hover:text-primary transition-colors text-base"
                 onClick={() => setIsMenuOpen(false)}
               >
                 BEEEP<span className="trademark-small">™</span>
               </Link>
               <Link 
                 to="/about" 
-                className="text-gray-700 hover:text-primary transition-colors text-base"
+                className=className="text-white hover:text-primary transition-colors text-base"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
               </Link>
               <Link 
                 to="/the-team" 
-                className="text-gray-700 hover:text-primary transition-colors text-base"
+                className=className="text-white hover:text-primary transition-colors text-base"
                 onClick={() => setIsMenuOpen(false)}
               >
                 The Team
               </Link>
               <Link 
                 to="/book-demo" 
-                className="text-gray-700 hover:text-primary transition-colors text-base"
+                className=className="text-white hover:text-primary transition-colors text-base"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
