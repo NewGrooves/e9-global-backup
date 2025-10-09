@@ -56,35 +56,35 @@ const Header = () => {
               </Link>
               <Link 
                 to="/how-it-works" 
-                className=className="text-white hover:text-primary transition-colors text-base"
+                className="text-white hover:text-primary transition-colors text-base"
                 onClick={() => setIsMenuOpen(false)}
               >
                 How It Works
               </Link>
               <Link 
                 to="/beeep" 
-                className=className="text-white hover:text-primary transition-colors text-base"
+                className="text-white hover:text-primary transition-colors text-base"
                 onClick={() => setIsMenuOpen(false)}
               >
                 BEEEP<span className="trademark-small">™</span>
               </Link>
               <Link 
                 to="/about" 
-                className=className="text-white hover:text-primary transition-colors text-base"
+                className="text-white hover:text-primary transition-colors text-base"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
               </Link>
               <Link 
                 to="/the-team" 
-                className=className="text-white hover:text-primary transition-colors text-base"
+                className="text-white hover:text-primary transition-colors text-base"
                 onClick={() => setIsMenuOpen(false)}
               >
                 The Team
               </Link>
               <Link 
                 to="/book-demo" 
-                className=className="text-white hover:text-primary transition-colors text-base"
+                className="text-white hover:text-primary transition-colors text-base"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
