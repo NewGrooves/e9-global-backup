@@ -96,11 +96,11 @@ This request was submitted through the E9 Global website contact form.
           </div>
 
           {/* Two Column Layout */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[600px]">
+         <div className="flex justify-center items-center min-h-[600px]">
       
 
             {/* Right Column - Form */}
-            <div className="order-1 lg:order-2">
+            <div className="max-w-2xl w-full">
               <div className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-lg p-8 sm:p-12">
                 <Form {...form}>
                   <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
