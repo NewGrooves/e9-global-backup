@@ -49,7 +49,7 @@ const Header = () => {
             <div className="flex flex-col space-y-6 sm:space-y-4 items-center">
               <Link 
                 to="/" 
-                className=className="text-white hover:text-primary transition-colors text-base"
+                className="text-white hover:text-primary transition-colors text-base"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
