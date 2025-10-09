@@ -97,20 +97,7 @@ This request was submitted through the E9 Global website contact form.
 
           {/* Two Column Layout */}
           <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[600px]">
-            {/* Left Column - Image */}
-            <div className="order-2 lg:order-1">
-              <div className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden">
-                <img 
-                  src="/lovable-uploads/da057f4b-d579-4270-b296-68902907a40b.png" 
-                  alt="Los Angeles Center Studios" 
-                  className="w-full h-auto"
-                />
-                <div className="p-6 text-center">
-                  <p className="text-lg font-medium text-foreground/90">E9 Global, Inc.</p>
-                  <p className="text-lg font-medium text-foreground/90">Headquarters</p>
-                </div>
-              </div>
-            </div>
+      
 
             {/* Right Column - Form */}
             <div className="order-1 lg:order-2">
