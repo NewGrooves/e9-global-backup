@@ -14,7 +14,8 @@ const AboutSection = () => {
               A Dual-Layer of <span className="gradient-text-blue">Authentication & Engagement</span>
             </h2>
             <p className="text-xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
-              Through our BEEEP™ platform (PaaS), we transform every product, collectible asset and real-world surface into a secure, data-rich channel - engaging customers, collectors, fans and citizens while powering trust and revenue. 
+              EncryptorSeal™ + BEEEP™ transform every product and branded surface into a secure, data-rich channel - protecting brands, engaging customers,
+powering trust and driving revenue.
             </p>
           </div>
           
