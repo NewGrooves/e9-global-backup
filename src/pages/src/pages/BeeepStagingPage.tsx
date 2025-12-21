@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import ContactCTA from '../components/ContactCTA';
 import { Shield, Zap, Target, BarChart3, Lock, Languages, QrCode, Sparkles, Database, Rocket } from 'lucide-react';
 
-const Beeep = () => {
+const BeeepStagingPage = () => {
   const [customerJourneyStep, setCustomerJourneyStep] = useState(0);
   const [imagesLoaded, setImagesLoaded] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0); 
@@ -610,5 +610,5 @@ const Beeep = () => {
   );
 };
 
-export default Beeep;
+export default BeeepStagingPage;
 // no-op commit to force Netlify rebuild
