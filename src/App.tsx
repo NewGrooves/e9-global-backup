@@ -59,5 +59,3 @@ const App = () => {
 };
 
 export default App;
-Remove stray text from App.tsx
-Update staging route import after rename
