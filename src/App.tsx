@@ -59,5 +59,3 @@ const App = () => {
 };
 
 export default App;
-// staging page – included to ensure CI sees this file
-Fix BeeepStaging module resolution
