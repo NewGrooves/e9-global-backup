@@ -93,7 +93,7 @@ const About = () => {
               <div className="space-y-8">
                 <div>
                   <p className="text-lg text-foreground/90 leading-relaxed">
-                    As data-centric MarTech innovators, our proprietary fusion of proven anti-counterfeit brand protection and emerging AI-driven customer engagement technologies give brands entirely new ways to authentically connect with their customers while opening up unprecedented revenue channels.
+                    E9 Global is a data-centric MarTech company focused on transforming how people engage with the physical world. Through our proprietary combination of patented, secure identity, brand protection, and  engagement technologies, we enable authentic, trusted interactions at scale.
                   </p>
                 </div>
                 
