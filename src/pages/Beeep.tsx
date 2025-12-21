@@ -190,9 +190,6 @@ const Beeep = () => {
                   BEEEP<span className="trademark-small">™</span>
                 </span>
               </h1>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-playfair font-semibold gradient-text-investor mb-6 text-left">
-                Our Brand Experience, Engagement, Encryption Platform
-              </h2>
               <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mb-6"></div>
               <div className="space-y-6 text-lg text-foreground leading-relaxed">
                 <p>
