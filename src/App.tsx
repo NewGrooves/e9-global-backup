@@ -59,3 +59,4 @@ const App = () => {
 };
 
 export default App;
+Remove stray text from App.tsx
