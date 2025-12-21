@@ -99,7 +99,7 @@ const About = () => {
                 
                 <div>
                   <p className="text-lg text-foreground/90 leading-relaxed">
-                    We enable customer interaction through real-world touchpoints—product packaging, branded surfaces, and beyond—transforming them into gateways for customer acquisition, brand loyalty, and aggregated data intelligence based on unified audience engagement.
+                    We turn products, collectible assets, and real-world touchpoints into secure, data-rich channels—creating meaningful connections with customers, collectors, fans, and communities while generating actionable intelligence and new revenue opportunities for the organizations we serve.
                   </p>
                 </div>
               </div>
