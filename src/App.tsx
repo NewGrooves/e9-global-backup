@@ -15,7 +15,7 @@ import About from "./pages/About";
 import TheTeam from "./pages/TheTeam";
 import HowItWorks from "./pages/HowItWorks";
 import Beeep from "./pages/Beeep";
-import BeeepStaging from "./pages/BeeepStaging";
+import BeeepStaging from "./pages/BeeepStaging.tsx";
 import BookDemo from "./pages/BookDemo";
 import VideoPage from "./pages/VideoPage";
 
