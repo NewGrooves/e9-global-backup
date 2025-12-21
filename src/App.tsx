@@ -15,7 +15,7 @@ import About from "./pages/About";
 import TheTeam from "./pages/TheTeam";
 import HowItWorks from "./pages/HowItWorks";
 import Beeep from "./pages/Beeep";
-import BeeepStaging from "./pages/BeeepStaging";
+import BeeepStaging from "./pages/BeeepStagingPage";
 import BookDemo from "./pages/BookDemo";
 import VideoPage from "./pages/VideoPage";
 
@@ -60,3 +60,4 @@ const App = () => {
 
 export default App;
 Remove stray text from App.tsx
+Update staging route import after rename
