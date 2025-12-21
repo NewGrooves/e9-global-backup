@@ -2,9 +2,7 @@ import { useEffect, useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ContactCTA from '../components/ContactCTA';
-import ModernPhoneDisplay from '../components/ModernPhoneDisplay';
-import { Button } from '../components/ui/button';
-import { Shield, Zap, Target, BarChart3, Lock, Languages, Smartphone, Users, TrendingUp, QrCode, Sparkles, Database, Rocket } from 'lucide-react';
+import { Shield, Zap, Target, BarChart3, Lock, Languages, QrCode, Sparkles, Database, Rocket } from 'lucide-react';
 
 const Beeep = () => {
   const [customerJourneyStep, setCustomerJourneyStep] = useState(0);
