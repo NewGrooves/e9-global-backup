@@ -49,12 +49,6 @@ const HomeStaging = () => {
 
       <main className="pt-24">
         {/* Build ID marker (optional) */}
-        {buildId && (
-          <div className="fixed top-4 left-4 z-50 text-xs text-muted-foreground bg-muted px-2 py-1 rounded shadow">
-            Build: {buildId}
-          </div>
-        )}
-
         {/* Hero */}
         <section className="relative py-16 sm:py-20 flex items-center justify-center px-4 sm:px-6">
           <div className="text-center max-w-5xl mx-auto">
