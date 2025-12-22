@@ -395,11 +395,10 @@ const BeeepStagingPage = () => {
             })}
           </div>
 
-          <p className="mt-8 text-center text-base sm:text-lg text-foreground font-medium">
+         <p className="mt-8 text-center text-base sm:text-lg text-foreground font-medium">
   Select a platform above to view the expanded details below.
 </p>
 
-          </p>
         </div>
       </section>
 
