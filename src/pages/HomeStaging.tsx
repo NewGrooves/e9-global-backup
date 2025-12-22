@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import StatsSection from "../components/StatsSection";
@@ -9,16 +8,6 @@ import SEOHead from "../components/SEOHead";
 import { ProductSchema, VideoSchema, BreadcrumbSchema } from "../components/StructuredData";
 
 const HomeStaging = () => {
-  const [buildId, setBuildId] = useState<string>("");
-
-  useEffect(() => {
-    // Optional build marker for debugging deploys
-    fetch("/build-id.txt")
-      .then((res) => res.text())
-      .then(setBuildId)
-      .catch(() => setBuildId("Unknown"));
-  }, []);
-
   return (
     <div className="min-h-screen bg-background text-foreground font-inter overflow-x-hidden">
       {/* SEO / Schema */}
@@ -35,6 +24,7 @@ const HomeStaging = () => {
         ]}
         ogImage="/og-image.png"
       />
+
       <ProductSchema product="encryptorseal" />
       <ProductSchema product="beeep" />
       <VideoSchema />
@@ -48,7 +38,6 @@ const HomeStaging = () => {
       <Header />
 
       <main className="pt-24">
-        {/* Build ID marker (optional) */}
         {/* Hero */}
         <section className="relative py-16 sm:py-20 flex items-center justify-center px-4 sm:px-6">
           <div className="text-center max-w-5xl mx-auto">
