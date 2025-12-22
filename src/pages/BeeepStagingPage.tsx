@@ -332,7 +332,6 @@ const BeeepStagingPage = () => {
           </div>
         </div>
       </section>
-
       {/* 3 Platform Cards */}
       <section className="py-12 md:py-16 px-3 sm:px-8 lg:px-6 bg-card/30 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_40%_20%,rgba(59,130,246,0.05),transparent_70%)]" />
@@ -347,59 +346,59 @@ const BeeepStagingPage = () => {
             </p>
           </div>
 
-         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-  {platformCards.map((card) => {
-    const isActive = selectedPlatform === card.key;
-    const Icon = card.icon;
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            {platformCards.map((card) => {
+              const isActive = selectedPlatform === card.key;
+              const Icon = card.icon;
 
-    return (
-      <button
-        key={card.key}
-        type="button"
-        onClick={() => setSelectedPlatform(card.key)}
-        className={`text-left bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border transition-all duration-300 relative overflow-hidden ${
-          isActive
-            ? "border-purple-500/60 ring-2 ring-purple-500/20"
-            : "border-border/20 hover:border-border/40"
-        }`}
-      >
-        <div className="flex items-start justify-between gap-4">
-          <div>
-            <div className="flex items-center gap-3 mb-2">
-              <div className="w-11 h-11 icon-gradient-primary rounded-2xl flex items-center justify-center shadow-lg">
-                <Icon className="w-5 h-5 text-white" />
-              </div>
-              <h3 className="font-playfair font-bold text-xl text-foreground">
-                {card.title}
-              </h3>
-            </div>
+              return (
+                <button
+                  key={card.key}
+                  type="button"
+                  onClick={() => setSelectedPlatform(card.key)}
+                  className={`text-left bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border transition-all duration-300 relative overflow-hidden ${
+                    isActive
+                      ? "border-purple-500/60 ring-2 ring-purple-500/20"
+                      : "border-border/20 hover:border-border/40"
+                  }`}
+                >
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <div className="flex items-center gap-3 mb-2">
+                        <div className="w-11 h-11 icon-gradient-primary rounded-2xl flex items-center justify-center shadow-lg">
+                          <Icon className="w-5 h-5 text-white" />
+                        </div>
+                        <h3 className="font-playfair font-bold text-xl text-foreground">
+                          {card.title}
+                        </h3>
+                      </div>
+                      <p className="text-foreground/80 leading-relaxed">{card.subtitle}</p>
+                    </div>
 
-            <p className="text-foreground/80 leading-relaxed">{card.subtitle}</p>
+                    <ChevronDown
+                      className={`w-5 h-5 text-foreground/60 transition-transform duration-300 ${
+                        isActive ? "rotate-180" : "rotate-0"
+                      }`}
+                    />
+                  </div>
+
+                  <div className="mt-5 space-y-2">
+                    {card.highlights.map((h, idx) => (
+                      <div key={idx} className="flex items-start gap-3 text-foreground/90">
+                        <span className="mt-2 w-2 h-2 rounded-full bg-purple-500 flex-shrink-0" />
+                        <span className="text-sm sm:text-base">{h}</span>
+                      </div>
+                    ))}
+                  </div>
+                </button>
+              );
+            })}
           </div>
 
-          <ChevronDown
-            className={`w-5 h-5 text-foreground/60 transition-transform duration-300 ${
-              isActive ? "rotate-180" : "rotate-0"
-            }`}
-          />
+          <p className="mt-6 text-center text-sm text-muted-foreground">
+            Select a platform above to view the expanded details below.
+          </p>
         </div>
-
-        <div className="mt-5 space-y-2">
-          {card.highlights.map((h, idx) => (
-            <div key={idx} className="flex items-start gap-3 text-foreground/90">
-              <span className="mt-2 w-2 h-2 rounded-full bg-purple-500 flex-shrink-0" />
-              <span className="text-sm sm:text-base">{h}</span>
-            </div>
-          ))}
-        </div>
-      </button>
-    );
-  })}
-</div>
-
-<p className="mt-6 text-center text-sm text-muted-foreground">
-  Select a platform above to view the expanded details below.
-</p>
       </section>
 
       {/* Selected Platform Detail */}
@@ -453,9 +452,7 @@ const BeeepStagingPage = () => {
                     <div className="font-playfair font-bold text-base text-foreground mb-2">
                       {s.step}
                     </div>
-                    <div className="text-sm text-foreground/90 leading-relaxed">
-                      {s.description}
-                    </div>
+                    <div className="text-sm text-foreground/90 leading-relaxed">{s.description}</div>
                   </div>
                 ))}
               </div>
@@ -487,9 +484,7 @@ const BeeepStagingPage = () => {
                 <div className="w-12 h-12 icon-gradient-secondary rounded-2xl flex items-center justify-center mb-4 shadow-lg">
                   <f.icon className="w-6 h-6 text-white" />
                 </div>
-                <div className="font-playfair font-bold text-lg text-foreground mb-2">
-                  {f.title}
-                </div>
+                <div className="font-playfair font-bold text-lg text-foreground mb-2">{f.title}</div>
                 <div className="text-sm text-foreground/90 leading-relaxed">{f.description}</div>
               </div>
             ))}
