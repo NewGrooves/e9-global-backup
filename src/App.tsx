@@ -16,6 +16,7 @@ import TheTeam from "./pages/TheTeam";
 import HowItWorks from "./pages/HowItWorks";
 import Beeep from "./pages/Beeep";
 import BeeepStagingPage from "./pages/BeeepStagingPage";
+import HomeStagingPage from "./pages/HomeStagingPage";
 import BookDemo from "./pages/BookDemo";
 import VideoPage from "./pages/VideoPage";
 
