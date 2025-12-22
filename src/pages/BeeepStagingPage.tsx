@@ -347,8 +347,16 @@ const BeeepStagingPage = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {platformCards.map((card) => {
+         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+  {platformCards.map((card) => {
+    ...
+  })}
+</div>
+
+<p className="mt-6 text-center text-sm text-muted-foreground flex items-center justify-center gap-2">
+  Select a platform above to view the expanded details below.
+</p>
+
               const isActive = selectedPlatform === card.key;
               const Icon = card.icon;
 
