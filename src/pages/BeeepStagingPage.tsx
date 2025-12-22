@@ -269,9 +269,7 @@ const BeeepStagingPage = () => {
                 </p>
 
                 <p className="text-foreground/90">
-                  BEEEP Enterprise™, BEEEP Collect™, and BEEEP Metro™ operate as complementary layers
-                  of one patented engagement system—turning trusted touchpoints into secure,
-                  multilingual experiences and permission-based first-party relationship signals.
+                  BEEEP Enterprise™, BEEEP Collect™, and BEEEP Metro™ are three independent, industry-specific BEEEP platforms—each configured to meet the unique engagement, trust, and data needs of its respective market. Built on a shared patented architecture, they transform trusted physical and digital touchpoints into secure, multilingual experiences and permission-based first-party relationship signals.
                 </p>
 
                 {/* Mobile-first quick bullets */}
