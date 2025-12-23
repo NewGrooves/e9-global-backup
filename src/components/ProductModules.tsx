@@ -35,8 +35,8 @@ const ProductModules = () => {
   return (
     <section id="products" className="py-12 md:py-20 bg-background relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(59,130,246,0.08),transparent_70%)]"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_60%,rgba(147,51,234,0.08),transparent_70%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(59,130,246,0.08),transparent_70%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_60%,rgba(147,51,234,0.08),transparent_70%)]" />
 
       <div className="container mx-auto px-6 relative">
         <div className="text-center mb-16">
@@ -45,52 +45,83 @@ const ProductModules = () => {
             <span className="gradient-text-purple">Trustpoint</span>
           </h2>
 
-          <p className="mt-6 text-lg sm:text-xl text-foreground/90 leading-relaxed">
-            BEEEP™ extends authenticated products and places into secure, intelligent engagement
-            layers—connecting trust, participation, and permission-based data in the real world.
+          {/* Investor/client-friendly subheading */}
+          <p className="mt-6 text-lg sm:text-xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
+            E9 Global turns authenticated products and real-world places into secure engagement layers—so every interaction
+            can deliver trusted access, measurable outcomes, and permission-based first-party relationship signals.
           </p>
 
+          {/* 3 capability micro-bullets (replaces the old 4-card block below) */}
+          <div className="mt-8 max-w-5xl mx-auto">
+            <ul className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6">
+              <li className="text-base sm:text-lg text-foreground font-medium">
+                Authenticate what’s real
+              </li>
+
+              <span className="hidden sm:inline-block text-foreground/40" aria-hidden="true">
+                •
+              </span>
+
+              <li className="text-base sm:text-lg text-foreground font-medium">
+                Control who sees what
+              </li>
+
+              <span className="hidden sm:inline-block text-foreground/40" aria-hidden="true">
+                •
+              </span>
+
+              <li className="text-base sm:text-lg text-foreground font-medium">
+                Capture value with permission
+              </li>
+            </ul>
+
+            <p className="mt-3 text-sm sm:text-base text-foreground/70 max-w-3xl mx-auto leading-relaxed">
+              Covert anti-counterfeit protection, secure role-based QR engagement, and opt-in data signals—designed to scale
+              across brands, collectors, and communities.
+            </p>
+          </div>
+
+          {/* 3 images (with labels below each image) */}
           <div className="mt-12 max-w-6xl mx-auto">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-start">
-              {/* Left image + caption */}
-              <div className="flex flex-col items-center text-center">
+              <div className="flex flex-col items-center">
                 <img
                   src="/lovable-uploads/Touchpoint-Enterprise.png"
-                  alt="Woman using smartphone to engage with QR code at stadium, demonstrating BEEEP platform touchpoint interaction"
+                  alt="Customer engaging with a secure QR touchpoint"
                   className="w-full max-w-[280px] h-auto object-contain rounded-2xl shadow-2xl"
                 />
-                <p className="mt-4 text-base sm:text-lg text-foreground font-medium">
+                <div className="mt-4 text-sm sm:text-base text-foreground font-semibold">
                   Customer Engagement
-                </p>
+                </div>
               </div>
 
-              {/* Center image + caption */}
-              <div className="flex flex-col items-center text-center">
+              <div className="flex flex-col items-center">
                 <img
                   src="/lovable-uploads/Touchpoint-Collect.png"
-                  alt="Woman scanning QR code on handbag with smartphone, demonstrating product authentication"
+                  alt="Collector engaging with an authenticated asset touchpoint"
                   className="w-full max-w-[280px] h-auto object-contain rounded-2xl shadow-2xl"
                 />
-                <p className="mt-4 text-base sm:text-lg text-foreground font-medium">
+                <div className="mt-4 text-sm sm:text-base text-foreground font-semibold">
                   Collector Engagement
-                </p>
+                </div>
               </div>
 
-              {/* Right image + caption */}
-              <div className="flex flex-col items-center text-center">
+              <div className="flex flex-col items-center">
                 <img
                   src="/lovable-uploads/Touchpoint Metro Bus Scan.png"
-                  alt="Person scanning a QR code in a transit context, demonstrating place-based engagement"
+                  alt="Community member engaging with a place-based touchpoint"
                   className="w-full max-w-[280px] h-auto object-contain rounded-2xl shadow-2xl"
                 />
-                <p className="mt-4 text-base sm:text-lg text-foreground font-medium">
+                <div className="mt-4 text-sm sm:text-base text-foreground font-semibold">
                   Community Engagement
-                </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
+        {/* NOTE: Keeping the existing module cards for now (per your prior layout).
+            If you later want them removed entirely, we can delete this block cleanly. */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
           {modules.map((module, index) => (
             <div
@@ -100,7 +131,7 @@ const ProductModules = () => {
               {/* Background Gradient */}
               <div
                 className={`absolute inset-0 bg-gradient-to-br ${module.bgGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
-              ></div>
+              />
 
               {/* Content */}
               <div className="relative z-10">
@@ -118,8 +149,8 @@ const ProductModules = () => {
               </div>
 
               {/* Decorative Elements - varied and simplified */}
-              <div className="absolute -top-6 -right-6 w-24 h-8 bg-cobalt-blue/6 rounded-xl transform -rotate-12"></div>
-              <div className="absolute -bottom-8 -left-8 w-12 h-12 bg-cobalt-blue/4 rounded-2xl"></div>
+              <div className="absolute -top-6 -right-6 w-24 h-8 bg-cobalt-blue/6 rounded-xl transform -rotate-12" />
+              <div className="absolute -bottom-8 -left-8 w-12 h-12 bg-cobalt-blue/4 rounded-2xl" />
             </div>
           ))}
         </div>
