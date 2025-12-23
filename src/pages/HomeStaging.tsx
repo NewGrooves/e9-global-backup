@@ -175,14 +175,6 @@ const HomeStaging = () => {
                 );
               })}
             </div>
-
-            {/* Optional: single-line investor-friendly clarification */}
-            <div className="mt-10 text-center">
-              <p className="text-sm sm:text-base text-foreground/70">
-                Built to support brands, collectors, and communities—without forcing complexity on the end user.
-              </p>
-            </div>
-          </div>
         </section>
 
         {/* CTA */}
