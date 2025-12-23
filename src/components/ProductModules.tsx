@@ -43,12 +43,10 @@ const ProductModules = () => {
           <h2 className="text-4xl md:text-5xl font-playfair font-bold mb-6 gradient-text-investor px-4">
             From <span className="gradient-text-blue">Touchpoint</span> to <span className="gradient-text-purple">Trustpoint</span>
           </h2>
-          <p className="...">
+         <p className="mt-6 text-lg sm:text-xl text-foreground/90 leading-relaxed">
   BEEEP™ extends authenticated products and places into secure, intelligent engagement layers—connecting trust, participation, and permission-based data in the real world.
 </p>
-
-          
-          <div className="mt-12 max-w-6xl mx-auto">
+                    <div className="mt-12 max-w-6xl mx-auto">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-center">
               <div className="flex justify-center">
                 <img 
