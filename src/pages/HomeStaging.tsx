@@ -2,7 +2,6 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import StatsSection from "../components/StatsSection";
 import ProductModules from "../components/ProductModules";
-import AboutSection from "../components/AboutSection";
 import ContactCTA from "../components/ContactCTA";
 import SEOHead from "../components/SEOHead";
 import { ProductSchema, VideoSchema, BreadcrumbSchema } from "../components/StructuredData";
@@ -49,11 +48,7 @@ const HomeStaging = () => {
           </div>
         </section>
 
-        {/* Core sections */}
-        <section id="about-section">
-          <AboutSection />
-        </section>
-
+        {/* NEXT SECTION: From Touchpoint to Trustpoint (via ProductModules) */}
         <section>
           <ProductModules />
         </section>
