@@ -57,7 +57,7 @@ const ProductModules = () => {
               </div>
               <div className="flex justify-center">
                 <img 
-                  src="/lovable-uploads/c4f5f77a-5e22-4427-adb7-ab44b0b3ef4b.png" 
+                  src="/lovable-uploads/Touchpoint-Collect.png" 
                   alt="Woman scanning QR code on handbag with smartphone, demonstrating product authentication"
                   className="w-full max-w-[280px] h-auto object-contain rounded-2xl shadow-2xl"
                 />
