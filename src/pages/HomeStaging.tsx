@@ -76,7 +76,7 @@ const HomeStaging = () => {
           </div>
 
           <div className="container mx-auto px-4 sm:px-6">
-            {/* Reduced top padding by ~30%: was py-12; now py-8 */}
+            {/* Reduced top padding by ~30% */}
             <div className="mx-auto max-w-5xl py-8 sm:py-11 lg:py-14 text-center">
               {/* Logo */}
               <div className="flex justify-center">
@@ -97,11 +97,11 @@ const HomeStaging = () => {
                 <span className="block">unified.</span>
               </h1>
 
-            <p className="mt-6 text-base sm:text-lg text-foreground/85 leading-relaxed max-w-3xl mx-auto">
-  Covert anti-counterfeit protection, secure role-based QR engagement,
-  and opt-in data signals—designed to scale across brands, collectors,
-  and communities.
-</p>
+              {/* Subhead (smaller than before) */}
+              <p className="mt-6 text-sm sm:text-base text-foreground/85 leading-relaxed max-w-3xl mx-auto">
+                Covert anti-counterfeit protection, secure role-based QR engagement, and opt-in data
+                signals—designed to scale across brands, collectors, and communities.
+              </p>
 
               {/* CTAs */}
               <div className="mt-9 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
@@ -119,7 +119,8 @@ const HomeStaging = () => {
                 </a>
               </div>
 
-              {/* NOTE: Deleted the line: “Built to support brands, collectors, and communities—without forcing complexity on the end user.” */}
+              {/* Deleted line remains deleted:
+                  “Built to support brands, collectors, and communities—without forcing complexity on the end user.” */}
             </div>
           </div>
         </section>
