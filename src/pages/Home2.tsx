@@ -59,8 +59,9 @@ const Home2 = () => {
       <Header />
 
       <main className="pt-24">
-        {/* HERO: keep this minimal/safe so Home2 always builds */}
-        <section className="relative py-12 sm:py-16 px-4 sm:px-6 overflow-hidden">
+        {/* HERO */}
+        <section className="relative overflow-hidden py-12 sm:py-16 px-4 sm:px-6">
+          {/* Ambient background */}
           <div className="absolute inset-0 -z-10">
             <div className="absolute -top-24 left-1/2 h-[460px] w-[460px] -translate-x-1/2 rounded-full bg-blue-500/10 blur-3xl" />
             <div className="absolute -bottom-24 left-1/4 h-[460px] w-[460px] rounded-full bg-purple-500/10 blur-3xl" />
@@ -69,6 +70,7 @@ const Home2 = () => {
 
           <div className="container mx-auto">
             <div className="mx-auto max-w-5xl text-center">
+              {/* Logo */}
               <div className="flex justify-center">
                 <img
                   src="/lovable-uploads/92326d7f-5c6a-4075-85f0-fd776e75240a.png"
@@ -78,6 +80,7 @@ const Home2 = () => {
                 />
               </div>
 
+              {/* Headline */}
               <h1
                 className="mt-9 sm:mt-10 font-playfair font-bold text-4xl sm:text-5xl md:text-6xl tracking-tight"
                 style={{ lineHeight: "1.06" }}
@@ -86,11 +89,13 @@ const Home2 = () => {
                 <span className="block">unified.</span>
               </h1>
 
+              {/* Subhead (smaller + only once) */}
               <p className="mt-6 text-sm sm:text-base text-foreground/85 leading-relaxed max-w-3xl mx-auto">
                 Covert anti-counterfeit protection, secure role-based QR engagement, and opt-in data
                 signals—designed to scale across brands, collectors, and communities.
               </p>
 
+              {/* CTAs */}
               <div className="mt-9 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
                 <a
                   href="/beeep"
@@ -114,7 +119,7 @@ const Home2 = () => {
           <ProductModules />
         </section>
 
-        {/* Success section (replaces old StatsSection component) */}
+        {/* Success section (inline) */}
         <section className="py-12 md:py-16 px-4 sm:px-6 bg-card/20 relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_60%_40%,rgba(147,51,234,0.08),transparent_70%)]" />
           <div className="container mx-auto relative">
@@ -141,13 +146,16 @@ const Home2 = () => {
                   <div className="font-playfair font-bold text-lg text-foreground mb-2">
                     {m.title}
                   </div>
-                  <div className="text-sm text-foreground/90 leading-relaxed">{m.description}</div>
+                  <div className="text-sm text-foreground/90 leading-relaxed">
+                    {m.description}
+                  </div>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
+        {/* CTA */}
         <section>
           <ContactCTA />
         </section>
