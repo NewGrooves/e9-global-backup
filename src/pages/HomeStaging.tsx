@@ -39,7 +39,7 @@ const HomeStaging = () => {
       <Header />
 
       <main className="pt-24">
-        {/* HERO (simplified, premium, not wordy, no duplicate tagline) */}
+        {/* HERO (cleaned: remove duplicate tagline, chips, and bottom line) */}
         <section className="relative overflow-hidden">
           {/* Ambient background */}
           <div className="absolute inset-0 -z-10">
@@ -60,9 +60,9 @@ const HomeStaging = () => {
                 />
               </div>
 
-              {/* Single, non-repeating tagline (keep subtle) */}
+              {/* Keep ONLY ONE tagline line (this one). */}
               <p className="mt-3 text-sm sm:text-base text-foreground/70">
-                Monetizing authentic customer experiences.
+                Monetizing Authentic Customer Experiences.
               </p>
 
               {/* Headline */}
@@ -74,24 +74,11 @@ const HomeStaging = () => {
                 <span className="block">unified.</span>
               </h1>
 
-              {/* Subhead (shorter, cleaner, less jargon) */}
+              {/* Subhead */}
               <p className="mt-6 text-base sm:text-lg text-foreground/85 leading-relaxed max-w-3xl mx-auto">
                 EncryptorSeal™ protects what’s real. BEEEP™ turns every verified touchpoint into secure
                 access, measurable engagement, and permission-based first-party signals.
               </p>
-
-              {/* Calm “value chips” (optional, but far less clutter than cards) */}
-              <div className="mt-8 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
-                <span className="rounded-full border border-border/35 bg-card/15 px-4 py-2 text-sm text-foreground/80">
-                  Role-specific access
-                </span>
-                <span className="rounded-full border border-border/35 bg-card/15 px-4 py-2 text-sm text-foreground/80">
-                  Permission-based data
-                </span>
-                <span className="rounded-full border border-border/35 bg-card/15 px-4 py-2 text-sm text-foreground/80">
-                  Real-world analytics
-                </span>
-              </div>
 
               {/* CTAs */}
               <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
@@ -108,11 +95,6 @@ const HomeStaging = () => {
                   Book a Demo
                 </a>
               </div>
-
-              {/* Bottom line (optional; keep or remove) */}
-              <p className="mt-8 text-sm sm:text-base text-foreground/65 max-w-3xl mx-auto">
-                Built for brands, collectibles, and communities—without adding friction for the user.
-              </p>
             </div>
           </div>
         </section>
