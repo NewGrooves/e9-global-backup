@@ -64,7 +64,7 @@ const ProductModules = () => {
               </div>
               <div className="flex justify-center">
                 <img 
-                  src="/lovable-uploads/f9e54fa6-5f90-453a-96e0-60815f9ef598.png" 
+                  src="/lovable-uploads/Touchpoint Metro Bus Scan.png" 
                   alt="Automotive mechanic using smartphone to verify brake pads packaging in garage, demonstrating product authentication"
                   className="w-full max-w-[280px] h-auto object-contain rounded-2xl shadow-2xl"
                 />
