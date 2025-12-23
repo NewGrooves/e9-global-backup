@@ -97,11 +97,11 @@ const HomeStaging = () => {
                 <span className="block">unified.</span>
               </h1>
 
-              {/* Subhead (smaller than before) */}
-              <p className="mt-6 text-sm sm:text-base text-foreground/85 leading-relaxed max-w-3xl mx-auto">
-                Covert anti-counterfeit protection, secure role-based QR engagement, and opt-in data
-                signals—designed to scale across brands, collectors, and communities.
-              </p>
+             <p className="mt-6 text-lg sm:text-xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
+  Covert anti-counterfeit protection, secure role-based QR engagement,
+  and opt-in data signals—designed to scale across brands, collectors,
+  and communities.
+</p>
 
               {/* CTAs */}
               <div className="mt-9 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
