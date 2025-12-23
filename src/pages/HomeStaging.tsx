@@ -52,14 +52,15 @@ const HomeStaging = () => {
               {/* Hero Card */}
               <div className="bg-card/40 backdrop-blur-sm border border-border/30 rounded-3xl shadow-xl px-6 sm:px-10 py-10 sm:py-12">
                 {/* Logo */}
-                <div className="flex justify-center mb-6 sm:mb-8">
-                  <img
-                    src="/lovable-uploads/92326d7f-5c6a-4075-85f0-fd776e75240a.png"
-                    alt="E9 Global"
-                    className="h-14 sm:h-16 md:h-20 w-auto"
-                    loading="eager"
-                  />
-                </div>
+                <div className="flex justify-center mb-8 sm:mb-10">
+  <img
+    src="/lovable-uploads/92326d7f-5c6a-4075-85f0-fd776e75240a.png"
+    alt="E9 Global"
+    className="h-32 sm:h-40 md:h-48 w-auto"
+    loading="eager"
+  />
+</div>
+
 
                 {/* Headline */}
                 <div className="text-center">
