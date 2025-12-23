@@ -1,6 +1,8 @@
+// src/pages/HomeStaging.tsx
+
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import StatsSection from "../components/StatsSection";
+import SuccessSection from "../components/SuccessSection"; // ✅ swapped in
 import ProductModules from "../components/ProductModules";
 import ContactCTA from "../components/ContactCTA";
 import SEOHead from "../components/SEOHead";
@@ -53,14 +55,13 @@ const HomeStaging = () => {
               <div className="bg-card/40 backdrop-blur-sm border border-border/30 rounded-3xl shadow-xl px-6 sm:px-10 py-10 sm:py-12">
                 {/* Logo */}
                 <div className="flex justify-center mb-8 sm:mb-10">
-  <img
-    src="/lovable-uploads/92326d7f-5c6a-4075-85f0-fd776e75240a.png"
-    alt="E9 Global"
-    className="h-32 sm:h-40 md:h-48 w-auto"
-    loading="eager"
-  />
-</div>
-
+                  <img
+                    src="/lovable-uploads/92326d7f-5c6a-4075-85f0-fd776e75240a.png"
+                    alt="E9 Global"
+                    className="h-32 sm:h-40 md:h-48 w-auto"
+                    loading="eager"
+                  />
+                </div>
 
                 {/* Headline */}
                 <div className="text-center">
@@ -78,7 +79,7 @@ const HomeStaging = () => {
                     relationship signals.
                   </p>
 
-                  {/* Primary CTAs (kept simple; link targets can be adjusted if needed) */}
+                  {/* Primary CTAs */}
                   <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
                     <a
                       href="/beeep"
@@ -104,13 +105,14 @@ const HomeStaging = () => {
           </div>
         </section>
 
-        {/* Core sections (unchanged) */}
+        {/* Core sections */}
         <section>
           <ProductModules />
         </section>
 
+        {/* ✅ swapped: this is the section that will change your “statistics boxes” */}
         <section>
-          <StatsSection />
+          <SuccessSection />
         </section>
 
         <section>
