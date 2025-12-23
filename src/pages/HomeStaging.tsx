@@ -71,7 +71,7 @@ const HomeStaging = () => {
               </h1>
 
               {/* Subhead – slightly larger */}
-              <p className="mt-6 text-lg sm:text-xl text-foreground/85 leading-relaxed max-w-3xl mx-auto">
+             <p className="mt-6 text-xl sm:text-2xl text-foreground/90 leading-relaxed max-w-3xl mx-auto">
                 Covert anti-counterfeit protection, secure role-based QR engagement,
                 and opt-in data signals—designed to scale across brands, collectors,
                 and communities.
