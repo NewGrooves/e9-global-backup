@@ -1,51 +1,12 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import StatsSection from "../components/StatsSection";
 import ProductModules from "../components/ProductModules";
 import ContactCTA from "../components/ContactCTA";
 import SEOHead from "../components/SEOHead";
 import { ProductSchema, VideoSchema, BreadcrumbSchema } from "../components/StructuredData";
-import { ShieldCheck, KeyRound, Database, LineChart, Globe2, Sparkles } from "lucide-react";
 
 const HomeStaging = () => {
-  const metrics = [
-    {
-      icon: ShieldCheck,
-      title: "Covert authenticity at scale",
-      description:
-        "EncryptorSeal™ protects products and packaging with invisible, copy-proof verification—built for real-world enforcement and trust.",
-    },
-    {
-      icon: KeyRound,
-      title: "Role-specific secure access",
-      description:
-        "GS1-aligned secure QR workflows enable different experiences for customers, operators, and partners—without exposing sensitive pathways.",
-    },
-    {
-      icon: Database,
-      title: "Permission-based first-party signals",
-      description:
-        "BEEEP™ enables opt-in relationship signals and data enrichment—client-owned, compliant, and tied to authenticated touchpoints.",
-    },
-    {
-      icon: LineChart,
-      title: "Real-world analytics (not clicks)",
-      description:
-        "Measure engagement grounded in time, place, and touchpoint context—connecting physical behavior to outcomes and ROI.",
-    },
-    {
-      icon: Globe2,
-      title: "Multilingual engagement by design",
-      description:
-        "Deliver secure, context-preserving experiences globally—supporting brands, collectibles, and place-based ecosystems.",
-    },
-    {
-      icon: Sparkles,
-      title: "Programmable value layers",
-      description:
-        "Enable high-security and high-value workflows—like biometric verification and automated royalty logic—when the use case demands it.",
-    },
-  ];
-
   return (
     <div className="min-h-screen bg-background text-foreground font-inter overflow-x-hidden">
       {/* SEO / Schema */}
@@ -78,7 +39,7 @@ const HomeStaging = () => {
       <Header />
 
       <main className="pt-24">
-        {/* HERO (cleaned: remove duplicate tagline, chips, and bottom line) */}
+        {/* HERO */}
         <section className="relative overflow-hidden">
           {/* Ambient background */}
           <div className="absolute inset-0 -z-10">
@@ -88,7 +49,8 @@ const HomeStaging = () => {
           </div>
 
           <div className="container mx-auto px-4 sm:px-6">
-            <div className="mx-auto max-w-5xl py-12 sm:py-16 lg:py-20 text-center">
+            {/* ↓ reduced top padding here */}
+            <div className="mx-auto max-w-5xl py-8 sm:py-12 lg:py-16 text-center">
               {/* Logo */}
               <div className="flex justify-center">
                 <img
@@ -101,17 +63,18 @@ const HomeStaging = () => {
 
               {/* Headline */}
               <h1
-                className="mt-10 font-playfair font-bold text-4xl sm:text-5xl md:text-6xl tracking-tight"
+                className="mt-8 font-playfair font-bold text-4xl sm:text-5xl md:text-6xl tracking-tight"
                 style={{ lineHeight: "1.06" }}
               >
                 Authenticity and engagement,
                 <span className="block">unified.</span>
               </h1>
 
-              {/* Subhead */}
-              <p className="mt-6 text-base sm:text-lg text-foreground/85 leading-relaxed max-w-3xl mx-auto">
-                EncryptorSeal™ protects what’s real. BEEEP™ turns every verified touchpoint into secure
-                access, measurable engagement, and permission-based first-party signals.
+              {/* Subhead – slightly larger */}
+              <p className="mt-6 text-lg sm:text-xl text-foreground/85 leading-relaxed max-w-3xl mx-auto">
+                Covert anti-counterfeit protection, secure role-based QR engagement,
+                and opt-in data signals—designed to scale across brands, collectors,
+                and communities.
               </p>
 
               {/* CTAs */}
@@ -133,59 +96,15 @@ const HomeStaging = () => {
           </div>
         </section>
 
-        {/* Touchpoint to Trustpoint (images section) */}
+        {/* Core sections */}
         <section>
           <ProductModules />
         </section>
 
-        {/* UPDATED “Success / Metrics” SECTION (replaces old anti-counterfeit stats) */}
-        <section className="py-12 md:py-16 px-4 sm:px-6 bg-card/30 relative overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_35%_35%,rgba(59,130,246,0.08),transparent_70%)]" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_55%,rgba(147,51,234,0.08),transparent_70%)]" />
-
-          <div className="container mx-auto relative">
-            <div className="text-center mb-10 md:mb-12">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-playfair font-bold mb-4 gradient-text-investor">
-                Trust infrastructure for the physical world.
-              </h2>
-              <p className="text-base sm:text-lg text-foreground/85 max-w-3xl mx-auto leading-relaxed">
-                E9 Global combines covert authentication, secure GS1 QR engagement, and permission-based
-                intelligence—so brands can protect authenticity, deepen relationships, and measure real-world outcomes.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 max-w-6xl mx-auto">
-              {metrics.map((m, idx) => {
-                const Icon = m.icon;
-                return (
-                  <div
-                    key={idx}
-                    className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 md:p-7 shadow-lg border border-border/20 hover:border-border/40 transition-colors"
-                  >
-                    <div className="w-12 h-12 icon-gradient-primary rounded-2xl flex items-center justify-center shadow-lg mb-4">
-                      <Icon className="w-6 h-6 text-white" />
-                    </div>
-                    <h3 className="text-lg md:text-xl font-playfair font-bold text-foreground mb-2">
-                      {m.title}
-                    </h3>
-                    <p className="text-sm md:text-base text-foreground/80 leading-relaxed">
-                      {m.description}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
-
-            {/* Optional: single-line investor-friendly clarification */}
-            <div className="mt-10 text-center">
-              <p className="text-sm sm:text-base text-foreground/70">
-                Built to support brands, collectors, and communities—without forcing complexity on the end user.
-              </p>
-            </div>
-          </div>
+        <section>
+          <StatsSection />
         </section>
 
-        {/* CTA */}
         <section>
           <ContactCTA />
         </section>
