@@ -10,6 +10,7 @@ const ProductModules = () => {
 
       <div className="container mx-auto px-6 relative">
         <div className="text-center mb-16">
+          {/* Section headline */}
           <h2 className="text-4xl md:text-5xl font-playfair font-bold mb-6 gradient-text-investor px-4">
             From <span className="gradient-text-blue">Touchpoint</span> to{" "}
             <span className="gradient-text-purple">Trustpoint</span>
@@ -23,31 +24,17 @@ const ProductModules = () => {
             signals.
           </p>
 
-          {/* Strategic micro-bullets */}
-          <div className="mt-8 max-w-5xl mx-auto">
-            <ul className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6">
-              <li className="text-base sm:text-lg text-foreground font-medium">
-                Authenticate what’s real
-              </li>
-
-              <span className="hidden sm:inline-block text-foreground/40">•</span>
-
-              <li className="text-base sm:text-lg text-foreground font-medium">
-                Control who sees what
-              </li>
-
-              <span className="hidden sm:inline-block text-foreground/40">•</span>
-
-              <li className="text-base sm:text-lg text-foreground font-medium">
-                Capture value with permission
-              </li>
-            </ul>
-
-            <p className="mt-3 text-sm sm:text-base text-foreground/70 max-w-3xl mx-auto leading-relaxed">
-              Covert anti-counterfeit protection, secure role-based QR engagement,
-              and opt-in data signals—designed to scale across brands, collectors,
-              and communities.
-            </p>
+          {/* Strategic pill statements */}
+          <div className="mt-8 flex flex-wrap justify-center gap-3 sm:gap-4">
+            <span className="px-4 py-2 rounded-full text-sm sm:text-base font-medium bg-card/70 border border-border/30 backdrop-blur-sm text-foreground">
+              Authenticate what’s real
+            </span>
+            <span className="px-4 py-2 rounded-full text-sm sm:text-base font-medium bg-card/70 border border-border/30 backdrop-blur-sm text-foreground">
+              Control who sees what
+            </span>
+            <span className="px-4 py-2 rounded-full text-sm sm:text-base font-medium bg-card/70 border border-border/30 backdrop-blur-sm text-foreground">
+              Capture value with permission
+            </span>
           </div>
 
           {/* Engagement imagery */}
