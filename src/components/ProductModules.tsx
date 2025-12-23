@@ -50,7 +50,7 @@ const ProductModules = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-center">
               <div className="flex justify-center">
                 <img 
-                  src="/lovable-uploads/35d01727-682a-41be-996f-31819b9045d4.png" 
+                  src="/public/lovable-uploads/Touchpoint-Enterprise.png" 
                   alt="Woman using smartphone to engage with QR code at stadium, demonstrating BEEED platform touchpoint interaction"
                   className="w-full max-w-[280px] h-auto object-contain rounded-2xl shadow-2xl"
                 />
