@@ -60,11 +60,6 @@ const HomeStaging = () => {
                 />
               </div>
 
-              {/* Keep ONLY ONE tagline line (this one). */}
-              <p className="mt-3 text-sm sm:text-base text-foreground/70">
-                Monetizing Authentic Customer Experiences.
-              </p>
-
               {/* Headline */}
               <h1
                 className="mt-10 font-playfair font-bold text-4xl sm:text-5xl md:text-6xl tracking-tight"
