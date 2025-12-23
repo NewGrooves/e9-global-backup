@@ -1,12 +1,39 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import StatsSection from "../components/StatsSection";
 import ProductModules from "../components/ProductModules";
 import ContactCTA from "../components/ContactCTA";
 import SEOHead from "../components/SEOHead";
 import { ProductSchema, VideoSchema, BreadcrumbSchema } from "../components/StructuredData";
+import { ShieldCheck, QrCode, Database, Users } from "lucide-react";
 
 const HomeStaging = () => {
+  const successMetrics = [
+    {
+      icon: ShieldCheck,
+      title: "Verified Trust Layer",
+      description:
+        "Covert authentication and secure validation that protect what’s real—across products, assets, and environments.",
+    },
+    {
+      icon: QrCode,
+      title: "Role-Based Access via Secure QR",
+      description:
+        "One touchpoint can serve different stakeholders with permissioned experiences—without adding user friction.",
+    },
+    {
+      icon: Users,
+      title: "Measurable Engagement Outcomes",
+      description:
+        "Turn real-world touchpoints into interactive moments that drive education, loyalty, and conversion—by design.",
+    },
+    {
+      icon: Database,
+      title: "Opt-In First-Party Signals",
+      description:
+        "Capture permission-based relationship signals that brands and operators own—built for compliance and durability.",
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-background text-foreground font-inter overflow-x-hidden">
       {/* SEO / Schema */}
@@ -49,8 +76,8 @@ const HomeStaging = () => {
           </div>
 
           <div className="container mx-auto px-4 sm:px-6">
-            {/* ↓ reduced top padding here */}
-            <div className="mx-auto max-w-5xl py-8 sm:py-12 lg:py-16 text-center">
+            {/* Reduced top padding by ~30%: was py-12; now py-8 */}
+            <div className="mx-auto max-w-5xl py-8 sm:py-11 lg:py-14 text-center">
               {/* Logo */}
               <div className="flex justify-center">
                 <img
@@ -63,22 +90,21 @@ const HomeStaging = () => {
 
               {/* Headline */}
               <h1
-                className="mt-8 font-playfair font-bold text-4xl sm:text-5xl md:text-6xl tracking-tight"
+                className="mt-9 sm:mt-10 font-playfair font-bold text-4xl sm:text-5xl md:text-6xl tracking-tight"
                 style={{ lineHeight: "1.06" }}
               >
                 Authenticity and engagement,
                 <span className="block">unified.</span>
               </h1>
 
-              {/* Subhead – slightly larger */}
-             <p className="mt-6 text-xl sm:text-2xl text-foreground/90 leading-relaxed max-w-3xl mx-auto">
-                Covert anti-counterfeit protection, secure role-based QR engagement,
-                and opt-in data signals—designed to scale across brands, collectors,
-                and communities.
+              {/* Subhead – larger (more like primary explanatory copy) */}
+              <p className="mt-6 text-2xl sm:text-3xl text-foreground/90 leading-snug max-w-4xl mx-auto">
+                Covert anti-counterfeit protection, secure role-based QR engagement, and opt-in data
+                signals—designed to scale across brands, collectors, and communities.
               </p>
 
               {/* CTAs */}
-              <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+              <div className="mt-9 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
                 <a
                   href="/beeep"
                   className="inline-flex w-full sm:w-auto items-center justify-center rounded-2xl px-7 py-3.5 text-base font-semibold bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg hover:opacity-95 transition"
@@ -92,19 +118,52 @@ const HomeStaging = () => {
                   Book a Demo
                 </a>
               </div>
+
+              {/* NOTE: Deleted the line: “Built to support brands, collectors, and communities—without forcing complexity on the end user.” */}
             </div>
           </div>
         </section>
 
-        {/* Core sections */}
+        {/* Touchpoint section */}
         <section>
           <ProductModules />
         </section>
 
-        <section>
-          <StatsSection />
+        {/* UPDATED SUCCESS / STATS SECTION (inline so it cannot revert to old component) */}
+        <section className="py-12 md:py-16 px-4 sm:px-6 bg-card/20 relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_60%_40%,rgba(147,51,234,0.08),transparent_70%)]" />
+          <div className="container mx-auto relative">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-playfair font-bold mb-4 gradient-text-investor">
+                Outcomes you can measure—built on trust.
+              </h2>
+              <p className="text-lg text-foreground/90 max-w-3xl mx-auto leading-relaxed">
+                E9 Global connects authentication, engagement, and permission-based intelligence so
+                enterprises can prove what’s real—and monetize what’s trusted.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {successMetrics.map((m, idx) => (
+                <div
+                  key={idx}
+                  className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-border/20 hover:border-border/40 transition-all duration-300"
+                >
+                  <div className="w-12 h-12 icon-gradient-secondary rounded-2xl flex items-center justify-center mb-4 shadow-lg">
+                    <m.icon className="w-6 h-6 text-white" />
+                  </div>
+
+                  <div className="font-playfair font-bold text-lg text-foreground mb-2">
+                    {m.title}
+                  </div>
+                  <div className="text-sm text-foreground/90 leading-relaxed">{m.description}</div>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
 
+        {/* CTA */}
         <section>
           <ContactCTA />
         </section>
