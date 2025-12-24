@@ -83,7 +83,7 @@ const HomeStaging = () => {
                 <img
                   src="/lovable-uploads/92326d7f-5c6a-4075-85f0-fd776e75240a.png"
                   alt="E9 Global"
-                  className="h-44 sm:h-56 md:h-64 w-auto"
+                  className="h-56 sm:h-72 md:h-80 w-auto"
                   loading="eager"
                 />
               </div>
@@ -97,11 +97,10 @@ const HomeStaging = () => {
                 <span className="block">unified.</span>
               </h1>
 
-             <p className="mt-6 text-lg sm:text-xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
-  Covert anti-counterfeit protection, secure role-based QR engagement,
-  and opt-in data signals—designed to scale across brands, collectors,
-  and communities.
-</p>
+              <p className="mt-6 text-lg sm:text-xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
+                Covert anti-counterfeit protection, secure role-based QR engagement, and opt-in data
+                signals—designed to scale across brands, collectors, and communities.
+              </p>
 
               {/* CTAs */}
               <div className="mt-9 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
@@ -119,8 +118,7 @@ const HomeStaging = () => {
                 </a>
               </div>
 
-              {/* Deleted line remains deleted:
-                  “Built to support brands, collectors, and communities—without forcing complexity on the end user.” */}
+              {/* Deleted line remains deleted */}
             </div>
           </div>
         </section>
@@ -130,7 +128,7 @@ const HomeStaging = () => {
           <ProductModules />
         </section>
 
-        {/* UPDATED SUCCESS / STATS SECTION (inline so it cannot revert to old component) */}
+        {/* UPDATED SUCCESS / STATS SECTION */}
         <section className="py-12 md:py-16 px-4 sm:px-6 bg-card/20 relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_60%_40%,rgba(147,51,234,0.08),transparent_70%)]" />
           <div className="container mx-auto relative">
