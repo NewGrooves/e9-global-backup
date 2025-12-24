@@ -53,7 +53,7 @@ const ProductModules = () => {
 
               <div className="flex flex-col items-center">
                 <img
-                  src="/lovable-uploads/Touchpoint-Collect.png"
+                  src="/lovable-uploads/Touchpoint - Hermes.png"
                   alt="Collector engaging with an authenticated asset"
                   className="w-full max-w-[280px] h-auto object-contain rounded-2xl shadow-2xl"
                 />
