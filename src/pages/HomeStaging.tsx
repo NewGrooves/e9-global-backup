@@ -78,15 +78,15 @@ const HomeStaging = () => {
             <div className="mx-auto max-w-5xl py-8 sm:py-11 lg:py-14 text-center">
               {/* Logo — width-driven, aspect-safe */}
               <div className="flex justify-center">
-                <div className="w-full max-w-[520px] sm:max-w-[640px] md:max-w-[760px]">
-                  <img
-                    src="/lovable-uploads/92326d7f-5c6a-4075-85f0-fd776e75240a.png"
-                    alt="E9 Global"
-                    className="w-full h-auto object-contain"
-                    loading="eager"
-                  />
-                </div>
-              </div>
+  <div className="w-full max-w-[780px] sm:max-w-[960px] md:max-w-[1100px]">
+    <img
+      src="/lovable-uploads/92326d7f-5c6a-4075-85f0-fd776e75240a.png"
+      alt="E9 Global"
+      className="w-full h-auto object-contain"
+      loading="eager"
+    />
+  </div>
+</div>
 
               {/* Headline */}
               <h1
