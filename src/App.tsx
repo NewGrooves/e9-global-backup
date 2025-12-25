@@ -1,3 +1,5 @@
+// src/App.tsx
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -14,9 +16,13 @@ import HomeStaging from "./pages/HomeStaging";
 
 import About from "./pages/About";
 import TheTeam from "./pages/TheTeam";
+
 import HowItWorks from "./pages/HowItWorks";
+import HowItWorksStaging from "./pages/HowItWorksStaging";
+
 import Beeep from "./pages/Beeep";
 import BeeepStagingPage from "./pages/BeeepStagingPage";
+
 import BookDemo from "./pages/BookDemo";
 import VideoPage from "./pages/VideoPage";
 import NotFound from "./pages/NotFound";
@@ -50,7 +56,10 @@ const App = () => {
                 {/* Site pages */}
                 <Route path="/about" element={<About />} />
                 <Route path="/the-team" element={<TheTeam />} />
+
+                {/* How It Works */}
                 <Route path="/how-it-works" element={<HowItWorks />} />
+                <Route path="/how-it-works-staging" element={<HowItWorksStaging />} />
 
                 {/* BEEEP */}
                 <Route path="/beeep" element={<Beeep />} />
