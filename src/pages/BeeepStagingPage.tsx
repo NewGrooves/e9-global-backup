@@ -191,7 +191,7 @@ const BeeepStagingPage = () => {
       {
         step: "Scan It — BEEEP IT!™",
         description:
-          "Users scan products or real-world touchpoints with any smartphone—no app download required.",
+          "Users scan products or real-world touchpoints with any smartphone.",
         icon: QrCode,
       },
       {
