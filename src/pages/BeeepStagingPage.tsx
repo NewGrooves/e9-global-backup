@@ -124,25 +124,26 @@ const BeeepStagingPage = () => {
                   first-party relationship signals.
                 </p>
 
-                <div className="bg-card/70 border border-border/30 rounded-2xl p-5 shadow-lg">
-                  <div className="text-sm uppercase tracking-wide text-foreground/70 mb-3">
-                    At a glance
-                  </div>
-                  <ul className="space-y-2 text-foreground/90 text-base">
-                    <li className="flex items-start gap-3">
-                      <span className="mt-2 w-2 h-2 rounded-full bg-blue-500 flex-shrink-0" />
-                      <span>
-                        Scan-to-engagement on any smartphone (no app required)
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="mt-2 w-2 h-2 rounded-full bg-purple-500 flex-shrink-0" />
-                      <span>Trusted touchpoints + measurable outcomes</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="mt-2 w-2 h-2 rounded-full bg-pink-500 flex-shrink-0" />
-                      <span>
-                        Permission-based participation for brand-owned first-party
-                        data
-                      </span>
-                    </li>
+               <div className="bg-card/70 border border-border/30 rounded-2xl p-5 shadow-lg">
+  <div className="text-sm uppercase tracking-wide text-foreground/70 mb-3">
+    At a glance
+  </div>
+  <ul className="space-y-2 text-foreground/90 text-base">
+    <li className="flex items-start gap-3">
+      <span className="mt-2 w-2 h-2 rounded-full bg-blue-500 flex-shrink-0" />
+      <span>Scan-to-engagement on any smartphone (no app required)</span>
+    </li>
+    <li className="flex items-start gap-3">
+      <span className="mt-2 w-2 h-2 rounded-full bg-purple-500 flex-shrink-0" />
+      <span>Trusted touchpoints + measurable outcomes</span>
+    </li>
+    <li className="flex items-start gap-3">
+      <span className="mt-2 w-2 h-2 rounded-full bg-pink-500 flex-shrink-0" />
+      <span>Permission-based participation for brand-owned first-party data</span>
+    </li>
+    <li className="flex items-start gap-3">
+      <span className="mt-2 w-2 h-2 rounded-full bg-indigo-500 flex-shrink-0" />
+      <span>Multilingual delivery that preserves intent and context</span>
+    </li>
+  </ul>
+</div>
