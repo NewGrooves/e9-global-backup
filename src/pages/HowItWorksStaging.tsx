@@ -204,10 +204,6 @@ const HowItWorks = () => {
               role-based access, and permission-based first-party data.
             </p>
 
-            <p className="text-sm sm:text-base md:text-lg text-foreground/80 max-w-4xl mx-auto leading-relaxed">
-              This page focuses on the mechanics: EncryptorSeal™ authentication, secure GS1 QR role-based routing, BEEEP™ content delivery,
-              optional blockchain royalties (Collector), and the brand-owned data flywheel.
-            </p>
           </div>
         </div>
       </section>
