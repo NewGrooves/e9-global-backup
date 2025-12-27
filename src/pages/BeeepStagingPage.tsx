@@ -298,8 +298,8 @@ const BeeepStagingPage = () => {
 
                 <p className="text-foreground/90">
                   The same printed code can securely deliver different content to different stakeholders, and that content can be updated at any time.
-                  When users opt in, brands capture permission-based signals they own, enrich them with additional permission-based datasets,
-                  and monetize data intelligence in ways that increase enterprise value.
+                  When users opt in, brands capture permission-based signals they own. E9 Global can then enrich them with additional permission-based datasets,
+                  and monetize their data intelligence in ways that increase enterprise value.
                 </p>
 
                 {/* Quick bullets with colors */}
