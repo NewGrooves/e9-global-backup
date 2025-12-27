@@ -116,7 +116,7 @@ const BeeepStagingPage = () => {
       },
       {
         key: "metro" as const,
-        title: "Place-Based Deployment",
+        title: "Community Deployment",
         subtitle:
           "Scan-initiated engagement grounded in real places, with optional covert verification and multilingual delivery.",
         icon: MapPin,
