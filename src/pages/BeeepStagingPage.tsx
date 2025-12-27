@@ -291,9 +291,11 @@ const BeeepStagingPage = () => {
                 <p className="text-foreground/90">
                   The most common question we hear is, “What makes this
                   different from regular QR codes?” The answer is simple. Regular
-                  QR codes are links. BEEEP is a patented trust and intelligence
-                  layer powered by Optropic GS1 QR technology plus covert
-                  EncryptorSeal authentication.
+                  QR codes are links. <strong>
+  BEEEP is a patented trust and intelligence layer powered by Optropic GS1 QR technology plus covert
+  EncryptorSeal authentication.
+</strong>
+
                 </p>
 
                 <p className="text-foreground/90">
