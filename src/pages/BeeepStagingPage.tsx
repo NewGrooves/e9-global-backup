@@ -3,23 +3,16 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ContactCTA from "../components/ContactCTA";
 import {
-  Shield,
-  BarChart3,
-  Lock,
-  Languages,
   QrCode,
-  Sparkles,
-  Database,
-  Rocket,
-  Building2,
-  Gem,
-  MapPin,
-  ChevronDown,
   Users,
   RefreshCw,
+  Database,
+  Building2,
+  Gem,
+  ChevronDown,
 } from "lucide-react";
 
-type PlatformKey = "enterprise" | "collect" | "metro";
+type PlatformKey = "enterprise" | "collect" | "community";
 
 const BeeepStagingPage = () => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
@@ -50,7 +43,8 @@ const BeeepStagingPage = () => {
       try {
         await Promise.all(promises);
         setImagesLoaded(true);
-      } catch {
+      } catch (error) {
+        console.error("Failed to preload images:", error);
         setImagesLoaded(true);
       }
     };
@@ -78,9 +72,11 @@ const BeeepStagingPage = () => {
 
   useEffect(() => {
     if (!imagesLoaded) return;
+
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % heroImages.length);
     }, 4000);
+
     return () => clearInterval(interval);
   }, [imagesLoaded, heroImages.length]);
 
@@ -93,33 +89,33 @@ const BeeepStagingPage = () => {
           "Embedded engagement infrastructure for brands and enterprise organizations.",
         icon: Building2,
         highlights: [
-          "Integrates into existing mobile apps, web properties, and operational workflows",
-          "Supports secure engagement and permission-based data capture inside brand-owned systems",
-          "Designed for scalable analytics and trusted outcomes across customer and partner touchpoints",
+          "Integrates into existing apps, web properties, and operational workflows",
+          "Role-specific delivery for customers, partners, internal teams, and regulators",
+          "Designed for secure participation and permission-based intelligence",
         ],
       },
       {
         key: "collect" as const,
         title: "Collectibles Deployment",
         subtitle:
-          "Persistent engagement and secure stakeholder delivery across asset lifecycles.",
+          "High-trust engagement and lifecycle continuity for authenticated assets.",
         icon: Gem,
         highlights: [
-          "Embeds into auction, registry, and provenance ecosystems",
-          "Supports role-specific access for buyers, sellers, authenticators, and partners",
-          "Assets become long-lived, updateable engagement touchpoints over time",
+          "Supports provenance continuity across resale, inheritance, and stewardship",
+          "Role-specific delivery for buyers, sellers, authenticators, and service partners",
+          "Built for high-security asset workflows and premium stakeholder experiences",
         ],
       },
       {
-        key: "metro" as const,
-        title: "Place-Based Deployment",
+        key: "community" as const,
+        title: "Community Deployment",
         subtitle:
-          "Scan-initiated engagement grounded in real places and community ecosystems.",
-        icon: MapPin,
+          "Participation-centric engagement for cities, venues, destinations, and communities.",
+        icon: Users,
         highlights: [
-          "Integrates into city apps, venue platforms, signage, and destination experiences",
-          "Role-specific delivery supports residents, visitors, staff, and partner workflows",
-          "Content can be updated at any time without reprinting signage",
+          "Supports residents, visitors, staff, local organizations, and partners",
+          "Dynamic content updates without reprinting signage or touchpoints",
+          "Designed for participation loops, learning, and value exchange",
         ],
       },
     ],
@@ -128,123 +124,96 @@ const BeeepStagingPage = () => {
 
   const platformDetail = useMemo(() => {
     const common = {
-      sectionTitle: "How BEEEP™ works in practice",
+      sectionTitle: "How it works in practice",
       bulletsTitle: "What you get",
       bullets: [
-        "A secure scan-to-engagement workflow that works on any smartphone",
-        "Role-specific delivery so each stakeholder sees what is relevant to them",
-        "Dynamic content control with updates at any time without reprinting",
+        "Scan-initiated engagement tied to real-world touchpoints",
+        "Role-specific delivery governed by permissions and context",
+        "Dynamic updates without reprinting or redeploying",
       ],
     };
 
     const enterprise = {
-      eyebrow: "Embedded engagement infrastructure",
+      eyebrow: "Enterprise-grade embedded infrastructure",
       headline:
-        "Trust-first engagement and permission-based intelligence inside systems brands already run.",
+        "Secure engagement and permission-based intelligence inside systems brands already run.",
       body: [
-        "BEEEP™ Enterprise integrates into existing apps, websites, packaging, and real-world touchpoints to connect physical engagement to digital experiences at scale.",
-        "It supports role-specific content delivery for customers, partners, internal teams, and regulated stakeholders, while keeping governance and access controls aligned to existing systems.",
-        "When users opt in, organizations can capture cohesive, consent-based behavioral intelligence and activate it for performance marketing, loyalty, support, and operational efficiency.",
+        "BEEEP™ Enterprise integrates directly into existing apps and real-world touchpoints to connect physical engagement to digital experiences at scale.",
+        "Role-specific delivery enables different stakeholders to access different secure content from the same scan based on identity, permissions, and context.",
+        "EncryptorSeal™ can be deployed as part of Enterprise for covert anti-counterfeit authentication and trusted verification workflows where required.",
+        "When users opt in, brands capture permission-based signals they own, enabling enrichment and monetization services that strengthen retention, performance, and valuation.",
       ],
       bullets: [
-        "Integrates into existing systems without a new consumer app",
-        "Permission-based intelligence where the organization remains the data controller",
-        "Role-specific delivery and measurable engagement signals",
+        "Embedded into existing brand-owned systems",
+        "Role-specific delivery with dynamic content control",
+        "Optional EncryptorSeal™ for covert verification and anti-counterfeit protection",
       ],
     };
 
     const collect = {
-      eyebrow: "Embedded collectibles infrastructure",
+      eyebrow: "High-security collectibles infrastructure",
       headline:
-        "Persistent engagement and trusted stakeholder workflows across ownership cycles.",
+        "Trusted asset engagement with advanced verification and lifecycle economics.",
       body: [
-        "BEEEP™ Collect embeds into auction, registry, and provenance environments to maintain continuity across resale, inheritance, and long-term stewardship.",
-        "A single printed code can securely serve different stakeholders with different content and workflows, based on permissions and context.",
-        "Content can be updated at any time, allowing the experience and intelligence loop to evolve without changing the asset’s physical touchpoint.",
+        "BEEEP™ Collect is designed for authenticated assets and high-trust markets where provenance continuity and stakeholder-specific workflows matter.",
+        "EncryptorSeal™ can be deployed for covert anti-counterfeit authentication and trusted verification at the point of interaction.",
+        "For high-security assets, Collect can support biometric scanning and advanced verification workflows, including 3D fingerprinting verification.",
+        "Collect can also support patented automated royalty payments to enable programmable, auditable economics across resale and stewardship cycles.",
       ],
       bullets: [
-        "Role-specific delivery for buyers, sellers, authenticators, and partners",
-        "Dynamic content updates without reprinting",
-        "Persistent engagement signals that compound across lifecycle events",
+        "Optional EncryptorSeal™ for covert verification and anti-counterfeit protection",
+        "Biometric scanning for high-security assets; 3D fingerprinting verification workflows",
+        "Patented automated royalty payments for lifecycle-aligned economics",
       ],
     };
 
-    const metro = {
-      eyebrow: "Embedded place-based infrastructure",
+    const community = {
+      eyebrow: "Participation-centric community infrastructure",
       headline:
-        "Scan-initiated engagement grounded in real places, built for participation and continuity.",
+        "Scan-initiated engagement that supports participation, learning, and value exchange.",
       body: [
-        "BEEEP™ Metro integrates into signage, venues, destinations, and community platforms to deliver multilingual guidance and secure experiences in real-world contexts.",
-        "Role-specific access enables the same code to serve visitors, residents, staff, and partners differently, while keeping governance and content control clean.",
-        "Because content can be updated at any time, cities and venues can keep engagement accurate across events, schedules, and evolving initiatives without reprinting.",
+        "BEEEP™ Community Deployment integrates into civic and cultural touchpoints to connect real-world participation to secure, role-specific digital experiences.",
+        "The same touchpoint can deliver different content to residents, visitors, staff, and partners, based on permissions and context.",
+        "Content can be updated at any time to support events, alerts, initiatives, education, and multilingual guidance without reprinting.",
+        "Community deployments can include a participation-powered value exchange component that rewards constructive engagement and reinforces recurring participation loops.",
       ],
       bullets: [
-        "Right message for the right stakeholder at the right moment",
-        "Dynamic updates without redesign or reprint cycles",
-        "Scan-to-engagement pathways that support participation and learning",
+        "Role-specific delivery across community stakeholders",
+        "Dynamic content updates without reprinting",
+        "Participation-powered value exchange component for recurring engagement",
       ],
     };
 
     if (selectedPlatform === "enterprise") return { ...common, ...enterprise };
     if (selectedPlatform === "collect") return { ...common, ...collect };
-    return { ...common, ...metro };
+    return { ...common, ...community };
   }, [selectedPlatform]);
 
   const howItWorksSteps = useMemo(
     () => [
       {
-        step: "Scan initiates engagement",
+        step: "Scan-initiated engagement",
         description:
-          "A familiar scan connects real-world touchpoints to digital experiences, without requiring a new consumer app.",
+          "A familiar scan connects physical touchpoints to digital experiences without requiring a new consumer app.",
         icon: QrCode,
       },
       {
-        step: "Role-specific secure delivery",
+        step: "Role-specific delivery",
         description:
-          "The same code can deliver different secure content to different stakeholders based on identity, permissions, and context.",
+          "Different stakeholders can receive different secure content based on permissions and context.",
         icon: Users,
       },
       {
-        step: "Dynamic content control",
+        step: "Dynamic updates",
         description:
-          "Update content at any time without reprinting packaging or signage, keeping experiences current and accurate.",
+          "Update content at any time without reprinting packaging, signage, or physical touchpoints.",
         icon: RefreshCw,
       },
       {
         step: "Permission-based intelligence",
         description:
-          "When users opt in, cohesive consent-based signals can be owned, enriched, and activated for measurable outcomes.",
+          "When users opt in, organizations can enrich and monetize cohesive consent-based behavioral intelligence.",
         icon: Database,
-      },
-    ],
-    []
-  );
-
-  const trustCapabilities = useMemo(
-    () => [
-      {
-        title: "Trust-first by design",
-        description:
-          "Built for secure participation, role-specific delivery, and measurable outcomes across real-world touchpoints.",
-        icon: Shield,
-      },
-      {
-        title: "Role-specific access",
-        description:
-          "Different stakeholders can receive different secure content from the same code, governed by permissions.",
-        icon: Users,
-      },
-      {
-        title: "Live content control",
-        description:
-          "Update content instantly without reprinting, enabling rapid changes across products, assets, and places.",
-        icon: Sparkles,
-      },
-      {
-        title: "Consent-based intelligence",
-        description:
-          "Capture cohesive, permission-based signals that connect physical and digital engagement at scale.",
-        icon: BarChart3,
       },
     ],
     []
@@ -295,40 +264,31 @@ const BeeepStagingPage = () => {
                     <li className="flex items-start gap-3">
                       <span className="mt-2 w-2 h-2 rounded-full bg-blue-500 flex-shrink-0" />
                       <span>
-                        <strong>Embedded by design</strong> inside existing apps
-                        and real-world touchpoints
+                        <strong>Scan-initiated engagement</strong> that connects
+                        physical interaction to digital experiences
                       </span>
                     </li>
 
                     <li className="flex items-start gap-3">
                       <span className="mt-2 w-2 h-2 rounded-full bg-purple-500 flex-shrink-0" />
                       <span>
-                        <strong>Scan-initiated engagement</strong> that connects
-                        physical interaction to digital experience
+                        <strong>Patented, secure role-specific content delivery</strong>{" "}
+                        so each stakeholder experiences what is relevant to them
                       </span>
                     </li>
 
                     <li className="flex items-start gap-3">
                       <span className="mt-2 w-2 h-2 rounded-full bg-pink-500 flex-shrink-0" />
                       <span>
-                        <strong>Role-specific content delivery</strong> so each
-                        stakeholder sees what is relevant to them
+                        <strong>Dynamic content control</strong> with updates at
+                        any time
                       </span>
                     </li>
 
                     <li className="flex items-start gap-3">
                       <span className="mt-2 w-2 h-2 rounded-full bg-indigo-500 flex-shrink-0" />
                       <span>
-                        <strong>Dynamic content control</strong> with updates at
-                        any time, without reprinting or redeploying
-                      </span>
-                    </li>
-
-                    <li className="flex items-start gap-3">
-                      <span className="mt-2 w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0" />
-                      <span>
-                        <strong>Permission-based data ownership</strong> where
-                        the brand or operator remains the data controller
+                        <strong>Permission-based data enrichment and monetization services</strong>
                       </span>
                     </li>
                   </ul>
@@ -382,7 +342,7 @@ const BeeepStagingPage = () => {
               Multiple deployment contexts. One infrastructure layer.
             </h2>
             <p className="text-lg text-foreground/90 max-w-3xl mx-auto leading-relaxed">
-              BEEEP™ adapts to brands, assets, and places while preserving
+              BEEEP™ adapts to brands, assets, and communities while preserving
               governance, permissions, and role-specific delivery.
             </p>
           </div>
@@ -508,42 +468,6 @@ const BeeepStagingPage = () => {
                 ))}
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Trust / Security / Capabilities */}
-      <section className="py-12 md:py-16 px-3 sm:px-8 lg:px-6 bg-card/30 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_60%_40%,rgba(147,51,234,0.08),transparent_70%)]" />
-        <div className="container mx-auto relative">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-playfair font-bold mb-4 gradient-text-investor">
-              Trust-first engagement by design
-            </h2>
-            <p className="text-lg text-foreground/90 max-w-3xl mx-auto leading-relaxed">
-              BEEEP™ is built around verified touchpoints, secure participation,
-              role-specific delivery, permission controls, and measurable
-              outcomes across diverse real-world contexts.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {trustCapabilities.map((f, idx) => (
-              <div
-                key={idx}
-                className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-border/20"
-              >
-                <div className="w-12 h-12 icon-gradient-secondary rounded-2xl flex items-center justify-center mb-4 shadow-lg">
-                  <f.icon className="w-6 h-6 text-white" />
-                </div>
-                <div className="font-playfair font-bold text-lg text-foreground mb-2">
-                  {f.title}
-                </div>
-                <div className="text-sm text-foreground/90 leading-relaxed">
-                  {f.description}
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
