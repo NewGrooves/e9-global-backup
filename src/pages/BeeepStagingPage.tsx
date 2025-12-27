@@ -28,7 +28,6 @@ const BeeepStagingPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    // Preload images for smooth animation
     const imageUrls = [
       "/lovable-uploads/15924118-0f12-4905-8052-bf11eb18a294.png",
       "/lovable-uploads/a598f3f0-1391-48f2-83f0-230cc65f4b86.png",
@@ -49,8 +48,7 @@ const BeeepStagingPage = () => {
       try {
         await Promise.all(promises);
         setImagesLoaded(true);
-      } catch (error) {
-        console.error("Failed to preload images:", error);
+      } catch {
         setImagesLoaded(true);
       }
     };
@@ -62,15 +60,15 @@ const BeeepStagingPage = () => {
     () => [
       {
         src: "/lovable-uploads/15924118-0f12-4905-8052-bf11eb18a294.png",
-        alt: "Woman scanning product with smartphone",
+        alt: "Consumer scanning product with smartphone",
       },
       {
         src: "/lovable-uploads/a598f3f0-1391-48f2-83f0-230cc65f4b86.png",
-        alt: "Medical professional scanning QR code",
+        alt: "Healthcare professional scanning authenticated asset",
       },
       {
         src: "/lovable-uploads/d8be894c-fe1d-4fac-8e1e-7afae82889dd.png",
-        alt: "Man using smartphone at museum display",
+        alt: "Visitor engaging with authenticated cultural content",
       },
     ],
     []
@@ -78,11 +76,10 @@ const BeeepStagingPage = () => {
 
   useEffect(() => {
     if (!imagesLoaded) return;
-
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % heroImages.length);
-    }, 4000);
-
+    const interval = setInterval(
+      () => setCurrentSlide((prev) => (prev + 1) % heroImages.length),
+      4000
+    );
     return () => clearInterval(interval);
   }, [imagesLoaded, heroImages.length]);
 
@@ -90,35 +87,35 @@ const BeeepStagingPage = () => {
     () => [
       {
         key: "enterprise" as const,
-        title: "BEEEP Enterprise™",
-        subtitle: "For brands, manufacturers, and enterprise organizations.",
+        title: "Enterprise Deployment",
+        subtitle: "Embedded authentication and engagement inside brand-owned apps and systems.",
         icon: Building2,
         highlights: [
-          "Turns products, packaging, and OOH/digital displays into secure engagement channels",
-          "Permission-based participation to unlock brand-owned first-party data",
-          "Trusted engagement tied to authenticated touchpoints (not anonymous traffic)",
+          "Integrates into existing mobile apps, web properties, and digital workflows",
+          "No new app, login, or consumer trust decision required",
+          "Brand remains data controller; BEEEP operates as infrastructure",
         ],
       },
       {
         key: "collect" as const,
-        title: "BEEEP Collect™",
-        subtitle: "For auction houses and the global collectibles ecosystem.",
+        title: "Collectibles Deployment",
+        subtitle: "Persistent authentication and stewardship across ownership lifecycles.",
         icon: Gem,
         highlights: [
-          "Transforms authenticated assets + records into persistent engagement channels",
-          "Supports provenance continuity across resale, inheritance, and stewardship cycles",
-          "Item-linked storytelling + education that evolves over time",
+          "Embeds into auction, registry, and provenance systems",
+          "Maintains continuity across resale, inheritance, and transfer",
+          "Authenticated items become long-lived engagement touchpoints",
         ],
       },
       {
         key: "metro" as const,
-        title: "BEEEP Metro™",
-        subtitle: "For cities, destinations, venues, and community ecosystems.",
+        title: "Place-Based Deployment",
+        subtitle: "Scan-initiated engagement grounded in real places and moments.",
         icon: MapPin,
         highlights: [
-          "Turns civic and cultural touchpoints into multilingual pathways for engagement",
-          "Built for persistent participation, not one-time interactions",
-          "Enables guidance, learning, and optional incentives tied to real places",
+          "Integrates into city apps, venue platforms, and destination experiences",
+          "Multilingual engagement without abstracting place into a system",
+          "Supports persistent participation across communities and visitors",
         ],
       },
     ],
@@ -127,57 +124,60 @@ const BeeepStagingPage = () => {
 
   const platformDetail = useMemo(() => {
     const common = {
-      sectionTitle: "How it works in practice",
-      bulletsTitle: "What you get",
+      sectionTitle: "How BEEEP works as embedded infrastructure",
+      bulletsTitle: "Infrastructure outcomes",
       bullets: [
-        "A secure scan-to-engagement workflow that works on any smartphone",
-        "Authenticated touchpoints to support trusted, measurable outcomes",
-        "Multilingual delivery that preserves context and intent",
+        "Scan-initiated intent captured at the moment of real-world interaction",
+        "Permission handled inside existing brand or institutional frameworks",
+        "Normalized engagement signals without fragmenting ownership or control",
       ],
     };
 
     const enterprise = {
-      eyebrow: "Commercial engagement layer",
-      headline: "Secure, data-rich engagement for brands operating at scale.",
+      eyebrow: "Embedded engagement infrastructure",
+      headline:
+        "Authentication and permission-based engagement—inside systems brands already run.",
       body: [
-        "BEEEP Enterprise™ transforms products, packaging, and real-world touchpoints—including digital displays and out-of-home media—into secure channels for direct interaction.",
-        "Interactions can begin with a simple scan, while deeper engagement is enabled through secure, permission-based participation. When users opt in, enterprises gain brand-owned first-party behavioral data grounded in real-world intent.",
-        "Because interactions are tied to authenticated touchpoints, Enterprise supports trusted engagement, measurable outcomes, and secure transactions where required.",
+        "BEEEP Enterprise operates as an embedded scan-to-engagement layer inside existing brand apps, websites, packaging flows, and digital experiences.",
+        "Consumers never need to download a BEEEP app or create a new account. Authentication, consent, and identity remain governed by the brand’s existing UX and privacy framework.",
+        "BEEEP functions as infrastructure: capturing high-intent scan events, enabling permission-based participation, and returning trusted engagement signals to the brand—without competing for end-user ownership.",
       ],
       bullets: [
-        "Brand-owned first-party relationship signals (permission-based)",
-        "Scan analytics tied to real-world context (time/place/touchpoint)",
-        "Trusted pathways for loyalty, education, support, and transactions",
+        "Brand remains the data controller; BEEEP acts as a bounded processor",
+        "Higher scan completion rates with zero install friction",
+        "Faster enterprise approvals and lower regulatory exposure",
       ],
     };
 
     const collect = {
-      eyebrow: "Collector relationship layer",
-      headline: "Persistent engagement across ownership, resale, and legacy cycles.",
+      eyebrow: "Embedded provenance infrastructure",
+      headline:
+        "Persistent authentication that travels with the asset—not the platform.",
       body: [
-        "BEEEP Collect™ transforms authenticated collectible assets and associated records into secure engagement channels—supporting trusted interactions across ownership, resale, and inheritance cycles.",
-        "Collect enables item-linked storytelling, education, and stewardship experiences that can evolve over time, while strengthening provenance continuity and long-term collector loyalty.",
-        "It also supports permission-based relationship signals tied to verified interactions—helping market participants stay connected well beyond the moment of sale.",
+        "BEEEP Collect embeds directly into auction, registry, and provenance systems—transforming authenticated items into persistent engagement anchors.",
+        "Because BEEEP operates beneath the interface, ownership transitions do not break the engagement loop. Stewardship, education, and storytelling evolve alongside the asset.",
+        "The result is continuity across resale and legacy cycles without forcing collectors into a new platform or application.",
       ],
       bullets: [
-        "Provenance continuity + engagement that persists beyond a sale",
-        "Item-linked storytelling and education that evolves over time",
-        "Verified interactions supporting long-term collector loyalty",
+        "Engagement continuity across ownership transitions",
+        "Item-level authentication tied to real-world interactions",
+        "Infrastructure that outlives any single marketplace or interface",
       ],
     };
 
     const metro = {
-      eyebrow: "Place-based engagement layer",
-      headline: "Multilingual engagement grounded in real places and real moments.",
+      eyebrow: "Embedded place-based infrastructure",
+      headline:
+        "Scan-initiated engagement that respects place, context, and governance.",
       body: [
-        "BEEEP Metro™ transforms civic and cultural touchpoints—signage, venues, corridors, events, and shared spaces—into trusted multilingual pathways for community engagement and learning.",
-        "Metro is built for persistent participation, not one-time interactions. It supports inclusive communication across residents, visitors, local organizations, and on-the-ground stakeholders.",
-        "Because engagement is grounded in real places, Metro enables continuity, evolving guidance, and shared understanding—without abstracting the city into a platform or system.",
+        "BEEEP Metro embeds into city apps, venue systems, signage, and destination platforms—activating real-world touchpoints without centralizing control.",
+        "Engagement begins with a scan and unfolds inside the environments people already trust, supporting multilingual access, education, and guidance.",
+        "Because BEEEP is infrastructure, cities and institutions retain governance while benefiting from consistent, learn-once scan behavior.",
       ],
       bullets: [
         "Right message, right moment, right language—grounded in place",
-        "Persistent participation loops for education and community involvement",
-        "Continuity across stakeholders without forcing a “city as a system” frame",
+        "No ‘city as a platform’ abstraction",
+        "Persistent participation without new consumer adoption hurdles",
       ],
     };
 
@@ -189,28 +189,28 @@ const BeeepStagingPage = () => {
   const howItWorksSteps = useMemo(
     () => [
       {
-        step: "Scan It — BEEEP IT!™",
+        step: "Scan Initiates Intent",
         description:
-          "Users scan products or real-world touchpoints with any smartphone.",
+          "A simple scan signals real-world intent—no app install, no new account, no friction.",
         icon: QrCode,
       },
       {
-        step: "Experience It",
+        step: "Permission Handshake",
         description:
-          "Dynamic content changes instantly by time, location, and audience context—while staying on-brand.",
+          "Consent and identity are handled inside the brand’s existing systems and policies.",
+        icon: Lock,
+      },
+      {
+        step: "Authenticated Engagement",
+        description:
+          "Content, guidance, or interaction unfolds where the user already is—app, site, or system.",
         icon: Sparkles,
       },
       {
-        step: "Permission-Based Data",
+        step: "Normalized Signals",
         description:
-          "Scan events are captured by default. Personal data is collected only when users opt in—and remains client-owned.",
+          "Trusted engagement signals flow back to the brand without fragmenting ownership.",
         icon: Database,
-      },
-      {
-        step: "Scale Outcomes",
-        description:
-          "Use unified engagement signals to drive smarter campaigns, stronger loyalty, and measurable ROI.",
-        icon: Rocket,
       },
     ],
     []
@@ -219,27 +219,27 @@ const BeeepStagingPage = () => {
   const trustCapabilities = useMemo(
     () => [
       {
-        title: "Authentic Protection",
+        title: "Authentication First",
         description:
-          "Stop counterfeits and gray market activity while strengthening trust through verified interactions.",
+          "Every engagement begins with a verified, real-world touchpoint—not anonymous traffic.",
         icon: Shield,
       },
       {
-        title: "Actionable Insights",
+        title: "Permission by Design",
         description:
-          "Track real behavior and real-world engagement outcomes with analytics that connect to intent.",
-        icon: BarChart3,
-      },
-      {
-        title: "Enterprise Security",
-        description:
-          "Security and compliance controls designed for enterprise requirements and protected data workflows.",
+          "Personal data is captured only when users opt in, under brand-controlled consent.",
         icon: Lock,
       },
       {
-        title: "AI-Powered Translation",
+        title: "Enterprise-Safe Infrastructure",
         description:
-          "Multilingual delivery that preserves nuance, intent, and brand voice—without flattening meaning.",
+          "Designed to reduce liability, regulatory exposure, and platform dependency.",
+        icon: BarChart3,
+      },
+      {
+        title: "Multilingual at the Core",
+        description:
+          "Language delivery preserves nuance and intent without flattening meaning.",
         icon: Languages,
       },
     ],
@@ -251,246 +251,53 @@ const BeeepStagingPage = () => {
       <Header />
 
       {/* Hero */}
-      <section className="pt-32 pb-8 sm:pb-20 px-3 sm:px-8 lg:px-6 bg-background relative overflow-hidden">
-        <div className="container mx-auto relative">
+      <section className="pt-32 pb-12 px-3 sm:px-8 lg:px-6 bg-background">
+        <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
-            {/* Left */}
-            <div className="text-left">
-              {/* LOGO HEADER (replaces text "BEEEP" header) */}
-              <div className="mb-6">
-                <img
-                  src="/lovable-uploads/BEEEPWhiteLogo.png"
-                  alt="BEEEP"
-                  className="w-56 sm:w-64 md:w-72 object-contain"
-                  loading="eager"
-                />
-              </div>
+            <div>
+              <img
+                src="/lovable-uploads/BEEEPWhiteLogo.png"
+                alt="BEEEP"
+                className="w-64 mb-6"
+              />
 
               <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mb-6" />
 
-              <div className="space-y-5 text-lg text-foreground leading-relaxed">
-                <p>
-                  <strong>
-                    A unified engagement platform—built for three real-world
-                    contexts.
-                  </strong>
-                </p>
+              <p className="text-xl font-semibold mb-4">
+                BEEEP is embedded infrastructure for authentication and
+                permission-based engagement.
+              </p>
 
-                <p className="text-foreground/90">
-                  BEEEP Enterprise™, BEEEP Collect™, and BEEEP Metro™ are three
-                  independent, industry-specific BEEEP platforms—each configured
-                  to meet the unique engagement, trust, and data needs of its
-                  respective market. Built on a shared patented architecture,
-                  they transform trusted physical and digital touchpoints into
-                  secure, multilingual experiences and permission-based first-party
-                  relationship signals.
-                </p>
+              <p className="text-lg text-foreground/90 leading-relaxed mb-6">
+                BEEEP does not replace your app, your identity system, or your
+                customer relationship. It operates underneath them—activating
+                scan-initiated intent, trusted participation, and normalized
+                engagement signals inside environments people already trust.
+              </p>
 
-                {/* Mobile-first quick bullets */}
-                <div className="bg-card/70 border border-border/30 rounded-2xl p-5 shadow-lg">
-                  <div className="text-sm uppercase tracking-wide text-foreground/70 mb-3">
-                    At a glance
-                  </div>
-                  <ul className="space-y-2 text-foreground/90 text-base">
-                    <li className="flex items-start gap-3">
-                      <span className="mt-2 w-2 h-2 rounded-full bg-blue-500 flex-shrink-0" />
-                      <span>
-                        Scan-to-engagement on any smartphone (no app required)
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="mt-2 w-2 h-2 rounded-full bg-purple-500 flex-shrink-0" />
-                      <span>Trusted touchpoints + measurable outcomes</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="mt-2 w-2 h-2 rounded-full bg-pink-500 flex-shrink-0" />
-                      <span>
-                        Permission-based participation for brand-owned first-party
-                        data
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="mt-2 w-2 h-2 rounded-full bg-indigo-500 flex-shrink-0" />
-                      <span>
-                        Multilingual delivery that preserves intent and context
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            {/* Right */}
-            <div className="flex justify-center lg:justify-end relative">
-              <div className="relative">
-                <div className="rounded-3xl shadow-2xl overflow-hidden">
-                  {heroImages.map((image, index) => (
-                    <img
-                      key={index}
-                      src={image.src}
-                      alt={image.alt}
-                      className={`w-full max-w-sm sm:max-w-md lg:max-w-lg transition-opacity duration-1000 ${
-                        index === currentSlide
-                          ? "opacity-100"
-                          : "opacity-0 absolute inset-0"
-                      }`}
-                    />
-                  ))}
-                </div>
-
-                <div className="absolute -bottom-8 -right-8 w-20 h-20 bg-gradient-to-r from-blue-500/15 to-purple-500/15 rounded-3xl blur-lg transform rotate-12" />
-
-                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-                  {heroImages.map((_, index) => (
-                    <div
-                      key={index}
-                      className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                        index === currentSlide
-                          ? "bg-white shadow-lg"
-                          : "bg-white/50"
-                      }`}
-                    />
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 3 Platform Cards */}
-      <section className="py-12 md:py-16 px-3 sm:px-8 lg:px-6 bg-card/30 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_40%_20%,rgba(59,130,246,0.05),transparent_70%)]" />
-        <div className="container mx-auto relative">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-playfair font-bold mb-3 gradient-text-investor">
-              Three platform categories. One unified system.
-            </h2>
-            <p className="text-lg text-foreground/90 max-w-3xl mx-auto leading-relaxed">
-              Choose the layer that matches your real-world environment—brands,
-              collectibles, or communities—while operating on the same core
-              BEEEP™ engine.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {platformCards.map((card) => {
-              const isActive = selectedPlatform === card.key;
-              const Icon = card.icon;
-
-              return (
-                <button
-                  key={card.key}
-                  type="button"
-                  onClick={() => setSelectedPlatform(card.key)}
-                  className={`text-left bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border transition-all duration-300 relative overflow-hidden ${
-                    isActive
-                      ? "border-purple-500/60 ring-2 ring-purple-500/20"
-                      : "border-border/20 hover:border-border/40"
-                  }`}
-                >
-                  <div className="flex items-start justify-between gap-4">
-                    <div>
-                      <div className="flex items-center gap-3 mb-2">
-                        <div className="w-11 h-11 icon-gradient-primary rounded-2xl flex items-center justify-center shadow-lg">
-                          <Icon className="w-5 h-5 text-white" />
-                        </div>
-                        <h3 className="font-playfair font-bold text-xl text-foreground">
-                          {card.title}
-                        </h3>
-                      </div>
-                      <p className="text-foreground/80 leading-relaxed">
-                        {card.subtitle}
-                      </p>
-                    </div>
-
-                    <ChevronDown
-                      className={`w-5 h-5 text-foreground/60 transition-transform duration-300 ${
-                        isActive ? "rotate-180" : "rotate-0"
-                      }`}
-                    />
-                  </div>
-
-                  <div className="mt-5 space-y-2">
-                    {card.highlights.map((h, idx) => (
-                      <div
-                        key={idx}
-                        className="flex items-start gap-3 text-foreground/90"
-                      >
-                        <span className="mt-2 w-2 h-2 rounded-full bg-purple-500 flex-shrink-0" />
-                        <span className="text-sm sm:text-base">{h}</span>
-                      </div>
-                    ))}
-                  </div>
-                </button>
-              );
-            })}
-          </div>
-
-          <p className="mt-8 text-center text-base sm:text-lg text-foreground font-medium">
-            Select a platform above to view the expanded details below.
-          </p>
-        </div>
-      </section>
-
-      {/* Selected Platform Detail */}
-      <section className="py-12 md:py-16 px-3 sm:px-8 lg:px-6 bg-background">
-        <div className="container mx-auto">
-          <div className="max-w-5xl mx-auto bg-card/70 border border-border/30 rounded-3xl p-6 sm:p-10 shadow-xl">
-            <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6">
-              <div>
-                <div className="text-sm uppercase tracking-wide text-foreground/70 mb-2">
-                  {platformDetail.eyebrow}
-                </div>
-                <h3 className="text-2xl sm:text-3xl font-playfair font-bold text-foreground mb-3">
-                  {platformDetail.headline}
-                </h3>
-              </div>
-
-              <div className="bg-background/60 border border-border/30 rounded-2xl p-4 sm:p-5 min-w-[260px]">
-                <div className="text-sm font-semibold text-foreground mb-3">
-                  {platformDetail.bulletsTitle}
-                </div>
-                <ul className="space-y-2">
-                  {platformDetail.bullets.map((b, idx) => (
-                    <li
-                      key={idx}
-                      className="flex items-start gap-3 text-foreground/90"
-                    >
-                      <span className="mt-2 w-2 h-2 rounded-full bg-blue-500 flex-shrink-0" />
-                      <span className="text-sm">{b}</span>
-                    </li>
-                  ))}
+              <div className="bg-card/70 border border-border/30 rounded-2xl p-5">
+                <ul className="space-y-3 text-base">
+                  <li>No new consumer app</li>
+                  <li>No new login or trust surface</li>
+                  <li>Brand remains data controller</li>
+                  <li>“Powered by BEEEP” when you choose to show it</li>
                 </ul>
               </div>
             </div>
 
-            <div className="mt-7 space-y-4 text-foreground/90 leading-relaxed">
-              {platformDetail.body.map((p, idx) => (
-                <p key={idx}>{p}</p>
-              ))}
-            </div>
-
-            <div className="mt-10">
-              <div className="text-sm uppercase tracking-wide text-foreground/70 mb-4">
-                {platformDetail.sectionTitle}
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                {howItWorksSteps.map((s, idx) => (
-                  <div
-                    key={idx}
-                    className="bg-card/80 backdrop-blur-sm rounded-3xl p-5 shadow-lg border border-border/20"
-                  >
-                    <div className="w-12 h-12 icon-gradient-primary rounded-2xl flex items-center justify-center mb-4 shadow-lg">
-                      <s.icon className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="font-playfair font-bold text-base text-foreground mb-2">
-                      {s.step}
-                    </div>
-                    <div className="text-sm text-foreground/90 leading-relaxed">
-                      {s.description}
-                    </div>
-                  </div>
+            <div className="relative">
+              <div className="rounded-3xl shadow-2xl overflow-hidden">
+                {heroImages.map((image, index) => (
+                  <img
+                    key={index}
+                    src={image.src}
+                    alt={image.alt}
+                    className={`transition-opacity duration-1000 ${
+                      index === currentSlide
+                        ? "opacity-100"
+                        : "opacity-0 absolute inset-0"
+                    }`}
+                  />
                 ))}
               </div>
             </div>
@@ -498,39 +305,98 @@ const BeeepStagingPage = () => {
         </div>
       </section>
 
-      {/* Trust / Security / Multilingual */}
-      <section className="py-12 md:py-16 px-3 sm:px-8 lg:px-6 bg-card/30 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_60%_40%,rgba(147,51,234,0.08),transparent_70%)]" />
-        <div className="container mx-auto relative">
+      {/* Deployment Contexts */}
+      <section className="py-16 px-3 sm:px-8 lg:px-6 bg-card/30">
+        <div className="container mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-playfair font-bold mb-4 gradient-text-investor">
-              Trust-first engagement—by design
+            <h2 className="text-4xl font-playfair font-bold mb-4">
+              One infrastructure. Multiple deployment contexts.
             </h2>
-            <p className="text-lg text-foreground/90 max-w-3xl mx-auto leading-relaxed">
-              Whether you are engaging customers, collectors, or communities,
-              BEEEP™ is built around authenticated touchpoints, secure
-              participation, and measurable outcomes.
+            <p className="text-lg text-foreground/90 max-w-3xl mx-auto">
+              The same BEEEP engine adapts to brands, assets, and places—without
+              fragmenting behavior or ownership.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {trustCapabilities.map((f, idx) => (
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            {platformCards.map((card) => {
+              const Icon = card.icon;
+              const isActive = selectedPlatform === card.key;
+
+              return (
+                <button
+                  key={card.key}
+                  onClick={() => setSelectedPlatform(card.key)}
+                  className={`text-left p-6 rounded-3xl border transition ${
+                    isActive
+                      ? "border-purple-500 ring-2 ring-purple-500/20"
+                      : "border-border/20"
+                  }`}
+                >
+                  <div className="flex items-center gap-3 mb-3">
+                    <Icon />
+                    <h3 className="font-bold text-xl">{card.title}</h3>
+                  </div>
+                  <p className="mb-3 text-foreground/80">{card.subtitle}</p>
+                  <ul className="space-y-2 text-sm">
+                    {card.highlights.map((h, i) => (
+                      <li key={i}>{h}</li>
+                    ))}
+                  </ul>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Details */}
+      <section className="py-16 px-3 sm:px-8 lg:px-6 bg-background">
+        <div className="container mx-auto max-w-5xl">
+          <h3 className="text-3xl font-playfair font-bold mb-4">
+            {platformDetail.headline}
+          </h3>
+          <p className="uppercase text-sm text-foreground/60 mb-6">
+            {platformDetail.eyebrow}
+          </p>
+
+          {platformDetail.body.map((p, i) => (
+            <p key={i} className="mb-4 text-lg text-foreground/90">
+              {p}
+            </p>
+          ))}
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-10">
+            {howItWorksSteps.map((s, i) => (
               <div
-                key={idx}
-                className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-border/20"
+                key={i}
+                className="p-5 bg-card/80 rounded-3xl border border-border/20"
               >
-                <div className="w-12 h-12 icon-gradient-secondary rounded-2xl flex items-center justify-center mb-4 shadow-lg">
-                  <f.icon className="w-6 h-6 text-white" />
-                </div>
-                <div className="font-playfair font-bold text-lg text-foreground mb-2">
-                  {f.title}
-                </div>
-                <div className="text-sm text-foreground/90 leading-relaxed">
-                  {f.description}
-                </div>
+                <s.icon className="mb-3" />
+                <h4 className="font-bold mb-2">{s.step}</h4>
+                <p className="text-sm">{s.description}</p>
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Trust */}
+      <section className="py-16 px-3 sm:px-8 lg:px-6 bg-card/30">
+        <div className="container mx-auto text-center mb-10">
+          <h2 className="text-4xl font-playfair font-bold mb-4">
+            Built for trust, scale, and inevitability
+          </h2>
+        </div>
+
+        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {trustCapabilities.map((t, i) => (
+            <div key={i} className="p-6 bg-card rounded-3xl">
+              <t.icon className="mb-3" />
+              <h4 className="font-bold mb-2">{t.title}</h4>
+              <p className="text-sm">{t.description}</p>
+            </div>
+          ))}
         </div>
       </section>
 
