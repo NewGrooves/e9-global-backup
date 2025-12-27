@@ -275,14 +275,27 @@ const BeeepStagingPage = () => {
                 engagement signals inside environments people already trust.
               </p>
 
-              <div className="bg-card/70 border border-border/30 rounded-2xl p-5">
-                <ul className="space-y-3 text-base">
-                  <li>No new consumer app</li>
-                  <li>No new login or trust surface</li>
-                  <li>Brand remains data controller</li>
-                  <li>“Powered by BEEEP” when you choose to show it</li>
-                </ul>
-              </div>
+              <div className="bg-card/70 border border-border/30 rounded-2xl p-5 shadow-lg">
+  <ul className="space-y-3 text-base text-foreground/90">
+    <li className="flex items-start gap-3">
+      <span className="mt-2 w-2 h-2 rounded-full bg-blue-500 flex-shrink-0" />
+      <span>No new consumer app</span>
+    </li>
+    <li className="flex items-start gap-3">
+      <span className="mt-2 w-2 h-2 rounded-full bg-purple-500 flex-shrink-0" />
+      <span>No new login or trust surface</span>
+    </li>
+    <li className="flex items-start gap-3">
+      <span className="mt-2 w-2 h-2 rounded-full bg-pink-500 flex-shrink-0" />
+      <span>Brand remains data controller</span>
+    </li>
+    <li className="flex items-start gap-3">
+      <span className="mt-2 w-2 h-2 rounded-full bg-indigo-500 flex-shrink-0" />
+      <span>“Powered by BEEEP” when you choose to show it</span>
+    </li>
+  </ul>
+</div>
+
             </div>
 
             <div className="relative">
