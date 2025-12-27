@@ -30,6 +30,7 @@ const BeeepStagingPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
 
+    // Preload images for smooth animation
     const imageUrls = [
       "/lovable-uploads/15924118-0f12-4905-8052-bf11eb18a294.png",
       "/lovable-uploads/a598f3f0-1391-48f2-83f0-230cc65f4b86.png",
@@ -98,7 +99,7 @@ const BeeepStagingPage = () => {
         highlights: [
           "Integrates into existing mobile apps, web properties, and packaging workflows",
           "No new app, no new login, and no new trust surface for consumers",
-          "Brand remains the data controller while BEEEP operates as bounded infrastructure",
+          "Brand remains the data controller while BEEEP™ operates as bounded infrastructure",
         ],
       },
       {
@@ -115,7 +116,7 @@ const BeeepStagingPage = () => {
       },
       {
         key: "metro" as const,
-        title: "Community Deployment",
+        title: "Place Based Deployment",
         subtitle:
           "Scan initiated engagement grounded in real places, with optional covert verification and multilingual delivery.",
         icon: MapPin,
@@ -131,7 +132,7 @@ const BeeepStagingPage = () => {
 
   const platformDetail = useMemo(() => {
     const common = {
-      sectionTitle: "How BEEEP works as embedded infrastructure",
+      sectionTitle: "How BEEEP™ works as embedded infrastructure",
       bulletsTitle: "Infrastructure outcomes",
       bullets: [
         "Scan initiated intent captured at the moment of real world interaction",
@@ -145,14 +146,14 @@ const BeeepStagingPage = () => {
       headline:
         "Authentication and permission based engagement inside systems brands already run.",
       body: [
-        "BEEEP Enterprise operates as an embedded scan to engagement layer inside existing brand apps, websites, packaging flows, and digital experiences.",
-        "Every scan is backed by patented Optropic GS1 QR code technology and covert EncryptorSeal authentication, so the scan is not just a link. It is a verification event that brands can trust.",
+        "BEEEP™ Enterprise operates as an embedded scan to engagement layer inside existing brand apps, websites, packaging flows, and digital experiences.",
+        "Every scan is backed by patented Optropic GS1 QR code technology and covert EncryptorSeal™ authentication, so the scan is not just a link. It is a verification event that brands can trust.",
         "Optropic is designed for role based, secure delivery. The same printed code can serve entirely different secure experiences for customers, distributors, internal teams, service providers, or regulators, based on identity, permissions, and context.",
         "Content can be updated at any time, without reprinting packaging. That means brands can correct instructions, push recalls, update offers, change onboarding, or deliver stakeholder specific workflows instantly.",
         "Optropic is also designed to be resistant against future quantum attacks, supporting long term durability for trust, authentication, and data integrity.",
       ],
       bullets: [
-        "Brand remains the data controller and BEEEP acts as a bounded processor",
+        "Brand remains the data controller and BEEEP™ acts as a bounded processor",
         "Role specific secure content from the same code, with dynamic updates",
         "High confidence, permission based signals that support monetizable intelligence",
       ],
@@ -163,8 +164,8 @@ const BeeepStagingPage = () => {
       headline:
         "Persistent verification that travels with the asset, not the platform.",
       body: [
-        "BEEEP Collect embeds directly into auction, registry, and provenance systems, transforming authenticated items into persistent engagement anchors.",
-        "Optropic GS1 QR codes provide interoperable scanning, while EncryptorSeal adds a covert anti counterfeit layer that ordinary QR codes cannot replicate or securely copy.",
+        "BEEEP™ Collect embeds directly into auction, registry, and provenance systems, transforming authenticated items into persistent engagement anchors.",
+        "Optropic GS1 QR codes provide interoperable scanning, while EncryptorSeal™ adds a covert anti counterfeit layer that ordinary QR codes cannot replicate or securely copy.",
         "Role specific access allows different stakeholders to receive different secure content from the same item code. A buyer can see verified provenance, a service partner can see service records, and an authenticator can see privileged verification data, all without exposing sensitive content to the wrong party.",
         "Because the code remains constant while the content can be updated, the engagement and intelligence loop persists across resale, inheritance, and long term stewardship cycles.",
         "Optropic is designed to be resistant against future quantum attacks, supporting a long horizon for valuable assets and records.",
@@ -181,8 +182,8 @@ const BeeepStagingPage = () => {
       headline:
         "Scan initiated engagement that respects place, context, and governance.",
       body: [
-        "BEEEP Metro embeds into city apps, venue systems, signage, and destination platforms, activating real world touchpoints without centralizing control.",
-        "Optropic GS1 QR codes provide a familiar scan behavior, while EncryptorSeal can add covert verification where authenticity and safety matter.",
+        "BEEEP™ Metro embeds into city apps, venue systems, signage, and destination platforms, activating real world touchpoints without centralizing control.",
+        "Optropic GS1 QR codes provide a familiar scan behavior, while EncryptorSeal™ can add covert verification where authenticity and safety matter.",
         "Role specific access makes the same printed code far more powerful. Visitors can receive public guidance, residents can receive localized services, staff can receive operational content, and partners can receive secure workflows, each with permission controls.",
         "Dynamic updates allow content to evolve with events, emergencies, schedules, language needs, and community initiatives, without reprinting signage.",
         "Optropic is designed to be resistant against future quantum attacks, supporting long term trust for civic and institutional deployments.",
@@ -234,7 +235,7 @@ const BeeepStagingPage = () => {
       {
         title: "Not a Regular QR Code",
         description:
-          "Optropic GS1 QR plus covert EncryptorSeal turns a scan into a trusted verification event, not a simple redirect.",
+          "Optropic GS1 QR plus covert EncryptorSeal™ turns a scan into a trusted verification event, not a simple redirect.",
         icon: Shield,
       },
       {
@@ -273,7 +274,7 @@ const BeeepStagingPage = () => {
               <div className="mb-6">
                 <img
                   src="/lovable-uploads/BEEEPWhiteLogo.png"
-                  alt="BEEEP"
+                  alt="BEEEP™"
                   className="w-56 sm:w-64 md:w-72 object-contain"
                   loading="eager"
                 />
@@ -291,19 +292,19 @@ const BeeepStagingPage = () => {
                 <p className="text-foreground/90">
                   The most common question we hear is, “What makes this
                   different from regular QR codes?” The answer is simple. Regular
-                  QR codes are links. <strong>
-  BEEEP is a patented trust and intelligence layer powered by Optropic GS1 QR technology plus covert
-  EncryptorSeal authentication.
-</strong>
-
+                  QR codes are links.{" "}
+                  <strong>
+                    BEEEP™ is a patented trust and intelligence layer powered by
+                    Optropic GS1 QR technology plus covert EncryptorSeal™ authentication.
+                  </strong>
                 </p>
 
                 <p className="text-foreground/90">
                   The same printed code can securely deliver different content to
                   different stakeholders, and that content can be updated at any
-                  time. When users opt in, brands capture permission-based
-                  signals they own. E9 Global can enrich them with additional permission-based
-                  datasets and monetize data intelligence in ways that increase
+                  time. When users opt in, brands capture permission based
+                  signals they own, enrich them with additional permission based
+                  datasets, and monetize data intelligence in ways that increase
                   enterprise value.
                 </p>
 
@@ -317,7 +318,7 @@ const BeeepStagingPage = () => {
                       <span className="mt-2 w-2 h-2 rounded-full bg-blue-500 flex-shrink-0" />
                       <span>
                         <strong>Verification, not a link</strong> via Optropic
-                        GS1 QR plus EncryptorSeal
+                        GS1 QR plus EncryptorSeal™
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
@@ -345,8 +346,8 @@ const BeeepStagingPage = () => {
                 </div>
 
                 <div className="text-sm text-foreground/75">
-                  BEEEP is embedded inside brand owned systems. “Powered by
-                  BEEEP” branding is optional and used when you want to signal
+                  BEEEP™ is embedded inside brand owned systems. “Powered by
+                  BEEEP™” branding is optional and used when you want to signal
                   capability.
                 </div>
               </div>
@@ -400,7 +401,7 @@ const BeeepStagingPage = () => {
             </h2>
             <p className="text-lg text-foreground/90 max-w-4xl mx-auto leading-relaxed">
               Regular QR codes resolve to a destination. Optropic GS1 QR codes,
-              combined with covert EncryptorSeal authentication, turn the scan
+              combined with covert EncryptorSeal™ authentication, turn the scan
               into a verification event. That verification can unlock secure,
               role specific content and permission based data capture. Content
               can also be updated at any time without reprinting.
@@ -444,7 +445,7 @@ const BeeepStagingPage = () => {
                   <Shield className="w-5 h-5 text-white" />
                 </div>
                 <h3 className="font-playfair font-bold text-xl text-foreground">
-                  BEEEP powered Optropic plus EncryptorSeal
+                  BEEEP™ powered Optropic plus EncryptorSeal™
                 </h3>
               </div>
               <ul className="space-y-2 text-foreground/90 relative">
@@ -458,7 +459,7 @@ const BeeepStagingPage = () => {
                 <li className="flex items-start gap-3">
                   <span className="mt-2 w-2 h-2 rounded-full bg-purple-500 flex-shrink-0" />
                   <span>
-                    Covert <strong>EncryptorSeal</strong> authentication to verify
+                    Covert <strong>EncryptorSeal™</strong> authentication to verify
                     authenticity at scan time
                   </span>
                 </li>
@@ -638,7 +639,7 @@ const BeeepStagingPage = () => {
               Trust first engagement by design
             </h2>
             <p className="text-lg text-foreground/90 max-w-3xl mx-auto leading-relaxed">
-              BEEEP is built around verified touchpoints, covert anti counterfeit authentication,
+              BEEEP™ is built around verified touchpoints, covert anti counterfeit authentication,
               role based access, permission controls, and measurable outcomes. It is embedded inside
               systems brands already operate.
             </p>
