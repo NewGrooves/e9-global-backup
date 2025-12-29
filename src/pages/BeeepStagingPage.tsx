@@ -84,7 +84,7 @@ const BeeepStagingPage = () => {
     () => [
       {
         key: "enterprise" as const,
-        title: "Enterprise Deployment",
+        title: "BEEEP™ Enterprise",
         subtitle:
           "Embedded engagement infrastructure for brands and enterprise organizations.",
         icon: Building2,
@@ -96,7 +96,7 @@ const BeeepStagingPage = () => {
       },
       {
         key: "collect" as const,
-        title: "Collectibles Deployment",
+        title: "BEEEP™ Collector",
         subtitle:
           "High-trust engagement and lifecycle continuity for authenticated assets.",
         icon: Gem,
@@ -108,7 +108,7 @@ const BeeepStagingPage = () => {
       },
       {
         key: "community" as const,
-        title: "Community Deployment",
+        title: "BEEEP™ Metro",
         subtitle:
           "Participation-centric engagement for cities, venues, destinations, and communities.",
         icon: Users,
@@ -155,7 +155,7 @@ const BeeepStagingPage = () => {
       headline:
         "Trusted asset engagement with advanced verification and lifecycle economics.",
       body: [
-        "BEEEP™ Collect is designed for authenticated assets and high-trust markets where provenance continuity and stakeholder-specific workflows matter.",
+        "BEEEP™ Collector is designed for authenticated assets and high-trust markets where provenance continuity and stakeholder-specific workflows matter.",
         "EncryptorSeal™ can be deployed for covert anti-counterfeit authentication and trusted verification at the point of interaction.",
         "For high-security assets, Collect can support biometric scanning and advanced verification workflows, including 3D fingerprinting verification.",
         "Collect can also support patented automated royalty payments to enable programmable, auditable economics across resale and stewardship cycles.",
@@ -172,7 +172,7 @@ const BeeepStagingPage = () => {
       headline:
         "Scan-initiated engagement that supports participation, learning, and value exchange.",
       body: [
-        "BEEEP™ Community Deployment integrates into civic and cultural touchpoints to connect real-world participation to secure, role-specific digital experiences.",
+        "BEEEP™ Metro integrates into civic and cultural touchpoints to connect real-world participation to secure, role-specific digital experiences.",
         "The same touchpoint can deliver different content to residents, visitors, staff, and partners, based on permissions and context.",
         "Content can be updated at any time to support events, alerts, initiatives, education, and multilingual guidance without reprinting.",
         "Community deployments can include a participation-powered value exchange component that rewards constructive engagement and reinforces recurring participation loops.",
@@ -339,7 +339,7 @@ const BeeepStagingPage = () => {
         <div className="container mx-auto relative">
           <div className="text-center mb-10">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-playfair font-bold mb-3 gradient-text-investor">
-              Multiple deployment contexts. One infrastructure layer.
+              Multiple contexts. One infrastructure layer.
             </h2>
             <p className="text-lg text-foreground/90 max-w-3xl mx-auto leading-relaxed">
               BEEEP™ adapts to brands, assets, and communities while preserving
