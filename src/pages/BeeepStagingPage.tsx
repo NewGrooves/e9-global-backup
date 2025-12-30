@@ -252,7 +252,7 @@ const BeeepStagingPage = () => {
 
                 <p className="text-foreground/90">
                   It enables organizations to securely collect and monetize cohesive,
-                  consent-based behavioral audience intelligence—connecting real-world
+                  consent-based behavioral audience intelligence, connecting real-world
                   interaction and digital engagement at scale.
                 </p>
 
