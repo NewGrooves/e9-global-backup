@@ -100,9 +100,7 @@ const HomeStaging = () => {
 
               {/* Subhead (correct size, single instance) */}
               <p className="mt-6 text-lg sm:text-xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
-                Covert anti-counterfeit protection, patented, secure role-based QR engagement,
-                and opt-in data signals - designed to scale across brands, collectors,
-                and communities.
+                We connect physical and digital interaction into cohesive, secure permission-based engagement at scale.
               </p>
 
               {/* CTAs */}
