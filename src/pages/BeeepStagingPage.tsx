@@ -151,7 +151,7 @@ const BeeepStagingPage = () => {
     };
 
     const collect = {
-      eyebrow: "High-security collectibles infrastructure",
+      eyebrow: "High-security collectible asset infrastructure",
       headline:
         "Trusted asset engagement with advanced verification and lifecycle economics.",
       body: [
