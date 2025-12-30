@@ -196,13 +196,13 @@ const BeeepStagingPage = () => {
       {
         step: "Scan-initiated engagement",
         description:
-          "A familiar scan connects physical touchpoints to digital experiences without requiring a new consumer app.",
+          "A familiar scan connects physical touchpoints to secure, role-specific digital experiences.",
         icon: QrCode,
       },
       {
         step: "Role-specific delivery",
         description:
-          "Different stakeholders can receive different secure content based on permissions and context.",
+          "Different stakeholders can receive different secure content based on identity, permissions and context.",
         icon: Users,
       },
       {
