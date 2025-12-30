@@ -134,19 +134,19 @@ const BeeepStagingPage = () => {
     };
 
     const enterprise = {
-      eyebrow: "Enterprise-grade embedded infrastructure",
+      eyebrow: "Enterprise-grade embedded engagement infrastructure",
       headline:
-        "Secure engagement and permission-based intelligence inside systems brands already run.",
+        "Secure engagement and permission-based intelligence inside systems brands already operate.",
       body: [
-        "BEEEP™ Enterprise integrates directly into existing apps and real-world touchpoints to connect physical engagement to digital experiences at scale.",
-        "Role-specific delivery enables different stakeholders to access different secure content from the same scan based on identity, permissions, and context.",
-        "EncryptorSeal™ can be deployed as part of Enterprise for covert anti-counterfeit authentication and trusted verification workflows where required.",
-        "When users opt in, brands capture permission-based signals they own, enabling enrichment and monetization services that strengthen retention, performance, and valuation.",
+        "BEEEP™ Enterprise integrates directly into existing apps and real-world touchpoints to connect physical interaction with digital engagement at scale.",
+        "Role-specific delivery ensures that customers, partners, internal teams, and regulators can access different secure experiences from the same scan—based on identity, permissions, and context.",
+        "Where required, EncryptorSeal™ can be deployed as part of BEEEP™ Enterprise to enable covert authentication, anti-counterfeit protection, and trusted verification workflows.",
+        "When users opt in, organizations capture permission-based signals they own—enabling data enrichment and monetization services that strengthen retention, operational performance, and long-term enterprise value.",
       ],
       bullets: [
-        "Embedded into existing brand-owned systems",
-        "Role-specific delivery with dynamic content control",
-        "Optional EncryptorSeal™ for covert verification and anti-counterfeit protection",
+        "Embedded into existing brand-owned apps, web properties, and operational workflows",
+        "Role-specific delivery with dynamic content control across stakeholders",
+        "Optional EncryptorSeal™ integration for covert verification and anti-counterfeit protection",
       ],
     };
 
