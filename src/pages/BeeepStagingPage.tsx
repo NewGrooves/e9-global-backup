@@ -140,7 +140,7 @@ const BeeepStagingPage = () => {
       body: [
         "BEEEP™ Enterprise integrates directly into existing apps and real-world touchpoints to connect physical interaction with digital engagement at scale.",
         "Role-specific delivery ensures that customers, partners, internal teams, and regulators can access different secure experiences from the same scan—based on identity, permissions, and context.",
-        "Where required, EncryptorSeal™ can be deployed as part of BEEEP™ Enterprise to enable covert authentication, anti-counterfeit protection, and trusted verification workflows.",
+        "Where required, EncryptorSeal™ can be deployed as part of BEEEP Enterprise to enable covert authentication, anti-counterfeit protection, gray market tracking and trusted chain of custody documentation.",
         "When users opt in, organizations capture permission-based signals they own—enabling data enrichment and monetization services that strengthen retention, operational performance, and long-term enterprise value.",
       ],
       bullets: [
