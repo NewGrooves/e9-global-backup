@@ -88,14 +88,15 @@ const HomeStaging = () => {
   </div>
 </div>
 
-              {/* Headline */}
-              <h1
-                className="mt-9 sm:mt-10 font-playfair font-bold text-4xl sm:text-5xl md:text-6xl tracking-tight"
-                style={{ lineHeight: "1.06" }}
-              >
-                Authenticity and engagement,
-                <span className="block">unified.</span>
-              </h1>
+             {/* Headline */}
+<h1
+  className="mt-9 sm:mt-10 font-playfair font-bold text-4xl sm:text-5xl md:text-6xl tracking-tight"
+  style={{ lineHeight: "1.06" }}
+>
+  Authentication Meets
+  <span className="block">Unified Audience Engagement</span>
+</h1>
+
 
               {/* Subhead (correct size, single instance) */}
               <p className="mt-6 text-lg sm:text-xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
