@@ -114,7 +114,7 @@ const BeeepStagingPage = () => {
         icon: Users,
         highlights: [
           "Supports residents, visitors, staff, local organizations, and partners",
-          "Dynamic content updates without reprinting signage or touchpoints",
+          "Dynamic content updates without reprinting signage or physical touchpoints",
           "Designed for participation loops, learning, and value exchange",
         ],
       },
@@ -169,19 +169,20 @@ const BeeepStagingPage = () => {
     };
 
     const community = {
-      eyebrow: "Participation-centric community infrastructure",
+      eyebrow: "PARTICIPATION-CENTRIC COMMUNITY INFRASTRUCTURE",
       headline:
         "Scan-initiated engagement that supports participation, learning, and value exchange.",
       body: [
-        "BEEEP™ Metro integrates into civic and cultural touchpoints to connect real-world participation to secure, role-specific digital experiences.",
-        "The same touchpoint can deliver different content to residents, visitors, staff, and partners, based on permissions and context.",
-        "Content can be updated at any time to support events, alerts, initiatives, education, and multilingual guidance without reprinting.",
-        "Community deployments can include a participation-powered value exchange component that rewards constructive engagement and reinforces recurring participation loops.",
+        "BEEEP™ Metro powers community-branded apps that serve as trusted gateways for participation, information, and engagement - designed to be adopted locally and used consistently.",
+        "BEEEP™ Metro integrates into civic, cultural, and place-based touchpoints to connect real-world participation with secure, role-specific digital experiences.",
+        "The same physical touchpoint can deliver different content to residents, visitors, staff, and partners—based on permissions, context, and community needs.",
+        "Content can be updated at any time to support events, alerts, initiatives, education, and multilingual guidance without reprinting signage or materials.",
+        "Community deployments may include a participation-powered value exchange component that rewards constructive engagement and reinforces recurring participation and learning loops.",
       ],
       bullets: [
         "Role-specific delivery across community stakeholders",
-        "Dynamic content updates without reprinting",
-        "Participation-powered value exchange component for recurring engagement",
+        "Dynamic content updates without reprinting or redeploying physical infrastructure",
+        "Participation-powered value exchange to support recurring engagement",
       ],
     };
 
