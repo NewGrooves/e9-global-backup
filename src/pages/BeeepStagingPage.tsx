@@ -272,52 +272,51 @@ const BeeepStagingPage = () => {
                     <li className="flex items-start gap-3">
                       <span className="mt-2 w-2 h-2 rounded-full bg-purple-500 flex-shrink-0" />
                       <span>
-                        <strong>Patented, secure, role-based content delivery</strong>{" "}
-                        so each participant sees only what is relevant to them
+                        <strong>Patented secure scan architecture</strong> that verifies
+                        authenticity at the physical code itself and can support offline
+                        verification when required
                       </span>
                     </li>
 
                     <li className="flex items-start gap-3">
                       <span className="mt-2 w-2 h-2 rounded-full bg-pink-500 flex-shrink-0" />
                       <span>
-                        <strong>Dynamic content control</strong> with the ability
-                        to update experiences at any time
+                        <strong>Governed, role-specific access</strong> so each participant
+                        sees only what is relevant to them
                       </span>
                     </li>
 
                     <li className="flex items-start gap-3">
                       <span className="mt-2 w-2 h-2 rounded-full bg-indigo-500 flex-shrink-0" />
                       <span>
-                        <strong>
-                          Permission-based data enrichment and monetization services
-                        </strong>
+                        <strong>Dynamic content control</strong> with the ability to update
+                        experiences at any time
                       </span>
                     </li>
 
                     <li className="flex items-start gap-3">
                       <span className="mt-2 w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0" />
                       <span>
-                        <strong>Secure identity and authentication capabilities</strong>{" "}
-                        designed for high-trust physical environments
+                        <strong>Permission-based data enrichment and monetization services</strong>
+                      </span>
+                    </li>
+
+                    <li className="flex items-start gap-3">
+                      <span className="mt-2 w-2 h-2 rounded-full bg-amber-500 flex-shrink-0" />
+                      <span>
+                        <strong>High-assurance identity and authentication options</strong>{" "}
+                        including advanced biometric authentication when required
+                      </span>
+                    </li>
+
+                    <li className="flex items-start gap-3">
+                      <span className="mt-2 w-2 h-2 rounded-full bg-rose-500 flex-shrink-0" />
+                      <span>
+                        <strong>Trust at the point of interaction</strong> so confidence is
+                        established before downstream actions occur
                       </span>
                     </li>
                   </ul>
-
-                  <div className="mt-5 pt-5 border-t border-border/30 space-y-3 text-foreground/90 leading-relaxed">
-                    <p className="font-medium">
-                      Trust is established at the point of interaction, not after the fact.
-                    </p>
-                    <p>
-                      BEEEP™ is built on a patented secure scan architecture that verifies
-                      authenticity at the physical code itself, supports offline verification
-                      when required, and enables governed, role-specific access.
-                    </p>
-                    <p>
-                      For high-assurance use cases, this foundation can be combined with
-                      advanced biometric authentication to meet the most demanding security
-                      requirements.
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
@@ -347,9 +346,7 @@ const BeeepStagingPage = () => {
                     <div
                       key={index}
                       className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                        index === currentSlide
-                          ? "bg-white shadow-lg"
-                          : "bg-white/50"
+                        index === currentSlide ? "bg-white shadow-lg" : "bg-white/50"
                       }`}
                     />
                   ))}
@@ -399,9 +396,7 @@ const BeeepStagingPage = () => {
                           {card.title}
                         </h3>
                       </div>
-                      <p className="text-foreground/80 leading-relaxed">
-                        {card.subtitle}
-                      </p>
+                      <p className="text-foreground/80 leading-relaxed">{card.subtitle}</p>
                     </div>
 
                     <ChevronDown
@@ -413,10 +408,7 @@ const BeeepStagingPage = () => {
 
                   <div className="mt-5 space-y-2">
                     {card.highlights.map((h, idx) => (
-                      <div
-                        key={idx}
-                        className="flex items-start gap-3 text-foreground/90"
-                      >
+                      <div key={idx} className="flex items-start gap-3 text-foreground/90">
                         <span className="mt-2 w-2 h-2 rounded-full bg-purple-500 flex-shrink-0" />
                         <span className="text-sm sm:text-base">{h}</span>
                       </div>
@@ -453,10 +445,7 @@ const BeeepStagingPage = () => {
                 </div>
                 <ul className="space-y-2">
                   {platformDetail.bullets.map((b, idx) => (
-                    <li
-                      key={idx}
-                      className="flex items-start gap-3 text-foreground/90"
-                    >
+                    <li key={idx} className="flex items-start gap-3 text-foreground/90">
                       <span className="mt-2 w-2 h-2 rounded-full bg-blue-500 flex-shrink-0" />
                       <span className="text-sm">{b}</span>
                     </li>
@@ -487,9 +476,7 @@ const BeeepStagingPage = () => {
                     <div className="font-playfair font-bold text-base text-foreground mb-2">
                       {s.step}
                     </div>
-                    <div className="text-sm text-foreground/90 leading-relaxed">
-                      {s.description}
-                    </div>
+                    <div className="text-sm text-foreground/90 leading-relaxed">{s.description}</div>
                   </div>
                 ))}
               </div>
