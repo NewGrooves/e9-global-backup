@@ -18,10 +18,7 @@ const ProductModules = () => {
 
           {/* Core positioning statement */}
           <p className="mt-6 text-lg sm:text-xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
-            E9 Global transforms authenticated products and real-world places into
-            secure engagement layers—so every interaction delivers trusted access,
-            measurable outcomes, and permission-based first-party relationship
-            signals.
+            Our BEEEP™ platform (PaaS) transforms authenticated products and real-world places into secure engagement layers—so every interaction delivers trusted access, measurable outcomes, and permission-based first-party relationship signals.
           </p>
 
           {/* Strategic pill statements */}
