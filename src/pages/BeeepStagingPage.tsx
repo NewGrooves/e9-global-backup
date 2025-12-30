@@ -10,6 +10,7 @@ import {
   Building2,
   Gem,
   ChevronDown,
+  ShieldCheck,
 } from "lucide-react";
 
 type PlatformKey = "enterprise" | "collect" | "community";
@@ -243,18 +244,18 @@ const BeeepStagingPage = () => {
 
               <div className="space-y-5 text-lg text-foreground leading-relaxed">
                 <p className="text-xl sm:text-2xl font-semibold text-foreground">
-                  BEEEP™ is a patented trust-first engagement platform that
+                  BEEEP™ is a patented, trust-first engagement platform that
                   integrates directly into existing apps and real-world
                   touchpoints.
                 </p>
 
                 <p className="text-foreground/90">
                   It enables organizations to securely collect and monetize
-                  cohesive, consent-based, behavioral audience intelligence that
-                  connects physical and digital engagement at scale.
+                  cohesive, consent-based behavioral audience intelligence—connecting
+                  physical interaction and digital engagement at scale.
                 </p>
 
-                {/* Quick bullets with colors (UNIVERSAL ONLY) */}
+                {/* AT A GLANCE */}
                 <div className="bg-card/70 border border-border/30 rounded-2xl p-5 shadow-lg">
                   <div className="text-sm uppercase tracking-wide text-foreground/70 mb-3">
                     At a glance
@@ -265,23 +266,23 @@ const BeeepStagingPage = () => {
                       <span className="mt-2 w-2 h-2 rounded-full bg-blue-500 flex-shrink-0" />
                       <span>
                         <strong>Scan-initiated engagement</strong> that connects
-                        physical interaction to digital experiences
+                        real-world interaction to digital experiences
                       </span>
                     </li>
 
                     <li className="flex items-start gap-3">
                       <span className="mt-2 w-2 h-2 rounded-full bg-purple-500 flex-shrink-0" />
                       <span>
-                        <strong>Patented, secure role-specific content delivery</strong>{" "}
-                        so each stakeholder experiences what is relevant to them
+                        <strong>Patented, secure, role-based content delivery</strong>{" "}
+                        so each participant sees only what is relevant to them
                       </span>
                     </li>
 
                     <li className="flex items-start gap-3">
                       <span className="mt-2 w-2 h-2 rounded-full bg-pink-500 flex-shrink-0" />
                       <span>
-                        <strong>Dynamic content control</strong> with updates at
-                        any time
+                        <strong>Dynamic content control</strong> with the ability
+                        to update experiences at any time
                       </span>
                     </li>
 
@@ -291,8 +292,32 @@ const BeeepStagingPage = () => {
                         <strong>Permission-based data enrichment and monetization services</strong>
                       </span>
                     </li>
+
+                    <li className="flex items-start gap-3">
+                      <span className="mt-2 w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0" />
+                      <span>
+                        <strong>Secure identity and authentication capabilities</strong>{" "}
+                        designed for high-trust physical environments
+                      </span>
+                    </li>
                   </ul>
                 </div>
+
+                <p className="text-foreground/90 font-medium">
+                  Trust is established at the point of interaction, not after the fact.
+                </p>
+
+                <p className="text-foreground/90">
+                  BEEEP™ is built on a patented secure scan architecture that verifies
+                  authenticity at the physical code itself, supports offline verification
+                  when required, and enables governed, role-specific access.
+                </p>
+
+                <p className="text-foreground/90">
+                  For high-assurance use cases, this foundation can be combined with
+                  advanced biometric authentication to meet the most demanding security
+                  requirements.
+                </p>
               </div>
             </div>
 
