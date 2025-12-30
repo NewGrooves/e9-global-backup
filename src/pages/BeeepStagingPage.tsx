@@ -140,7 +140,7 @@ const BeeepStagingPage = () => {
       body: [
         "BEEEP™ Enterprise integrates directly into existing apps and real-world touchpoints to connect physical interaction with digital engagement at scale.",
         "Role-specific delivery ensures that customers, partners, internal teams, and regulators can access different secure experiences from the same scan—based on identity, permissions, and context.",
-        "Where required, EncryptorSeal™ can be deployed as part of BEEEP Enterprise to enable covert authentication, anti-counterfeit protection, gray market tracking and trusted chain of custody documentation.",
+        "Where required, EncryptorSeal™ can be deployed as part of BEEEP™ Enterprise to enable covert authentication, anti-counterfeit protection, and trusted verification workflows.",
         "When users opt in, organizations capture permission-based signals they own—enabling data enrichment and monetization services that strengthen retention, operational performance, and long-term enterprise value.",
       ],
       bullets: [
@@ -151,18 +151,19 @@ const BeeepStagingPage = () => {
     };
 
     const collect = {
-      eyebrow: "High-security collectible asset infrastructure",
+      eyebrow: "High-security collectibles infrastructure",
       headline:
         "Trusted asset engagement with advanced verification and lifecycle economics.",
       body: [
-        "BEEEP™ Collector is designed for authenticated assets and high-trust markets where provenance continuity and stakeholder-specific workflows matter.",
-        "EncryptorSeal™ can be deployed for covert anti-counterfeit authentication and trusted verification at the point of interaction.",
-        "For high-security assets, Collect can support biometric scanning and advanced verification workflows, including 3D fingerprinting verification.",
-        "Collect can also support patented automated royalty payments to enable programmable, auditable economics across resale and stewardship cycles.",
+        "BEEEP™ Collector is designed for authenticated assets and high-trust markets where provenance continuity and stakeholder-specific workflows matter across long ownership horizons.",
+        "EncryptorSeal™ can be deployed to enable covert anti-counterfeit authentication and trusted verification at the point of interaction.",
+        "For high-security assets, BEEEP™ Collector supports patented biometric authentication and patented AI-based visual and surface analysis, enabling non-invasive verification using inherent material characteristics—without introducing physical tags, markers, or codes.",
+        "BEEEP™ Collector also supports patented automated royalty payments, enabling programmable, auditable economics that align creators, collectors, and marketplaces across resale and stewardship cycles.",
       ],
       bullets: [
         "Optional EncryptorSeal™ for covert verification and anti-counterfeit protection",
-        "Biometric scanning for high-security assets; 3D fingerprinting verification workflows",
+        "Patented biometric authentication for high-security assets",
+        "Patented AI-based visual and surface analysis to create unique digital fingerprints from inherent material characteristics—enabling non-invasive verification without adding tags, codes, or markers",
         "Patented automated royalty payments for lifecycle-aligned economics",
       ],
     };
@@ -249,9 +250,9 @@ const BeeepStagingPage = () => {
                 </p>
 
                 <p className="text-foreground/90">
-                  It enables organizations to securely collect and monetize
-                  cohesive, consent-based behavioral audience intelligence—connecting
-                  physical interaction and digital engagement at scale.
+                  It enables organizations to securely collect and monetize cohesive,
+                  consent-based behavioral audience intelligence—connecting real-world
+                  interaction and digital engagement at scale.
                 </p>
 
                 {/* AT A GLANCE */}
@@ -264,8 +265,8 @@ const BeeepStagingPage = () => {
                     <li className="flex items-start gap-3">
                       <span className="mt-2 w-2 h-2 rounded-full bg-blue-500 flex-shrink-0" />
                       <span>
-                        <strong>Scan-initiated engagement</strong> that connects
-                        real-world interaction to digital experiences
+                        <strong>Scan-initiated engagement</strong> that connects real-world
+                        interaction to digital experiences
                       </span>
                     </li>
 
@@ -297,7 +298,9 @@ const BeeepStagingPage = () => {
                     <li className="flex items-start gap-3">
                       <span className="mt-2 w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0" />
                       <span>
-                        <strong>Permission-based data enrichment and monetization services</strong>
+                        <strong>
+                          Permission-based data enrichment and monetization services
+                        </strong>
                       </span>
                     </li>
 
@@ -365,7 +368,7 @@ const BeeepStagingPage = () => {
               Multiple contexts. One infrastructure layer.
             </h2>
             <p className="text-lg text-foreground/90 max-w-3xl mx-auto leading-relaxed">
-              BEEEP™ adapts to brands, collectible assets, and communities while preserving
+              BEEEP™ adapts to brands, assets, and communities while preserving
               governance, permissions, and role-specific delivery.
             </p>
           </div>
@@ -396,7 +399,9 @@ const BeeepStagingPage = () => {
                           {card.title}
                         </h3>
                       </div>
-                      <p className="text-foreground/80 leading-relaxed">{card.subtitle}</p>
+                      <p className="text-foreground/80 leading-relaxed">
+                        {card.subtitle}
+                      </p>
                     </div>
 
                     <ChevronDown
@@ -408,7 +413,10 @@ const BeeepStagingPage = () => {
 
                   <div className="mt-5 space-y-2">
                     {card.highlights.map((h, idx) => (
-                      <div key={idx} className="flex items-start gap-3 text-foreground/90">
+                      <div
+                        key={idx}
+                        className="flex items-start gap-3 text-foreground/90"
+                      >
                         <span className="mt-2 w-2 h-2 rounded-full bg-purple-500 flex-shrink-0" />
                         <span className="text-sm sm:text-base">{h}</span>
                       </div>
@@ -445,7 +453,10 @@ const BeeepStagingPage = () => {
                 </div>
                 <ul className="space-y-2">
                   {platformDetail.bullets.map((b, idx) => (
-                    <li key={idx} className="flex items-start gap-3 text-foreground/90">
+                    <li
+                      key={idx}
+                      className="flex items-start gap-3 text-foreground/90"
+                    >
                       <span className="mt-2 w-2 h-2 rounded-full bg-blue-500 flex-shrink-0" />
                       <span className="text-sm">{b}</span>
                     </li>
@@ -476,7 +487,9 @@ const BeeepStagingPage = () => {
                     <div className="font-playfair font-bold text-base text-foreground mb-2">
                       {s.step}
                     </div>
-                    <div className="text-sm text-foreground/90 leading-relaxed">{s.description}</div>
+                    <div className="text-sm text-foreground/90 leading-relaxed">
+                      {s.description}
+                    </div>
                   </div>
                 ))}
               </div>
