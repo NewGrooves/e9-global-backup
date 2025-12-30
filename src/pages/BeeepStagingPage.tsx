@@ -10,7 +10,6 @@ import {
   Building2,
   Gem,
   ChevronDown,
-  ShieldCheck,
 } from "lucide-react";
 
 type PlatformKey = "enterprise" | "collect" | "community";
@@ -289,7 +288,9 @@ const BeeepStagingPage = () => {
                     <li className="flex items-start gap-3">
                       <span className="mt-2 w-2 h-2 rounded-full bg-indigo-500 flex-shrink-0" />
                       <span>
-                        <strong>Permission-based data enrichment and monetization services</strong>
+                        <strong>
+                          Permission-based data enrichment and monetization services
+                        </strong>
                       </span>
                     </li>
 
@@ -301,23 +302,23 @@ const BeeepStagingPage = () => {
                       </span>
                     </li>
                   </ul>
+
+                  <div className="mt-5 pt-5 border-t border-border/30 space-y-3 text-foreground/90 leading-relaxed">
+                    <p className="font-medium">
+                      Trust is established at the point of interaction, not after the fact.
+                    </p>
+                    <p>
+                      BEEEP™ is built on a patented secure scan architecture that verifies
+                      authenticity at the physical code itself, supports offline verification
+                      when required, and enables governed, role-specific access.
+                    </p>
+                    <p>
+                      For high-assurance use cases, this foundation can be combined with
+                      advanced biometric authentication to meet the most demanding security
+                      requirements.
+                    </p>
+                  </div>
                 </div>
-
-                <p className="text-foreground/90 font-medium">
-                  Trust is established at the point of interaction, not after the fact.
-                </p>
-
-                <p className="text-foreground/90">
-                  BEEEP™ is built on a patented secure scan architecture that verifies
-                  authenticity at the physical code itself, supports offline verification
-                  when required, and enables governed, role-specific access.
-                </p>
-
-                <p className="text-foreground/90">
-                  For high-assurance use cases, this foundation can be combined with
-                  advanced biometric authentication to meet the most demanding security
-                  requirements.
-                </p>
               </div>
             </div>
 
