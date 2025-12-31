@@ -181,7 +181,7 @@ physical touchpoints into secure, trusted engagement channels at scale.
               </h2>
               <p className="text-lg text-foreground/90 max-w-3xl mx-auto leading-relaxed">
                 E9 Global connects authentication, engagement, and permission-based intelligence so
-                enterprises can prove what’s real—and monetize what’s trusted.
+                organizations can prove what’s real—and monetize what’s trusted.
               </p>
             </div>
 
