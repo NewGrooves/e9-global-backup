@@ -135,12 +135,7 @@ physical touchpoints into secure, trusted engagement channels at scale.
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold">
                   Built for trusted engagement across the physical world.
                 </h2>
-                <p className="mt-3 text-base sm:text-lg text-foreground/90 leading-relaxed max-w-3xl mx-auto">
-                  We turn products, collectible assets, and real-world places into secure, data-rich
-                  engagement channels—creating meaningful connections while generating actionable
-                  intelligence and new revenue opportunities.
-                </p>
-              </div>
+              
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                 <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-border/20">
