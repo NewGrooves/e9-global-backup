@@ -127,44 +127,44 @@ physical touchpoints into secure, trusted engagement channels at scale.
           </div>
         </section>
 
-        {/* Who / Why / How */}
-        <section className="py-10 sm:py-12">
-          <div className="container mx-auto px-4 sm:px-6">
-            <div className="mx-auto max-w-5xl">
-              <div className="text-center mb-8">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold">
-                  Built for trusted engagement across the physical world.
-                </h2>
-              
+      {/* Who / Why / How */}
+<section className="py-10 sm:py-12">
+  <div className="container mx-auto px-4 sm:px-6">
+    <div className="mx-auto max-w-5xl">
+      <div className="text-center mb-8">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold">
+          Built for trusted engagement across the physical world.
+        </h2>
+      </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-                <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-border/20">
-                  <div className="font-playfair font-bold text-lg mb-2">Who We Are</div>
-                  <p className="text-sm text-foreground/90 leading-relaxed">
-                    E9 Global is a data-centric MarTech company transforming how people engage with the
-                    physical world—uniting secure identity, brand protection, and AI-driven engagement.
-                  </p>
-                </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-border/20">
+          <div className="font-playfair font-bold text-lg mb-2">Who We Are</div>
+          <p className="text-sm text-foreground/90 leading-relaxed">
+            E9 Global is a data-centric MarTech company. We recast products, collectible assets and real-world places as secure, data-rich engagement channels - creating meaningful connections while generating actionable intelligence and new revenue opportunities.
+          </p>
+        </div>
 
-                <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-border/20">
-                  <div className="font-playfair font-bold text-lg mb-2">Why E9 Global</div>
-                  <p className="text-sm text-foreground/90 leading-relaxed">
-                    Because the future of engagement across physical touchpoints depends on trust.
-                  </p>
-                </div>
+        <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-border/20">
+          <div className="font-playfair font-bold text-lg mb-2">Why E9 Global</div>
+          <p className="text-sm text-foreground/90 leading-relaxed">
+            Because the future of engagement across physical touchpoints depends on trust.
+          </p>
+        </div>
 
-                <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-border/20">
-                  <div className="font-playfair font-bold text-lg mb-2">How We Do It</div>
-                  <p className="text-sm text-foreground/90 leading-relaxed">
-                    Through BEEEP™, our trust-first engagement platform embedded into apps and real-world
-                    touchpoints—enabling cohesive, consent-based audience intelligence and monetization at
-                    scale.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-border/20">
+          <div className="font-playfair font-bold text-lg mb-2">How We Do It</div>
+          <p className="text-sm text-foreground/90 leading-relaxed">
+            Through BEEEP™, our trust-first engagement platform embedded into apps and real-world
+            touchpoints—enabling cohesive, consent-based audience intelligence and monetization at
+            scale.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
         {/* Touchpoint section */}
         <section>
