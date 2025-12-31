@@ -8,10 +8,10 @@ const ContactCTA = () => {
       <div className="container mx-auto text-center">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-playfair font-bold mb-6 gradient-text-investor" style={{ lineHeight: '1.2' }}>
-            Ready to Grow Your Revenue While <br />Protecting Your Brand?
+            Let’s Build Trusted Engagement — Together. 
           </h2>
           <p className="text-xl text-secondary-foreground/90 mb-8 leading-relaxed max-w-5xl mx-auto">
-            Connect with our team to discover how EncryptorSeal™ and BEEEP™ can transform your brand/product security, customer engagement, and data monetization strategies.
+            Talk with our team about BEEEP™, the trust-first platform connecting physical and digital interaction at scale.
           </p>
           
           <div className="flex justify-center">
