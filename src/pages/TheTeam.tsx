@@ -109,7 +109,7 @@ const TheTeam = () => {
           </h1>
           <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full mb-6"></div>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground/90 mb-2 max-w-4xl mx-auto leading-relaxed">
-            Founder-Led. Tech-Proven. Vision-Driven.
+            Founder-led. Proven at scale. Built with purpose.
           </p>
         </div>
       </section>
