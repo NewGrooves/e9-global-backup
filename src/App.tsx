@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 
 import { OrganizationSchema, WebsiteSchema } from "@/components/StructuredData";
@@ -42,27 +42,30 @@ const App = () => {
 
             <BrowserRouter>
               <Routes>
-                {/* Primary homepage */}
-                <Route path="/" element={<IndexNew />} />
+                {/* Primary homepage (PROMOTED from staging) */}
+                <Route path="/" element={<HomeStaging />} />
 
                 {/* Legacy / alternate home routes */}
                 <Route path="/home-v2024" element={<Home2 />} />
                 <Route path="/home-2025" element={<Home2 />} />
                 <Route path="/home-fresh" element={<Home2 />} />
 
-                {/* New homepage staging */}
+                {/* Optional: keep a staging alias (can remove later) */}
                 <Route path="/home-staging" element={<HomeStaging />} />
 
-                {/* Site pages */}
-                <Route path="/about" element={<About />} />
+                {/* Deactivated pages (redirect away) */}
+                <Route path="/about" element={<Navigate to="/" replace />} />
+                <Route path="/how-it-works" element={<Navigate to="/" replace />} />
+                <Route
+                  path="/how-it-works-staging"
+                  element={<Navigate to="/" replace />}
+                />
+
+                {/* Keep team page if desired */}
                 <Route path="/the-team" element={<TheTeam />} />
 
-                {/* How It Works */}
-                <Route path="/how-it-works" element={<HowItWorks />} />
-                <Route path="/how-it-works-staging" element={<HowItWorksStaging />} />
-
-                {/* BEEEP */}
-                <Route path="/beeep" element={<Beeep />} />
+                {/* BEEEP (PROMOTED from staging) */}
+                <Route path="/beeep" element={<BeeepStagingPage />} />
                 <Route path="/beeep-staging" element={<BeeepStagingPage />} />
 
                 {/* Other */}
