@@ -55,15 +55,15 @@ const BeeepStagingPage = () => {
   const heroImages = useMemo(
     () => [
       {
-        src: "/lovable-uploads/15924118-0f12-4905-8052-bf11eb18a294.png",
+        src: "/lovable-uploads/BEEEP-page-cosmetics.jpg",
         alt: "Consumer scanning product with smartphone",
       },
       {
-        src: "/lovable-uploads/a598f3f0-1391-48f2-83f0-230cc65f4b86.png",
+        src: "/lovable-uploads/BEEEP page Rolex Guy Beeeping.png",
         alt: "Healthcare professional scanning authenticated asset",
       },
       {
-        src: "/lovable-uploads/d8be894c-fe1d-4fac-8e1e-7afae82889dd.png",
+        src: "/lovable-uploads/BEEEP page Woman Scanning at Concert.png",
         alt: "Visitor engaging with authenticated cultural content",
       },
     ],
