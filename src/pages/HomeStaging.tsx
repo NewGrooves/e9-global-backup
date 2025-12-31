@@ -110,15 +110,16 @@ const HomeStaging = () => {
                 >
                   Explore BEEEP™ Platforms
                 </a>
-                <a
+               <a
   href="/book-demo"
   className="inline-flex w-full sm:w-auto items-center justify-center rounded-2xl px-7 py-3.5 text-base font-semibold
-             bg-card text-foreground shadow-md
-             border border-border/40
-             hover:bg-card/90 hover:shadow-lg transition"
+             bg-blue-500/15 text-blue-300
+             border border-blue-400/30
+             hover:bg-blue-500/25 transition"
 >
   Book a Demo
 </a>
+
 
               </div>
             </div>
