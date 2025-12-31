@@ -24,9 +24,9 @@ const BeeepStagingPage = () => {
     window.scrollTo(0, 0);
 
     const imageUrls = [
-      "/lovable-uploads/15924118-0f12-4905-8052-bf11eb18a294.png",
-      "/lovable-uploads/a598f3f0-1391-48f2-83f0-230cc65f4b86.png",
-      "/lovable-uploads/d8be894c-fe1d-4fac-8e1e-7afae82889dd.png",
+      "/lovable-uploads/BEEEP-page-cosmetics.jpg",
+      "/lovable-uploads/BEEEP page Rolex Guy Beeeping.png",
+      "/lovable-uploads/BEEEP page Woman Scanning at Concert.png",
     ];
 
     const preloadImages = async () => {
