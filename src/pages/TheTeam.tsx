@@ -84,6 +84,13 @@ const TheTeam = () => {
       role: "Legal Advisor",
       description: "Veteran technology, privacy, and corporate lawyer guiding enterprises with strategic, ethical, and future-focused legal expertise for over three decades.",
       image: "/lovable-uploads/f61a6c14-d2a0-4c9c-a1a3-b38a800a4132.png"
+    },
+  {
+      id: 12,
+      name: "Cary Quinn",
+      role: "Director of Encryption & Security",
+      description: "Security innovator engineering discreet, production-ready anti-counterfeiting and authentication technologies that withstand AI fraud, post-quantum threats, and real-world scale.",
+      image: "/lovable-uploads/Cary Quinn headshot.png"
     }
   ];
 
