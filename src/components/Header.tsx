@@ -41,17 +41,14 @@ const Header = () => {
               The Team
             </Link>
 
-            {/* Standardize demo CTAs */}
+            {/* Primary CTA */}
             <Link
               to="/book-demo"
-              className="text-gray-700 hover:text-primary transition-colors text-sm lg:text-base"
-            >
-              Book a Demo
-            </Link>
-
-            <Link
-              to="/book-demo"
-              className="bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 text-white hover:from-blue-600 hover:via-purple-700 hover:to-pink-600 px-4 lg:px-6 py-2 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 text-sm lg:text-base"
+              className="bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500
+                         text-white hover:from-blue-600 hover:via-purple-700 hover:to-pink-600
+                         px-4 lg:px-6 py-2 rounded-lg font-medium
+                         shadow-lg hover:shadow-xl transition-all duration-300
+                         text-sm lg:text-base"
             >
               Book a Demo
             </Link>
@@ -98,18 +95,14 @@ const Header = () => {
                 The Team
               </Link>
 
-              {/* Standardize demo CTAs */}
+              {/* Primary CTA */}
               <Link
                 to="/book-demo"
-                className="text-white hover:text-primary transition-colors text-base"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Book a Demo
-              </Link>
-
-              <Link
-                to="/book-demo"
-                className="bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 text-white hover:from-blue-600 hover:via-purple-700 hover:to-pink-600 px-6 py-2 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 text-base"
+                className="bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500
+                           text-white hover:from-blue-600 hover:via-purple-700 hover:to-pink-600
+                           px-6 py-2 rounded-lg font-medium
+                           shadow-lg hover:shadow-xl transition-all duration-300
+                           text-base"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Book a Demo
