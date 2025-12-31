@@ -78,29 +78,29 @@ const HomeStaging = () => {
             <div className="mx-auto max-w-5xl py-8 sm:py-11 lg:py-14 text-center">
               {/* Logo — width-driven, aspect-safe */}
               <div className="flex justify-center">
-  <div className="w-full max-w-[780px] sm:max-w-[960px] md:max-w-[1100px]">
-    <img
-      src="/lovable-uploads/92326d7f-5c6a-4075-85f0-fd776e75240a.png"
-      alt="E9 Global"
-      className="w-full h-auto object-contain"
-      loading="eager"
-    />
-  </div>
-</div>
+                <div className="w-full max-w-[780px] sm:max-w-[960px] md:max-w-[1100px]">
+                  <img
+                    src="/lovable-uploads/92326d7f-5c6a-4075-85f0-fd776e75240a.png"
+                    alt="E9 Global"
+                    className="w-full h-auto object-contain"
+                    loading="eager"
+                  />
+                </div>
+              </div>
 
-             {/* Headline */}
-<h1
-  className="mt-9 sm:mt-10 font-playfair font-bold text-4xl sm:text-5xl md:text-6xl tracking-tight"
-  style={{ lineHeight: "1.06" }}
->
-  Authentication Meets
-  <span className="block">Unified Audience Engagement</span>
-</h1>
+              {/* Headline */}
+              <h1
+                className="mt-9 sm:mt-10 font-playfair font-bold text-4xl sm:text-5xl md:text-6xl tracking-tight"
+                style={{ lineHeight: "1.06" }}
+              >
+                Authentication Meets
+                <span className="block">Unified Audience Engagement</span>
+              </h1>
 
-
-              {/* Subhead (correct size, single instance) */}
+              {/* Subhead (tight, non-redundant) */}
               <p className="mt-6 text-lg sm:text-xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
-                We connect physical and digital interaction into cohesive, secure permission-based engagement at scale.
+                A data-centric MarTech company turning physical touchpoints into secure, trusted engagement
+                channels.
               </p>
 
               {/* CTAs */}
@@ -117,6 +117,50 @@ const HomeStaging = () => {
                 >
                   Book a Demo
                 </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Who / Why / How */}
+        <section className="py-10 sm:py-12">
+          <div className="container mx-auto px-4 sm:px-6">
+            <div className="mx-auto max-w-5xl">
+              <div className="text-center mb-8">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold">
+                  Built for trusted engagement across the physical world.
+                </h2>
+                <p className="mt-3 text-base sm:text-lg text-foreground/90 leading-relaxed max-w-3xl mx-auto">
+                  We turn products, collectible assets, and real-world places into secure, data-rich
+                  engagement channels—creating meaningful connections while generating actionable
+                  intelligence and new revenue opportunities.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-border/20">
+                  <div className="font-playfair font-bold text-lg mb-2">Who We Are</div>
+                  <p className="text-sm text-foreground/90 leading-relaxed">
+                    E9 Global is a data-centric MarTech company transforming how people engage with the
+                    physical world—uniting secure identity, brand protection, and AI-driven engagement.
+                  </p>
+                </div>
+
+                <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-border/20">
+                  <div className="font-playfair font-bold text-lg mb-2">Why E9 Global</div>
+                  <p className="text-sm text-foreground/90 leading-relaxed">
+                    Because the future of engagement across physical touchpoints depends on trust.
+                  </p>
+                </div>
+
+                <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-border/20">
+                  <div className="font-playfair font-bold text-lg mb-2">How We Do It</div>
+                  <p className="text-sm text-foreground/90 leading-relaxed">
+                    Through BEEEP™, our trust-first engagement platform embedded into apps and real-world
+                    touchpoints—enabling cohesive, consent-based audience intelligence and monetization at
+                    scale.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
