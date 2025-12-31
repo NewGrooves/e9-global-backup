@@ -109,7 +109,7 @@ physical touchpoints into secure, trusted engagement channels at scale.
                   href="/beeep"
                   className="inline-flex w-full sm:w-auto items-center justify-center rounded-2xl px-7 py-3.5 text-base font-semibold bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg hover:opacity-95 transition"
                 >
-                  Explore BEEEP™ Platforms
+                  Explore the BEEEP™ Platform
                 </a>
                <a
   href="/book-demo"
