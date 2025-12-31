@@ -99,7 +99,8 @@ const HomeStaging = () => {
 
               {/* Subhead (tight, non-redundant) */}
               <p className="mt-6 text-lg sm:text-xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
-                Powered by BEEEP™, a data-centric MarTech platform turning physical touchpoints into secure, trusted engagement channels.
+                Powered by BEEEP™, our patented, data-centric MarTech platform, we turn
+physical touchpoints into secure, trusted engagement channels at scale.
               </p>
 
               {/* CTAs */}
