@@ -108,7 +108,7 @@ const HomeStaging = () => {
                   href="/beeep"
                   className="inline-flex w-full sm:w-auto items-center justify-center rounded-2xl px-7 py-3.5 text-base font-semibold bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg hover:opacity-95 transition"
                 >
-                  Explore BEEEP Platforms
+                  Explore BEEEP™ Platforms
                 </a>
                 <a
                   href="/book-demo"
