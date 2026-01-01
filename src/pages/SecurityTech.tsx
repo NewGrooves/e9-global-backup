@@ -149,8 +149,8 @@ const SecurityTechStackStaging = () => {
         items={[
           { name: "Home", url: "https://www.e9global.com/" },
           {
-            name: "Security Tech Stack",
-            url: "https://www.e9global.com/security-tech-stack",
+            name: "Security Tech",
+            url: "https://www.e9global.com/security-tech",
           },
         ]}
       />
