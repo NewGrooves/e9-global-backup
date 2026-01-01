@@ -99,9 +99,13 @@ const HomeStaging = () => {
 
               {/* Subhead (tight, non-redundant) */}
               <p className="mt-6 text-lg sm:text-xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
-                Powered by BEEEP™, our patented, data-centric MarTech platform, we turn
-physical touchpoints into secure, trusted engagement channels at scale.
-              </p>
+  Powered by BEEEP*, our patented, data-centric, trust-first platform, we securely connect
+  physical and digital interactions at scale.
+</p>
+
+<p className="mt-2 text-sm text-foreground/60 max-w-4xl mx-auto">
+  *Brand Experience, Engagement, Encryption Platform
+</p>
 
               {/* CTAs */}
               <div className="mt-9 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
