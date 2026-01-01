@@ -45,24 +45,25 @@ const TheTeam = () => {
     },
     {
       id: 6,
-      name: "Jay Samit",
-      role: "Strategic Advisor",
-      description: "World-renowned tech disruption expert; former Vice Chair of Deloitte Digital and bestselling author on scaling innovation and transformation.",
-      image: "/lovable-uploads/7bf43a82-3a12-463b-a36f-75d2c622b00c.png"
+     name: "Cary Quinn",
+      role: "Director of Encryption & Security",
+      description: "Security innovator engineering discreet, production-ready anti-counterfeiting and authentication technologies that withstand AI fraud, post-quantum threats, and real-world scale.",
+      image: "/lovable-uploads/Cary Quinn headshot.png"
     },
     {
       id: 7,
-      name: "Ephraim Lindenbaum",
-      role: "Strategic Advisor",
-      description: "Founder and Managing Director of Advance Ventures. A Silicon Valley venture investor with a 25-year track record of high-growth startups, exits, and innovation.",
-      image: "/lovable-uploads/bb6eae89-c7e5-48ca-81d6-395be76a1198.png"
-    },
-    {
-      id: 8,
-      name: "Juanita Ramos",
+        name: "Juanita Ramos",
       role: "Government Affairs",
       description: "25+ years in public policy; forged high-impact alliances with DOJ and nonprofits to advance mission-driven innovation.",
       image: "/lovable-uploads/6876129a-e0ac-4878-90b0-84cc77dd399b.png"
+    },
+    {
+      id: 8,
+       name: "Jay Samit",
+      role: "Strategic Advisor",
+      description: "World-renowned tech disruption expert; former Vice Chair of Deloitte Digital and bestselling author on scaling innovation and transformation.",
+      image: "/lovable-uploads/7bf43a82-3a12-463b-a36f-75d2c622b00c.png"
+
     },
     {
       id: 9,
@@ -80,17 +81,18 @@ const TheTeam = () => {
     },
     {
       id: 11,
-      name: "Mark Vega",
-      role: "Legal Advisor",
-      description: "Veteran technology, privacy, and corporate lawyer guiding enterprises with strategic, ethical, and future-focused legal expertise for over three decades.",
-      image: "/lovable-uploads/f61a6c14-d2a0-4c9c-a1a3-b38a800a4132.png"
+    name: "Ephraim Lindenbaum",
+      role: "Strategic Advisor",
+      description: "Founder and Managing Director of Advance Ventures. A Silicon Valley venture investor with a 25-year track record of high-growth startups, exits, and innovation.",
+      image: "/lovable-uploads/bb6eae89-c7e5-48ca-81d6-395be76a1198.png"
+
     },
   {
       id: 12,
-      name: "Cary Quinn",
-      role: "Director of Encryption & Security",
-      description: "Security innovator engineering discreet, production-ready anti-counterfeiting and authentication technologies that withstand AI fraud, post-quantum threats, and real-world scale.",
-      image: "/lovable-uploads/Cary Quinn headshot.png"
+        name: "Mark Vega",
+      role: "Legal Advisor",
+      description: "Veteran technology, privacy, and corporate lawyer guiding enterprises with strategic, ethical, and future-focused legal expertise for over three decades.",
+      image: "/lovable-uploads/f61a6c14-d2a0-4c9c-a1a3-b38a800a4132.png"
     }
   ];
 
