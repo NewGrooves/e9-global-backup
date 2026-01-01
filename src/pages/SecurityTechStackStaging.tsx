@@ -35,7 +35,8 @@ const SecurityTechStackStaging = () => {
     },
     {
       role: "PHYSICAL AUTHENTICITY",
-      title: "EncryptorSeal™: Covert Smartphone-Verified Anti-Counterfeit Protection",
+      title:
+        "EncryptorSeal™: Covert Smartphone-Verified Anti-Counterfeit Protection",
       icon: ShieldCheck,
       highlights: [
         "Invisible authentication embedded into packaging varnish or laser-engraved into products",
@@ -47,6 +48,23 @@ const SecurityTechStackStaging = () => {
         "Every scan can become actionable intelligence - revealing legitimate interaction and counterfeit activity in real time.",
       ],
     },
+
+    // NEW LAYER: Surface-based physical identity (white-label safe)
+    {
+      role: "SURFACE IDENTITY (OPTIONAL)",
+      title: "Mark-Free Surface Fingerprint Authentication",
+      icon: Layers,
+      highlights: [
+        "Optically captures unique microstructures to create a physical fingerprint for each item",
+        "Mark-free verification—no added tags, chips, or visible markings required",
+        "Smartphone photo re-scan confirms identity against secure reference data",
+      ],
+      body: [
+        "Some assets are difficult to mark—or should not be marked. This layer verifies the physical identity of an object using its natural surface characteristics, converting high-resolution imagery into a compact digital fingerprint captured during enrollment.",
+        "Verification is performed by taking another photo—often via smartphone—and matching it against the reference record. Unlike AI brushstroke analysis used for artistic attribution, surface-based authentication verifies the physical identity of an object itself—making it suitable for ongoing provenance and lifecycle engagement rather than one-time attribution.",
+      ],
+    },
+
     {
       role: "HUMAN VERIFICATION (OPTIONAL)",
       title: "High-Assurance Biometric Identity & Authorization",
@@ -117,6 +135,8 @@ const SecurityTechStackStaging = () => {
           "secure GS1 QR",
           "anti-counterfeit",
           "covert authentication",
+          "surface fingerprint authentication",
+          "object authentication",
           "biometric verification",
           "provenance ledger",
           "permission-based data",
@@ -157,8 +177,9 @@ const SecurityTechStackStaging = () => {
               </h1>
 
               <p className="mt-6 text-lg sm:text-xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
-                A new foundation for trusted engagement, permission-based data, and brand value—built
-                to establish trust at the point of interaction before engagement begins.
+                A new foundation for trusted engagement, permission-based data, and
+                brand value—built to establish trust at the point of interaction
+                before engagement begins.
               </p>
 
               <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
@@ -184,10 +205,10 @@ const SecurityTechStackStaging = () => {
                   The core shift
                 </div>
                 <p className="text-foreground/90 leading-relaxed">
-                  Most engagement technologies assume trust and attempt to manage risk downstream. Our
-                  architecture inverts that model: it engineers trust into the infrastructure—so
-                  engagement, data, and monetization are built on verified interactions, not
-                  assumptions.
+                  Most engagement technologies assume trust and attempt to manage
+                  risk downstream. Our architecture inverts that model: it engineers
+                  trust into the infrastructure—so engagement, data, and
+                  monetization are built on verified interactions, not assumptions.
                 </p>
               </div>
             </div>
@@ -203,9 +224,9 @@ const SecurityTechStackStaging = () => {
                 Why existing approaches fall short
               </h2>
               <p className="text-lg text-foreground/90 max-w-3xl mx-auto leading-relaxed">
-                Traditional QR codes, loyalty platforms, and engagement tools treat physical touchpoints
-                as traffic sources. That model breaks down when counterfeits exist, access must be
-                governed, and privacy matters.
+                Traditional QR codes, loyalty platforms, and engagement tools treat
+                physical touchpoints as traffic sources. That model breaks down when
+                counterfeits exist, access must be governed, and privacy matters.
               </p>
             </div>
 
@@ -239,9 +260,9 @@ const SecurityTechStackStaging = () => {
                   Layered trust architecture
                 </h2>
                 <p className="text-lg text-foreground/90 max-w-3xl mx-auto leading-relaxed">
-                  Each layer answers a specific trust question. You don’t need every layer for every
-                  deployment—each can stand alone or combine with others based on risk, regulation, and
-                  use case.
+                  Each layer answers a specific trust question. You don’t need every
+                  layer for every deployment—each can stand alone or combine with
+                  others based on risk, regulation, and use case.
                 </p>
               </div>
 
@@ -249,8 +270,8 @@ const SecurityTechStackStaging = () => {
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                   <div className="text-foreground/90 leading-relaxed">
                     <span className="font-semibold text-foreground">The result:</span>{" "}
-                    trusted engagement + privacy-first, permission-based data that compounds into
-                    measurable ROI and long-term brand value.
+                    trusted engagement + privacy-first, permission-based data that
+                    compounds into measurable ROI and long-term brand value.
                   </div>
                   <div className="inline-flex items-center gap-2 text-sm text-foreground/70">
                     <ShieldCheck className="w-4 h-4" />
@@ -332,9 +353,9 @@ const SecurityTechStackStaging = () => {
                   The data flywheel
                 </h2>
                 <p className="text-lg text-foreground/90 max-w-3xl mx-auto leading-relaxed">
-                  Because engagement is verified at the point of interaction, opt-in signals captured
-                  through this stack are clean, permission-based, and defensible. That changes the
-                  economics entirely.
+                  Because engagement is verified at the point of interaction, opt-in
+                  signals captured through this stack are clean, permission-based,
+                  and defensible. That changes the economics entirely.
                 </p>
               </div>
 
@@ -375,8 +396,9 @@ const SecurityTechStackStaging = () => {
 
                   <div className="mt-6 bg-background/60 border border-border/30 rounded-2xl p-4">
                     <p className="text-foreground/90 leading-relaxed">
-                      Brands that own trusted, permission-based customer data infrastructure command
-                      greater strategic leverage and higher acquisition value.
+                      Brands that own trusted, permission-based customer data
+                      infrastructure command greater strategic leverage and higher
+                      acquisition value.
                     </p>
                   </div>
                 </div>
@@ -387,9 +409,9 @@ const SecurityTechStackStaging = () => {
                   The strategic advantage
                 </div>
                 <p className="text-foreground/90 leading-relaxed">
-                  This is not a feature stack. It is infrastructure—engineered to make trust explicit,
-                  keep privacy as a design principle, and convert physical engagement into a durable
-                  digital asset.
+                  This is not a feature stack. It is infrastructure—engineered to
+                  make trust explicit, keep privacy as a design principle, and
+                  convert physical engagement into a durable digital asset.
                 </p>
               </div>
             </div>
