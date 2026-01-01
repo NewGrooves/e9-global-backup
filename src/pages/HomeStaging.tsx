@@ -122,7 +122,7 @@ const HomeStaging = () => {
              border border-blue-400/30
              hover:bg-blue-500/25 transition"
 >
-  Book a Demo
+  How We Secure Engagement
 </a>
 
 
