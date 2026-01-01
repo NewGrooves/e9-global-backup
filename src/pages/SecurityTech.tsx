@@ -40,9 +40,6 @@ const App = () => {
                 <Route path="/" element={<HomeStaging />} />
 
                 {/* Legacy / alternate home routes */}
-                <Route path="/home-v2024" element={<Home2 />} />
-                <Route path="/home-2025" element={<Home2 />} />
-                <Route path="/home-fresh" element={<Home2 />} />
                 <Route path="/home-staging" element={<HomeStaging />} />
 
                 {/* Deactivated pages */}
