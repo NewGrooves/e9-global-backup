@@ -45,51 +45,56 @@ const TheTeam = () => {
     },
     {
       id: 6,
-     name: "Cary Quinn",
+      name: "Cary Quinn",
       role: "Director of Encryption & Security",
       description: "Security innovator engineering discreet, production-ready anti-counterfeiting and authentication technologies that withstand AI fraud, post-quantum threats, and real-world scale.",
       image: "/lovable-uploads/Cary Quinn headshot.png"
     },
     {
       id: 7,
-        name: "Juanita Ramos",
+      name: "Michael Buck",
+      role: "Strategic Tech Partner",
+      description: "Former Dell global marketing executive; digital transformation leader and architect of the BEEEP™ platform and Optropic QR technology.",
+      image: "/lovable-uploads/M Buck Profile pic.png"
+    },
+    {
+      id: 8,
+      name: "Juanita Ramos",
       role: "Government Affairs",
       description: "25+ years in public policy; forged high-impact alliances with DOJ and nonprofits to advance mission-driven innovation.",
       image: "/lovable-uploads/6876129a-e0ac-4878-90b0-84cc77dd399b.png"
     },
     {
-      id: 8,
-       name: "Jay Samit",
+      id: 9,
+      name: "Jay Samit",
       role: "Strategic Advisor",
       description: "World-renowned tech disruption expert; former Vice Chair of Deloitte Digital and bestselling author on scaling innovation and transformation.",
       image: "/lovable-uploads/7bf43a82-3a12-463b-a36f-75d2c622b00c.png"
-
     },
     {
-      id: 9,
+      id: 10,
       name: "Isaac Mizraki",
       role: "Strategic Advisor",
       description: "Seasoned healthcare entrepreneur with 30 years' expertise scaling, operating, and exiting companies across multiple healthcare verticals.",
       image: "/lovable-uploads/149e9d5b-197f-467d-9b48-3bac8532a00f.png"
     },
     {
-      id: 10,
+      id: 11,
       name: "John Ullmen",
       role: "Strategic Advisor",
       description: "UCLA Anderson's top-rated executive leadership professor and a globally respected executive coach to senior leaders worldwide.",
       image: "/lovable-uploads/c8a85515-4c7b-4e24-8470-9c8eb2121304.png"
     },
     {
-      id: 11,
-    name: "Ephraim Lindenbaum",
+      id: 12,
+      name: "Ephraim Lindenbaum",
       role: "Strategic Advisor",
       description: "Founder and Managing Director of Advance Ventures. A Silicon Valley venture investor with a 25-year track record of high-growth startups, exits, and innovation.",
       image: "/lovable-uploads/bb6eae89-c7e5-48ca-81d6-395be76a1198.png"
-
     },
-  {
-      id: 12,
-        name: "Mark Vega",
+    {
+      id: 13,
+      name: "Mark Vega",
       role: "Legal Advisor",
       description: "Veteran technology, privacy, and corporate lawyer guiding enterprises with strategic, ethical, and future-focused legal expertise for over three decades.",
       image: "/lovable-uploads/f61a6c14-d2a0-4c9c-a1a3-b38a800a4132.png"
@@ -124,7 +129,7 @@ const TheTeam = () => {
         
         <div className="container mx-auto relative">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {teamMembers.map((member, index) => (
+            {teamMembers.map((member) => (
               <div 
                 key={member.id} 
                 className="bg-card/80 backdrop-blur-sm rounded-3xl p-8 text-center shadow-lg border border-border/20 overflow-hidden relative"
