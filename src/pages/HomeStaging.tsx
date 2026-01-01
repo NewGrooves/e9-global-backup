@@ -103,7 +103,7 @@ const HomeStaging = () => {
   physical and digital interactions at scale.
 </p>
 
-<p className="mt-2 text-sm text-foreground/60 max-w-4xl mx-auto">
+<p className="mt-6 text-lg sm:text-xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
   *Brand Experience, Engagement, Encryption Platform
 </p>
 
