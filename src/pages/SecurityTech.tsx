@@ -10,7 +10,6 @@ import { HelmetProvider } from "react-helmet-async";
 import { OrganizationSchema, WebsiteSchema } from "@/components/StructuredData";
 import ErrorBoundary from "@/components/ErrorBoundary";
 
-import Home2 from "./pages/Home2";
 import HomeStaging from "./pages/HomeStaging";
 
 import TheTeam from "./pages/TheTeam";
