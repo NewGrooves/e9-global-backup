@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import ContactCTA from "../components/ContactCTA";
 import SEOHead from "../components/SEOHead";
 import { BreadcrumbSchema } from "../components/StructuredData";
+import { Link } from "react-router-dom";
 import {
   ShieldCheck,
   QrCode,
@@ -108,7 +109,7 @@ const SecurityTechStackStaging = () => {
     <div className="min-h-screen bg-background text-foreground font-inter overflow-x-hidden">
       {/* SEO / Schema */}
       <SEOHead
-        title="E9 Global — Security Tech Stack (Staging)"
+        title="E9 Global — Security Tech Stack"
         description="A layered trust architecture that establishes trust at the point of interaction, governs access, protects privacy, and turns verified engagement into permission-based first-party data."
         keywords={[
           "E9 Global",
@@ -128,8 +129,8 @@ const SecurityTechStackStaging = () => {
         items={[
           { name: "Home", url: "https://www.e9global.com/" },
           {
-            name: "Security Tech Stack (Staging)",
-            url: "https://www.e9global.com/security-tech-stack-staging",
+            name: "Security Tech Stack",
+            url: "https://www.e9global.com/security-tech-stack",
           },
         ]}
       />
@@ -140,7 +141,7 @@ const SecurityTechStackStaging = () => {
         {/* HERO */}
         <section className="relative overflow-hidden">
           {/* Ambient background */}
-          <div className="absolute inset-0 -z-10">
+          <div className="absolute inset-0 -z-10 pointer-events-none">
             <div className="absolute -top-24 left-1/2 h-[460px] w-[460px] -translate-x-1/2 rounded-full bg-blue-500/10 blur-3xl" />
             <div className="absolute -bottom-24 left-1/4 h-[460px] w-[460px] rounded-full bg-purple-500/10 blur-3xl" />
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_10%,rgba(255,255,255,0.06),transparent_55%)]" />
@@ -156,26 +157,26 @@ const SecurityTechStackStaging = () => {
               </h1>
 
               <p className="mt-6 text-lg sm:text-xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
-                A new foundation for trusted engagement, permission-based data, and
-                brand value—built to establish trust at the point of interaction
-                before engagement begins.
+                A new foundation for trusted engagement, permission-based data, and brand value—built
+                to establish trust at the point of interaction before engagement begins.
               </p>
 
               <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
-                <a
-                  href="/book-demo"
+                <Link
+                  to="/book-demo"
                   className="inline-flex w-full sm:w-auto items-center justify-center rounded-2xl px-7 py-3.5 text-base font-semibold
                              bg-blue-500/15 text-blue-300 border border-blue-400/30 hover:bg-blue-500/25 transition"
                 >
                   Book a Demo
-                </a>
-                <a
-                  href="/beeep"
+                </Link>
+
+                <Link
+                  to="/beeep"
                   className="inline-flex w-full sm:w-auto items-center justify-center rounded-2xl px-7 py-3.5 text-base font-semibold
                              bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg hover:opacity-95 transition"
                 >
                   Explore the Platform
-                </a>
+                </Link>
               </div>
 
               <div className="mt-10 max-w-4xl mx-auto bg-card/70 border border-border/30 rounded-2xl p-5 sm:p-6 shadow-lg text-left">
@@ -183,10 +184,10 @@ const SecurityTechStackStaging = () => {
                   The core shift
                 </div>
                 <p className="text-foreground/90 leading-relaxed">
-                  Most engagement technologies assume trust and attempt to manage risk
-                  downstream. Our architecture inverts that model: it engineers trust
-                  into the infrastructure—so engagement, data, and monetization are
-                  built on verified interactions, not assumptions.
+                  Most engagement technologies assume trust and attempt to manage risk downstream. Our
+                  architecture inverts that model: it engineers trust into the infrastructure—so
+                  engagement, data, and monetization are built on verified interactions, not
+                  assumptions.
                 </p>
               </div>
             </div>
@@ -195,16 +196,16 @@ const SecurityTechStackStaging = () => {
 
         {/* WHY EXISTING APPROACHES FAIL */}
         <section className="py-12 md:py-16 px-4 sm:px-6 bg-card/20 relative overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_60%_40%,rgba(147,51,234,0.08),transparent_70%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_60%_40%,rgba(147,51,234,0.08),transparent_70%)] pointer-events-none" />
           <div className="container mx-auto relative">
             <div className="text-center mb-10">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-playfair font-bold mb-4 gradient-text-investor">
                 Why existing approaches fall short
               </h2>
               <p className="text-lg text-foreground/90 max-w-3xl mx-auto leading-relaxed">
-                Traditional QR codes, loyalty platforms, and engagement tools treat
-                physical touchpoints as traffic sources. That model breaks down when
-                counterfeits exist, access must be governed, and privacy matters.
+                Traditional QR codes, loyalty platforms, and engagement tools treat physical touchpoints
+                as traffic sources. That model breaks down when counterfeits exist, access must be
+                governed, and privacy matters.
               </p>
             </div>
 
@@ -238,20 +239,18 @@ const SecurityTechStackStaging = () => {
                   Layered trust architecture
                 </h2>
                 <p className="text-lg text-foreground/90 max-w-3xl mx-auto leading-relaxed">
-                  Each layer answers a specific trust question. You don’t need every
-                  layer for every deployment—each can stand alone or combine with
-                  others based on risk, regulation, and use case.
+                  Each layer answers a specific trust question. You don’t need every layer for every
+                  deployment—each can stand alone or combine with others based on risk, regulation, and
+                  use case.
                 </p>
               </div>
 
               <div className="bg-card/70 border border-border/30 rounded-2xl p-5 sm:p-6 shadow-lg">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                   <div className="text-foreground/90 leading-relaxed">
-                    <span className="font-semibold text-foreground">
-                      The result:
-                    </span>{" "}
-                    trusted engagement + privacy-first, permission-based data that
-                    compounds into measurable ROI and long-term brand value.
+                    <span className="font-semibold text-foreground">The result:</span>{" "}
+                    trusted engagement + privacy-first, permission-based data that compounds into
+                    measurable ROI and long-term brand value.
                   </div>
                   <div className="inline-flex items-center gap-2 text-sm text-foreground/70">
                     <ShieldCheck className="w-4 h-4" />
@@ -325,7 +324,7 @@ const SecurityTechStackStaging = () => {
 
         {/* DATA FLYWHEEL */}
         <section className="py-12 md:py-16 px-4 sm:px-6 bg-card/20 relative overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_60%_40%,rgba(59,130,246,0.08),transparent_70%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_60%_40%,rgba(59,130,246,0.08),transparent_70%)] pointer-events-none" />
           <div className="container mx-auto relative">
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-10">
@@ -333,9 +332,9 @@ const SecurityTechStackStaging = () => {
                   The data flywheel
                 </h2>
                 <p className="text-lg text-foreground/90 max-w-3xl mx-auto leading-relaxed">
-                  Because engagement is verified at the point of interaction, opt-in
-                  signals captured through this stack are clean, permission-based, and
-                  defensible. That changes the economics entirely.
+                  Because engagement is verified at the point of interaction, opt-in signals captured
+                  through this stack are clean, permission-based, and defensible. That changes the
+                  economics entirely.
                 </p>
               </div>
 
@@ -376,9 +375,8 @@ const SecurityTechStackStaging = () => {
 
                   <div className="mt-6 bg-background/60 border border-border/30 rounded-2xl p-4">
                     <p className="text-foreground/90 leading-relaxed">
-                      Brands that own trusted, permission-based customer data
-                      infrastructure command greater strategic leverage and higher
-                      acquisition value.
+                      Brands that own trusted, permission-based customer data infrastructure command
+                      greater strategic leverage and higher acquisition value.
                     </p>
                   </div>
                 </div>
@@ -389,9 +387,9 @@ const SecurityTechStackStaging = () => {
                   The strategic advantage
                 </div>
                 <p className="text-foreground/90 leading-relaxed">
-                  This is not a feature stack. It is infrastructure—engineered to make
-                  trust explicit, keep privacy as a design principle, and convert
-                  physical engagement into a durable digital asset.
+                  This is not a feature stack. It is infrastructure—engineered to make trust explicit,
+                  keep privacy as a design principle, and convert physical engagement into a durable
+                  digital asset.
                 </p>
               </div>
             </div>
