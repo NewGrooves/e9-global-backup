@@ -24,7 +24,7 @@ const SecurityTechStackStaging = () => {
       icon: QrCode,
       highlights: [
         "Verification at the level of the code itself—before resolution occurs",
-        "Policy-governed routing and role-based access across stakeholders",
+        "Secure, policy-governed routing and role-based access across stakeholders",
         "Privacy-first entry point designed for long-lived governance and control",
       ],
       body: [
@@ -56,7 +56,7 @@ const SecurityTechStackStaging = () => {
         "Privacy-aligned verification options where minimal data is required",
       ],
       body: [
-        "When the stakes are high, identity must be provable. This layer helps confirm a real person is present - without relying on passwords, tokens, or easily spoofed credentials.",
+        "When the stakes are high, identity must be provable. This patented layer helps confirm a real person is present - without relying on passwords, tokens, or easily spoofed credentials.",
         "It can support anonymous or minimal-data verification scenarios where appropriate, while still delivering high assurance.",
       ],
     },
@@ -71,7 +71,7 @@ const SecurityTechStackStaging = () => {
       ],
       body: [
         "Engagement does not end at the first scan or first sale. For assets that change hands, trust must persist beyond platforms, marketplaces, and apps.",
-        "This layer creates a durable source of truth for provenance and ownership continuity—reducing fraud and increasing confidence across secondary markets.",
+        "This patented layer creates a durable source of truth for provenance and ownership continuity—reducing fraud and increasing confidence across secondary markets.",
       ],
     },
   ];
