@@ -23,6 +23,8 @@ import HowItWorksStaging from "./pages/HowItWorksStaging";
 import Beeep from "./pages/Beeep";
 import BeeepStagingPage from "./pages/BeeepStagingPage";
 
+import SecurityTechStackStaging from "./pages/SecurityTechStackStaging";
+
 import BookDemo from "./pages/BookDemo";
 import VideoPage from "./pages/VideoPage";
 import NotFound from "./pages/NotFound";
@@ -67,6 +69,12 @@ const App = () => {
                 {/* BEEEP (PROMOTED from staging) */}
                 <Route path="/beeep" element={<BeeepStagingPage />} />
                 <Route path="/beeep-staging" element={<BeeepStagingPage />} />
+
+                {/* Security Tech Stack (Staging) */}
+                <Route
+                  path="/security-tech-stack-staging"
+                  element={<SecurityTechStackStaging />}
+                />
 
                 {/* Other */}
                 <Route path="/book-demo" element={<BookDemo />} />
