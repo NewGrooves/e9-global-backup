@@ -12,11 +12,10 @@ import ErrorBoundary from "@/components/ErrorBoundary";
 
 import Home2 from "./pages/Home2";
 import HomeStaging from "./pages/HomeStaging";
-
 import TheTeam from "./pages/TheTeam";
 
 import BeeepStagingPage from "./pages/BeeepStagingPage";
-import SecurityTechStackStaging from "./pages/SecurityTechStackStaging";
+import SecurityTech from "./pages/SecurityTech";
 
 import BookDemo from "./pages/BookDemo";
 import VideoPage from "./pages/VideoPage";
@@ -37,18 +36,16 @@ const App = () => {
 
             <BrowserRouter>
               <Routes>
-                {/* Primary homepage (promoted from staging) */}
+                {/* Primary homepage */}
                 <Route path="/" element={<HomeStaging />} />
 
                 {/* Legacy / alternate home routes */}
                 <Route path="/home-v2024" element={<Home2 />} />
                 <Route path="/home-2025" element={<Home2 />} />
                 <Route path="/home-fresh" element={<Home2 />} />
-
-                {/* Optional: keep staging alias */}
                 <Route path="/home-staging" element={<HomeStaging />} />
 
-                {/* Deactivated pages (redirect to home) */}
+                {/* Deactivated pages */}
                 <Route path="/about" element={<Navigate to="/" replace />} />
                 <Route path="/how-it-works" element={<Navigate to="/" replace />} />
                 <Route
@@ -59,17 +56,14 @@ const App = () => {
                 {/* Team */}
                 <Route path="/the-team" element={<TheTeam />} />
 
-                {/* BEEEP (promoted from staging) */}
+                {/* BEEEP Platform */}
                 <Route path="/beeep" element={<BeeepStagingPage />} />
                 <Route path="/beeep-staging" element={<BeeepStagingPage />} />
 
                 {/* Security Tech (canonical) */}
-                <Route
-                  path="/security-tech"
-                  element={<SecurityTechStackStaging />}
-                />
+                <Route path="/security-tech" element={<SecurityTech />} />
 
-                {/* Redirect legacy/staging URLs to canonical */}
+                {/* Redirect legacy URLs */}
                 <Route
                   path="/security-tech-stack"
                   element={<Navigate to="/security-tech" replace />}
