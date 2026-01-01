@@ -63,15 +63,20 @@ const App = () => {
                 <Route path="/beeep" element={<BeeepStagingPage />} />
                 <Route path="/beeep-staging" element={<BeeepStagingPage />} />
 
-                {/* Security Tech Stack */}
+                {/* Security Tech (canonical) */}
                 <Route
-  path="/security-tech"
-  element={<SecurityTechStackStaging />}
-/>
+                  path="/security-tech"
+                  element={<SecurityTechStackStaging />}
+                />
 
+                {/* Redirect legacy/staging URLs to canonical */}
                 <Route
                   path="/security-tech-stack"
-                  element={<SecurityTechStackStaging />}
+                  element={<Navigate to="/security-tech" replace />}
+                />
+                <Route
+                  path="/security-tech-stack-staging"
+                  element={<Navigate to="/security-tech" replace />}
                 />
 
                 {/* Other */}
