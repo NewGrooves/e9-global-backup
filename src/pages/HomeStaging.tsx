@@ -148,7 +148,7 @@ physical touchpoints into secure, trusted engagement channels at scale.
         <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-border/20">
           <div className="font-playfair font-bold text-lg mb-2">Why E9 Global</div>
           <p className="text-sm text-foreground/90 leading-relaxed">
-            Because the future of engagement across physical touchpoints depends on trust.
+           Because trust and security are what make unified engagement across physical touchpoints possible.
           </p>
         </div>
 
