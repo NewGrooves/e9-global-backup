@@ -273,10 +273,7 @@ const SecurityTechStackStaging = () => {
                     trusted engagement + privacy-first, permission-based data that
                     compounds into measurable ROI and long-term brand value.
                   </div>
-                  <div className="inline-flex items-center gap-2 text-sm text-foreground/70">
-                    <ShieldCheck className="w-4 h-4" />
-                    <span>Trust-first by design</span>
-                  </div>
+                  
                 </div>
               </div>
 
