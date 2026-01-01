@@ -65,9 +65,10 @@ const App = () => {
 
                 {/* Security Tech Stack */}
                 <Route
-                  path="/security-tech-stack-staging"
-                  element={<Navigate to="/security-tech-stack" replace />}
-                />
+  path="/security-tech"
+  element={<SecurityTechStackStaging />}
+/>
+
                 <Route
                   path="/security-tech-stack"
                   element={<SecurityTechStackStaging />}
