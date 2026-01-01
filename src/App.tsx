@@ -70,11 +70,11 @@ const App = () => {
                 <Route path="/beeep" element={<BeeepStagingPage />} />
                 <Route path="/beeep-staging" element={<BeeepStagingPage />} />
 
-                {/* Security Tech Stack */}
                 <Route
-                  path="/security-tech-stack"
-                  element={<SecurityTechStackStaging />}
-                />
+  path="/security-tech-stack-staging"
+  element={<Navigate to="/security-tech-stack" replace />}
+/>
+
 
                 {/* Other */}
                 <Route path="/book-demo" element={<BookDemo />} />
