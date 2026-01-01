@@ -44,7 +44,7 @@ const App = () => {
 
             <BrowserRouter>
               <Routes>
-                {/* Primary homepage (PROMOTED from staging) */}
+                {/* Primary homepage (promoted from staging) */}
                 <Route path="/" element={<HomeStaging />} />
 
                 {/* Legacy / alternate home routes */}
@@ -52,10 +52,10 @@ const App = () => {
                 <Route path="/home-2025" element={<Home2 />} />
                 <Route path="/home-fresh" element={<Home2 />} />
 
-                {/* Optional: keep a staging alias (can remove later) */}
+                {/* Optional: keep staging alias */}
                 <Route path="/home-staging" element={<HomeStaging />} />
 
-                {/* Deactivated pages (redirect away) */}
+                {/* Deactivated pages (redirect to home) */}
                 <Route path="/about" element={<Navigate to="/" replace />} />
                 <Route path="/how-it-works" element={<Navigate to="/" replace />} />
                 <Route
@@ -63,16 +63,16 @@ const App = () => {
                   element={<Navigate to="/" replace />}
                 />
 
-                {/* Keep team page if desired */}
+                {/* Team */}
                 <Route path="/the-team" element={<TheTeam />} />
 
-                {/* BEEEP (PROMOTED from staging) */}
+                {/* BEEEP (promoted from staging) */}
                 <Route path="/beeep" element={<BeeepStagingPage />} />
                 <Route path="/beeep-staging" element={<BeeepStagingPage />} />
 
-                {/* Security Tech Stack (Staging) */}
+                {/* Security Tech Stack */}
                 <Route
-                  path="/security-tech-stack-staging"
+                  path="/security-tech-stack"
                   element={<SecurityTechStackStaging />}
                 />
 
