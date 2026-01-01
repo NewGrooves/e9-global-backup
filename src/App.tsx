@@ -10,19 +10,12 @@ import { HelmetProvider } from "react-helmet-async";
 import { OrganizationSchema, WebsiteSchema } from "@/components/StructuredData";
 import ErrorBoundary from "@/components/ErrorBoundary";
 
-import IndexNew from "./pages/IndexNew";
 import Home2 from "./pages/Home2";
 import HomeStaging from "./pages/HomeStaging";
 
-import About from "./pages/About";
 import TheTeam from "./pages/TheTeam";
 
-import HowItWorks from "./pages/HowItWorks";
-import HowItWorksStaging from "./pages/HowItWorksStaging";
-
-import Beeep from "./pages/Beeep";
 import BeeepStagingPage from "./pages/BeeepStagingPage";
-
 import SecurityTechStackStaging from "./pages/SecurityTechStackStaging";
 
 import BookDemo from "./pages/BookDemo";
@@ -70,17 +63,15 @@ const App = () => {
                 <Route path="/beeep" element={<BeeepStagingPage />} />
                 <Route path="/beeep-staging" element={<BeeepStagingPage />} />
 
+                {/* Security Tech Stack */}
                 <Route
-  path="/security-tech-stack-staging"
-  element={<Navigate to="/security-tech-stack" replace />}
-/>
-{/* Security Tech Stack */}
-<Route path="/security-tech-stack" element={<SecurityTechStackStaging />} />
-<Route
-  path="/security-tech-stack-staging"
-  element={<Navigate to="/security-tech-stack" replace />}
-/>
-
+                  path="/security-tech-stack-staging"
+                  element={<Navigate to="/security-tech-stack" replace />}
+                />
+                <Route
+                  path="/security-tech-stack"
+                  element={<SecurityTechStackStaging />}
+                />
 
                 {/* Other */}
                 <Route path="/book-demo" element={<BookDemo />} />
