@@ -20,7 +20,7 @@ const SecurityTechStackStaging = () => {
   const stackCards = [
     {
       role: "SECURE ENTRY",
-      title: "Trusted GS1-Compatible QR Infrastructure",
+      title: "Patented Optropic GS1-Compatible QR Infrastructure",
       icon: QrCode,
       highlights: [
         "Verification at the level of the code itself—before resolution occurs",
@@ -34,7 +34,7 @@ const SecurityTechStackStaging = () => {
     },
     {
       role: "PHYSICAL AUTHENTICITY",
-      title: "Covert Smartphone-Verified Anti-Counterfeit Protection",
+      title: "EncryptorSeal™: Covert Smartphone-Verified Anti-Counterfeit Protection",
       icon: ShieldCheck,
       highlights: [
         "Invisible authentication embedded into packaging varnish or laser-engraved into products",
@@ -43,7 +43,7 @@ const SecurityTechStackStaging = () => {
       ],
       body: [
         "Where authenticity matters, covert protection enables trusted verification without altering the customer experience or operational workflows.",
-        "Every scan can become actionable intelligence—revealing legitimate interaction and counterfeit activity in real time.",
+        "Every scan can become actionable intelligence - revealing legitimate interaction and counterfeit activity in real time.",
       ],
     },
     {
@@ -51,23 +51,23 @@ const SecurityTechStackStaging = () => {
       title: "High-Assurance Biometric Identity & Authorization",
       icon: Fingerprint,
       highlights: [
-        "Liveness and biometric validation for elevated confidence moments",
+        "Liveness and government-grade biometric validation for elevated confidence moments",
         "Passwordless authorization for access, approvals, and high-stakes actions",
         "Privacy-aligned verification options where minimal data is required",
       ],
       body: [
-        "When the stakes are high, identity must be provable. This layer helps confirm a real person is present—without relying on passwords, tokens, or easily spoofed credentials.",
+        "When the stakes are high, identity must be provable. This layer helps confirm a real person is present - without relying on passwords, tokens, or easily spoofed credentials.",
         "It can support anonymous or minimal-data verification scenarios where appropriate, while still delivering high assurance.",
       ],
     },
     {
-      role: "LIFECYCLE TRUST (OPTIONAL)",
+      role: "BLOCKCHAIN LIFECYCLE TRUST (OPTIONAL)",
       title: "Immutable Ownership, Provenance, and Resale Integrity",
       icon: Layers,
       highlights: [
         "Persistent digital identity for physical assets anchored to a tamper-resistant ledger",
         "Origination, ownership, transfers, and resale events recorded across the full lifecycle",
-        "Optional programmable resale logic for lifecycle-aligned economics",
+        "Optional automated royalty payments for lifecycle-aligned economics",
       ],
       body: [
         "Engagement does not end at the first scan or first sale. For assets that change hands, trust must persist beyond platforms, marketplaces, and apps.",
