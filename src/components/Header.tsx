@@ -31,7 +31,14 @@ const Header = () => {
               to="/beeep"
               className="text-gray-700 hover:text-primary transition-colors text-sm lg:text-base"
             >
-              BEEEP<span className="trademark-small">™</span>
+              BEEEP<span className="trademark-small">™</span> Platform
+            </Link>
+
+            <Link
+              to="/security-tech"
+              className="text-gray-700 hover:text-primary transition-colors text-sm lg:text-base"
+            >
+              Security Tech
             </Link>
 
             <Link
@@ -84,7 +91,15 @@ const Header = () => {
                 className="text-white hover:text-primary transition-colors text-base"
                 onClick={() => setIsMenuOpen(false)}
               >
-                BEEEP<span className="trademark-small">™</span>
+                BEEEP<span className="trademark-small">™</span> Platform
+              </Link>
+
+              <Link
+                to="/security-tech"
+                className="text-white hover:text-primary transition-colors text-base"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Security Tech
               </Link>
 
               <Link
