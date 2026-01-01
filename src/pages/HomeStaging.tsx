@@ -5,6 +5,7 @@ import ContactCTA from "../components/ContactCTA";
 import SEOHead from "../components/SEOHead";
 import { ProductSchema, VideoSchema, BreadcrumbSchema } from "../components/StructuredData";
 import { ShieldCheck, QrCode, Database, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const HomeStaging = () => {
   const successMetrics = [
@@ -67,7 +68,6 @@ const HomeStaging = () => {
       <main className="pt-24">
         {/* HERO */}
         <section className="relative overflow-hidden">
-          {/* Ambient background */}
           <div className="absolute inset-0 -z-10">
             <div className="absolute -top-24 left-1/2 h-[460px] w-[460px] -translate-x-1/2 rounded-full bg-blue-500/10 blur-3xl" />
             <div className="absolute -bottom-24 left-1/4 h-[460px] w-[460px] rounded-full bg-purple-500/10 blur-3xl" />
@@ -76,7 +76,7 @@ const HomeStaging = () => {
 
           <div className="container mx-auto px-4 sm:px-6">
             <div className="mx-auto max-w-5xl py-8 sm:py-11 lg:py-14 text-center">
-              {/* Logo — width-driven, aspect-safe */}
+              {/* Logo */}
               <div className="flex justify-center">
                 <div className="w-full max-w-[780px] sm:max-w-[960px] md:max-w-[1100px]">
                   <img
@@ -97,78 +97,79 @@ const HomeStaging = () => {
                 <span className="block">Unified Audience Engagement</span>
               </h1>
 
-              {/* Subhead (tight, non-redundant) */}
+              {/* Subhead */}
               <p className="mt-6 text-lg sm:text-xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
-  Powered by BEEEP*, our patented, data-centric, trust-first platform, we securely connect
-  physical and digital interactions at scale.
-</p>
+                Powered by BEEEP*, our patented, data-centric, trust-first platform, we securely connect
+                physical and digital interactions at scale.
+              </p>
 
-<p className="mt-6 text-lg sm:text-xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
-  *Brand Experience, Engagement, Encryption Platform
-</p>
+              <p className="mt-6 text-lg sm:text-xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
+                *Brand Experience, Engagement, Encryption Platform
+              </p>
 
               {/* CTAs */}
               <div className="mt-9 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
-                <a
-                  href="/beeep"
+                <Link
+                  to="/beeep"
                   className="inline-flex w-full sm:w-auto items-center justify-center rounded-2xl px-7 py-3.5 text-base font-semibold bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg hover:opacity-95 transition"
                 >
                   Explore the BEEEP™ Platform
-                </a>
-               <a
-  href="/book-demo"
-  className="inline-flex w-full sm:w-auto items-center justify-center rounded-2xl px-7 py-3.5 text-base font-semibold
-             bg-blue-500/15 text-blue-300
-             border border-blue-400/30
-             hover:bg-blue-500/25 transition"
->
-  How We Secure Engagement
-</a>
+                </Link>
 
-
+                <Link
+                  to="/security-tech-stack"
+                  className="inline-flex w-full sm:w-auto items-center justify-center rounded-2xl px-7 py-3.5 text-base font-semibold
+                             bg-blue-500/15 text-blue-300
+                             border border-blue-400/30
+                             hover:bg-blue-500/25 transition"
+                >
+                  How We Secure Engagement
+                </Link>
               </div>
             </div>
           </div>
         </section>
 
-      {/* Who / Why / How */}
-<section className="py-10 sm:py-12">
-  <div className="container mx-auto px-4 sm:px-6">
-    <div className="mx-auto max-w-5xl">
-      <div className="text-center mb-8">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold">
-          Built for trusted engagement across the physical world.
-        </h2>
-      </div>
+        {/* Who / Why / How */}
+        <section className="py-10 sm:py-12">
+          <div className="container mx-auto px-4 sm:px-6">
+            <div className="mx-auto max-w-5xl">
+              <div className="text-center mb-8">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold">
+                  Built for trusted engagement across the physical world.
+                </h2>
+              </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-        <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-border/20">
-          <div className="font-playfair font-bold text-lg mb-2">Who We Are</div>
-          <p className="text-sm text-foreground/90 leading-relaxed">
-            E9 Global is a data-centric MarTech company. We recast products, collectible assets and real-world places as secure, data-rich engagement channels - creating meaningful connections while generating actionable intelligence and new revenue opportunities.
-          </p>
-        </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-border/20">
+                  <div className="font-playfair font-bold text-lg mb-2">Who We Are</div>
+                  <p className="text-sm text-foreground/90 leading-relaxed">
+                    E9 Global is a data-centric MarTech company. We recast products, collectible assets
+                    and real-world places as secure, data-rich engagement channels—creating meaningful
+                    connections while generating actionable intelligence and new revenue opportunities.
+                  </p>
+                </div>
 
-        <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-border/20">
-          <div className="font-playfair font-bold text-lg mb-2">Why E9 Global</div>
-          <p className="text-sm text-foreground/90 leading-relaxed">
-           Because trust and security are what make unified engagement across physical touchpoints possible.
-          </p>
-        </div>
+                <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-border/20">
+                  <div className="font-playfair font-bold text-lg mb-2">Why E9 Global</div>
+                  <p className="text-sm text-foreground/90 leading-relaxed">
+                    Because trust and security are what make unified engagement across physical
+                    touchpoints possible.
+                  </p>
+                </div>
 
-        <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-border/20">
-          <div className="font-playfair font-bold text-lg mb-2">How We Do It</div>
-          <p className="text-sm text-foreground/90 leading-relaxed">
-            Through BEEEP™, our trust-first engagement platform embedded into apps and real-world
-            touchpoints—enabling cohesive, consent-based audience intelligence and monetization at
-            scale.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+                <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-border/20">
+                  <div className="font-playfair font-bold text-lg mb-2">How We Do It</div>
+                  <p className="text-sm text-foreground/90 leading-relaxed">
+                    Through BEEEP™, our trust-first engagement platform embedded into apps and real-world
+                    touchpoints—enabling cohesive, consent-based audience intelligence and monetization
+                    at scale.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Touchpoint section */}
         <section>
