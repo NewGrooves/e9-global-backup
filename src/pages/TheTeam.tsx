@@ -53,8 +53,8 @@ const TheTeam = () => {
     {
       id: 7,
       name: "Michael Buck",
-      role: "Strategic Tech Partner",
-      description: "Former Dell global marketing executive; digital transformation leader and architect of the BEEEP™ platform and Optropic QR technology.",
+      role: "Strategic Technology Partner",
+      description: "Former Dell global marketing executive; digital transformation leader and architect of the BEEEP platform and Optropic QR technology.",
       image: "/lovable-uploads/M Buck Profile pic.png"
     },
     {
@@ -107,16 +107,21 @@ const TheTeam = () => {
       
       {/* Hero Section */}
       <section className="pt-32 pb-4 sm:pb-24 px-3 sm:px-8 lg:px-6 bg-background relative overflow-hidden">
-        
         <div className="container mx-auto text-center relative">
           <h1 className="font-playfair font-bold mb-6 text-center" style={{ lineHeight: '1.5' }}>
             <span className="text-4xl sm:text-5xl md:text-6xl gradient-text-investor block mb-1 sm:mb-3 py-1 sm:py-2">
               Meet Our Team
             </span>
           </h1>
+
           <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full mb-6"></div>
+
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground/90 mb-2 max-w-4xl mx-auto leading-relaxed">
             Founder-led. Proven at scale. Built with purpose.
+          </p>
+
+          <p className="text-sm sm:text-base md:text-lg text-foreground/80 mt-3 max-w-4xl mx-auto leading-relaxed">
+            Our work is grounded in deep experience across security, identity (verification, permissions, and access control), engagement infrastructure, and data monetization.
           </p>
         </div>
       </section>
