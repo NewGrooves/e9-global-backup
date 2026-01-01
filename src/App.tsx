@@ -12,6 +12,7 @@ import ErrorBoundary from "@/components/ErrorBoundary";
 
 import Home2 from "./pages/Home2";
 import HomeStaging from "./pages/HomeStaging";
+
 import TheTeam from "./pages/TheTeam";
 
 import BeeepStagingPage from "./pages/BeeepStagingPage";
