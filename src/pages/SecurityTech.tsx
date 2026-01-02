@@ -45,7 +45,7 @@ const SecurityTech = () => {
       body: [
         "Where authenticity matters, covert protection enables trusted verification without altering the customer experience or operational workflows.",
         "Every scan can become actionable intelligence, revealing legitimate interaction and counterfeit activity in real time.",
-        "Combined with our patented QR infrastructure, EncryptorSeal™ forms an unparalleled system for brand protection and gray market detection, building on technology long used to secure U.S. government documents.",
+        "Combined with our patented Optropic QR infrastructure, EncryptorSeal™ forms an unparalleled system for brand protection and gray market detection, building on technology long used to secure U.S. government documents.",
       ],
     },
     {
