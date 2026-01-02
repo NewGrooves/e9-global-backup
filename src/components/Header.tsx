@@ -12,7 +12,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <img
-              src="/lovable-uploads/e50861dc-1942-4901-8bfb-2c5fa0c6d7f7.png"
+              src="/lovable-uploads/E9 Logo Black Trans.png"
               alt="E9 Global Logo"
               className="h-12 w-auto"
             />
