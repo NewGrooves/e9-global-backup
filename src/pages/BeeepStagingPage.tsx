@@ -9,16 +9,12 @@ import {
   Database,
   Building2,
   Gem,
-  ChevronDown,
+  ArrowRight,
 } from "lucide-react";
-
-type PlatformKey = "enterprise" | "collect" | "community";
 
 const BeeepStagingPage = () => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [selectedPlatform, setSelectedPlatform] =
-    useState<PlatformKey>("enterprise");
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -80,10 +76,10 @@ const BeeepStagingPage = () => {
     return () => clearInterval(interval);
   }, [imagesLoaded, heroImages.length]);
 
-  const platformCards = useMemo(
+  const deploymentStackCards = useMemo(
     () => [
       {
-        key: "enterprise" as const,
+        role: "DEPLOYMENT CONTEXT",
         title: "BEEEP™ Enterprise",
         subtitle:
           "Embedded engagement infrastructure for brands and enterprise organizations.",
@@ -93,10 +89,16 @@ const BeeepStagingPage = () => {
           "Role-specific delivery for customers, partners, internal teams, and regulators",
           "Designed for secure participation and permission-based intelligence",
         ],
+        notes: [
+          "BEEEP™ Enterprise integrates directly into existing apps and real-world touchpoints to connect physical interaction with digital engagement at scale.",
+          "Role-specific delivery ensures that customers, partners, internal teams, and regulators can access different secure experiences from the same scan—based on identity, permissions, and context.",
+          "Where required, EncryptorSeal™ can be deployed as part of BEEEP™ Enterprise to enable covert authentication, anti-counterfeit protection, and trusted verification workflows.",
+          "When users opt in, organizations capture permission-based signals they own—enabling data enrichment and monetization services that strengthen retention, operational performance, and long-term enterprise value.",
+        ],
       },
       {
-        key: "collect" as const,
-        title: "BEEEP™ Collector",
+        role: "DEPLOYMENT CONTEXT",
+        title: "BEEEP™ Collect",
         subtitle:
           "High-trust engagement and lifecycle continuity for authenticated assets.",
         icon: Gem,
@@ -105,9 +107,15 @@ const BeeepStagingPage = () => {
           "Role-specific delivery for buyers, sellers, authenticators, and service partners",
           "Built for high-security asset workflows and premium stakeholder experiences",
         ],
+        notes: [
+          "BEEEP™ Collect is designed for authenticated assets and high-trust markets where provenance continuity and stakeholder-specific workflows matter across long ownership horizons.",
+          "EncryptorSeal™ can be deployed to enable covert anti-counterfeit authentication and trusted verification at the point of interaction.",
+          "For high-security assets, BEEEP™ Collect supports patented biometric authentication and patented AI-based visual and surface analysis, enabling non-invasive verification using inherent material characteristics—without introducing physical tags, markers, or codes.",
+          "BEEEP™ Collect also supports patented automated royalty payments, enabling programmable, auditable economics that align creators, collectors, and marketplaces across resale and stewardship cycles.",
+        ],
       },
       {
-        key: "community" as const,
+        role: "DEPLOYMENT CONTEXT",
         title: "BEEEP™ Metro",
         subtitle:
           "Participation-centric engagement for cities, venues, destinations, and communities.",
@@ -117,105 +125,13 @@ const BeeepStagingPage = () => {
           "Dynamic content updates without reprinting signage or physical touchpoints",
           "Designed for participation loops, learning, and value exchange",
         ],
-      },
-    ],
-    []
-  );
-
-  const platformDetail = useMemo(() => {
-    const common = {
-      sectionTitle: "How it works in practice",
-      bulletsTitle: "What you get",
-      bullets: [
-        "Scan-initiated engagement tied to real-world touchpoints",
-        "Role-specific delivery governed by permissions and context",
-        "Dynamic updates without reprinting or redeploying",
-      ],
-    };
-
-    const enterprise = {
-      eyebrow: "Enterprise-grade embedded engagement infrastructure",
-      headline:
-        "Secure engagement and permission-based intelligence inside systems brands already operate.",
-      body: [
-        "BEEEP™ Enterprise integrates directly into existing apps and real-world touchpoints to connect physical interaction with digital engagement at scale.",
-        "Role-specific delivery ensures that customers, partners, internal teams, and regulators can access different secure experiences from the same scan—based on identity, permissions, and context.",
-        "Where required, EncryptorSeal™ can be deployed as part of BEEEP™ Enterprise to enable covert authentication, anti-counterfeit protection, and trusted verification workflows.",
-        "When users opt in, organizations capture permission-based signals they own—enabling data enrichment and monetization services that strengthen retention, operational performance, and long-term enterprise value.",
-      ],
-      bullets: [
-        "Embedded into existing brand-owned apps, web properties, and operational workflows",
-        "Role-specific delivery with dynamic content control across stakeholders",
-        "Optional EncryptorSeal™ integration for covert verification and anti-counterfeit protection",
-      ],
-    };
-
-    const collect = {
-      eyebrow: "High-security collectibles infrastructure",
-      headline:
-        "Trusted asset engagement with advanced verification and lifecycle economics.",
-      body: [
-        "BEEEP™ Collector is designed for authenticated assets and high-trust markets where provenance continuity and stakeholder-specific workflows matter across long ownership horizons.",
-        "EncryptorSeal™ can be deployed to enable covert anti-counterfeit authentication and trusted verification at the point of interaction.",
-        "For high-security assets, BEEEP™ Collector supports patented biometric authentication and patented AI-based visual and surface analysis, enabling non-invasive verification using inherent material characteristics—without introducing physical tags, markers, or codes.",
-        "BEEEP™ Collector also supports patented automated royalty payments, enabling programmable, auditable economics that align creators, collectors, and marketplaces across resale and stewardship cycles.",
-      ],
-      bullets: [
-        "Optional EncryptorSeal™ for covert verification and anti-counterfeit protection",
-        "Patented biometric authentication for high-security assets",
-        "Patented AI-based visual and surface analysis to create unique digital fingerprints from inherent material characteristics—enabling non-invasive verification without adding tags, codes, or markers",
-        "Patented automated royalty payments for lifecycle-aligned economics",
-      ],
-    };
-
-    const community = {
-      eyebrow: "PARTICIPATION-CENTRIC COMMUNITY INFRASTRUCTURE",
-      headline:
-        "Scan-initiated engagement that supports participation, learning, and value exchange.",
-      body: [
-        "BEEEP™ Metro powers community-branded apps that serve as trusted gateways for participation, information, and engagement - designed to be adopted locally and used consistently.",
-        "BEEEP™ Metro integrates into civic, cultural, and place-based touchpoints to connect real-world participation with secure, role-specific digital experiences.",
-        "The same physical touchpoint can deliver different content to residents, visitors, staff, and partners—based on permissions, context, and community needs.",
-        "Content can be updated at any time to support events, alerts, initiatives, education, and multilingual guidance without reprinting signage or materials.",
-        "Community deployments may include a participation-powered value exchange component that rewards constructive engagement and reinforces recurring participation and learning loops.",
-      ],
-      bullets: [
-        "Role-specific delivery across community stakeholders",
-        "Dynamic content updates without reprinting or redeploying physical infrastructure",
-        "Participation-powered value exchange to support recurring engagement",
-      ],
-    };
-
-    if (selectedPlatform === "enterprise") return { ...common, ...enterprise };
-    if (selectedPlatform === "collect") return { ...common, ...collect };
-    return { ...common, ...community };
-  }, [selectedPlatform]);
-
-  const howItWorksSteps = useMemo(
-    () => [
-      {
-        step: "Scan-initiated engagement",
-        description:
-          "A familiar scan connects physical touchpoints to secure, role-specific digital experiences.",
-        icon: QrCode,
-      },
-      {
-        step: "Role-specific delivery",
-        description:
-          "Different stakeholders can receive different secure content based on identity, permissions and context.",
-        icon: Users,
-      },
-      {
-        step: "Dynamic updates",
-        description:
-          "Update content at any time without reprinting packaging, signage, or physical touchpoints.",
-        icon: RefreshCw,
-      },
-      {
-        step: "Permission-based intelligence",
-        description:
-          "When users opt in, organizations can enrich and monetize cohesive consent-based behavioral intelligence.",
-        icon: Database,
+        notes: [
+          "BEEEP™ Metro powers community-branded apps that serve as trusted gateways for participation, information, and engagement - designed to be adopted locally and used consistently.",
+          "BEEEP™ Metro integrates into civic, cultural, and place-based touchpoints to connect real-world participation with secure, role-specific digital experiences.",
+          "The same physical touchpoint can deliver different content to residents, visitors, staff, and partners—based on permissions, context, and community needs.",
+          "Content can be updated at any time to support events, alerts, initiatives, education, and multilingual guidance without reprinting signage or materials.",
+          "Community deployments may include a participation-powered value exchange component that rewards constructive engagement and reinforces recurring participation and learning loops.",
+        ],
       },
     ],
     []
@@ -374,127 +290,81 @@ const BeeepStagingPage = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {platformCards.map((card) => {
-              const isActive = selectedPlatform === card.key;
+          <div className="max-w-5xl mx-auto space-y-6">
+            {deploymentStackCards.map((card, idx) => {
               const Icon = card.icon;
 
               return (
-                <button
-                  key={card.key}
-                  type="button"
-                  onClick={() => setSelectedPlatform(card.key)}
-                  className={`text-left bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border transition-all duration-300 relative overflow-hidden ${
-                    isActive
-                      ? "border-purple-500/60 ring-2 ring-purple-500/20"
-                      : "border-border/20 hover:border-border/40"
-                  }`}
+                <div
+                  key={card.title}
+                  className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 sm:p-8 shadow-lg border border-border/20"
                 >
-                  <div className="flex items-start justify-between gap-4">
-                    <div>
-                      <div className="flex items-center gap-3 mb-2">
-                        <div className="w-11 h-11 icon-gradient-primary rounded-2xl flex items-center justify-center shadow-lg">
-                          <Icon className="w-5 h-5 text-white" />
-                        </div>
-                        <h3 className="font-playfair font-bold text-xl text-foreground">
-                          {card.title}
-                        </h3>
+                  <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+                    <div className="flex-1">
+                      <div className="text-xs sm:text-sm uppercase tracking-wide text-foreground/70 mb-2">
+                        {card.role}
                       </div>
-                      <p className="text-foreground/80 leading-relaxed">
-                        {card.subtitle}
-                      </p>
+
+                      <div className="flex items-start gap-4">
+                        <div className="w-12 h-12 icon-gradient-primary rounded-2xl flex items-center justify-center shadow-lg flex-shrink-0">
+                          <Icon className="w-6 h-6 text-white" />
+                        </div>
+
+                        <div>
+                          <h3 className="text-2xl sm:text-3xl font-playfair font-bold text-foreground">
+                            {card.title}
+                          </h3>
+                          <p className="mt-2 text-foreground/80 leading-relaxed">
+                            {card.subtitle}
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="mt-5">
+                        <div className="text-sm uppercase tracking-wide text-foreground/70 mb-3">
+                          Key notes
+                        </div>
+                        <ul className="space-y-2 text-foreground/90">
+                          {card.notes.map((n, nIdx) => (
+                            <li key={nIdx} className="flex items-start gap-3">
+                              <span className="mt-2 w-2 h-2 rounded-full bg-blue-500 flex-shrink-0" />
+                              <span className="text-sm sm:text-base leading-relaxed">
+                                {n}
+                              </span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     </div>
 
-                    <ChevronDown
-                      className={`w-5 h-5 text-foreground/60 transition-transform duration-300 ${
-                        isActive ? "rotate-180" : "rotate-0"
-                      }`}
-                    />
+                    <div className="md:w-[360px] bg-background/60 border border-border/30 rounded-2xl p-5">
+                      <div className="text-sm font-semibold text-foreground mb-3">
+                        What you get
+                      </div>
+                      <ul className="space-y-2">
+                        {card.highlights.map((h, hIdx) => (
+                          <li
+                            key={hIdx}
+                            className="flex items-start gap-3 text-foreground/90"
+                          >
+                            <span className="mt-2 w-2 h-2 rounded-full bg-purple-500 flex-shrink-0" />
+                            <span className="text-sm">{h}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
 
-                  <div className="mt-5 space-y-2">
-                    {card.highlights.map((h, idx) => (
-                      <div
-                        key={idx}
-                        className="flex items-start gap-3 text-foreground/90"
-                      >
-                        <span className="mt-2 w-2 h-2 rounded-full bg-purple-500 flex-shrink-0" />
-                        <span className="text-sm sm:text-base">{h}</span>
-                      </div>
-                    ))}
-                  </div>
-                </button>
+                  {idx < deploymentStackCards.length - 1 && (
+                    <div className="mt-7 flex items-center gap-3 text-foreground/60">
+                      <div className="h-px flex-1 bg-border/40" />
+                      <ArrowRight className="w-4 h-4" />
+                      <div className="h-px flex-1 bg-border/40" />
+                    </div>
+                  )}
+                </div>
               );
             })}
-          </div>
-
-          <p className="mt-8 text-center text-base sm:text-lg text-foreground font-medium">
-            Select a deployment context above to view the expanded details below.
-          </p>
-        </div>
-      </section>
-
-      {/* Selected Platform Detail */}
-      <section className="py-12 md:py-16 px-3 sm:px-8 lg:px-6 bg-background">
-        <div className="container mx-auto">
-          <div className="max-w-5xl mx-auto bg-card/70 border border-border/30 rounded-3xl p-6 sm:p-10 shadow-xl">
-            <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6">
-              <div>
-                <div className="text-sm uppercase tracking-wide text-foreground/70 mb-2">
-                  {platformDetail.eyebrow}
-                </div>
-                <h3 className="text-2xl sm:text-3xl font-playfair font-bold text-foreground mb-3">
-                  {platformDetail.headline}
-                </h3>
-              </div>
-
-              <div className="bg-background/60 border border-border/30 rounded-2xl p-4 sm:p-5 min-w-[260px]">
-                <div className="text-sm font-semibold text-foreground mb-3">
-                  {platformDetail.bulletsTitle}
-                </div>
-                <ul className="space-y-2">
-                  {platformDetail.bullets.map((b, idx) => (
-                    <li
-                      key={idx}
-                      className="flex items-start gap-3 text-foreground/90"
-                    >
-                      <span className="mt-2 w-2 h-2 rounded-full bg-blue-500 flex-shrink-0" />
-                      <span className="text-sm">{b}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-
-            <div className="mt-7 space-y-4 text-foreground/90 leading-relaxed">
-              {platformDetail.body.map((p, idx) => (
-                <p key={idx}>{p}</p>
-              ))}
-            </div>
-
-            <div className="mt-10">
-              <div className="text-sm uppercase tracking-wide text-foreground/70 mb-4">
-                {platformDetail.sectionTitle}
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                {howItWorksSteps.map((s, idx) => (
-                  <div
-                    key={idx}
-                    className="bg-card/80 backdrop-blur-sm rounded-3xl p-5 shadow-lg border border-border/20"
-                  >
-                    <div className="w-12 h-12 icon-gradient-primary rounded-2xl flex items-center justify-center mb-4 shadow-lg">
-                      <s.icon className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="font-playfair font-bold text-base text-foreground mb-2">
-                      {s.step}
-                    </div>
-                    <div className="text-sm text-foreground/90 leading-relaxed">
-                      {s.description}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </section>
