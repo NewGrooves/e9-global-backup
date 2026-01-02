@@ -124,7 +124,7 @@ const BeeepStagingPage = () => {
           "Designed for participation loops, learning, and value exchange",
         ],
         notes: [
-          "BEEEP™ Metro powers community-branded apps that serve as trusted gateways for participation, information, and engagement - designed to be adopted locally and used consistently.",
+          "BEEEP™ Metro powers community-branded apps that serve as trusted gateways for participation, information, and engagement; designed to be adopted locally and used consistently.",
           "BEEEP™ Metro integrates into civic, cultural, and place-based touchpoints to connect real-world participation with secure, role-specific digital experiences.",
           "Content can be updated at any time to support events, alerts, initiatives, education, and multilingual guidance without reprinting signage or materials.",
         ],
