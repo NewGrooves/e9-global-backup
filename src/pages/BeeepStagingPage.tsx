@@ -336,10 +336,10 @@ const BeeepStagingPage = () => {
 
                     {/* Right: stacked windows */}
                     <div className="space-y-4">
-                      {/* What you get */}
+                      {/* At a glance */}
                       <div className="bg-background/60 border border-border/30 rounded-2xl p-5">
                         <div className="text-sm font-semibold text-foreground mb-3">
-                          What you get
+                          At a glance
                         </div>
                         <ul className="space-y-2">
                           {card.highlights.map((h, hIdx) => (
