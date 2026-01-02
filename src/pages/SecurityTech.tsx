@@ -30,7 +30,7 @@ const SecurityTech = () => {
       ],
       body: [
         "Traditional QR codes are simple pointers. They route users to destinations and rely on downstream systems to establish trust after the scan has already occurred.",
-        "This layer treats QR as security-relevant infrastructure: it enables intrinsic verification and governed resolution so trust is established before engagement, content delivery, or data capture.",
+        "This patented layer treats QR as security-relevant infrastructure: it enables intrinsic verification and governed resolution so trust is established before engagement, content delivery, or data capture.",
       ],
     },
     {
@@ -86,7 +86,7 @@ const SecurityTech = () => {
       ],
       body: [
         "Engagement does not end at the first scan or first sale. For assets that change hands, trust must persist beyond platforms, marketplaces, and apps.",
-        "This layer creates a durable source of truth for provenance and ownership continuity—reducing fraud and increasing confidence across secondary markets.",
+        "This patented layer creates a durable source of truth for provenance and ownership continuity—reducing fraud and increasing confidence across secondary markets.",
       ],
     },
   ];
