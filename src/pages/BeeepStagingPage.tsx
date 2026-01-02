@@ -85,11 +85,9 @@ const BeeepStagingPage = () => {
           "Role-specific delivery ensures that customers, partners, internal teams, and regulators can access different secure experiences from the same scan—based on identity, permissions, and context.",
           "When users opt in, organizations capture permission-based signals they own—enabling data enrichment and monetization services that strengthen retention, operational performance, and long-term enterprise value.",
         ],
-        chips: [
-          "Optional EncryptorSeal™ integration",
-          "Covert authentication (optional)",
-          "Anti-counterfeit protection (optional)",
-          "Trusted verification workflows (optional)",
+        securityTech: [
+          "Patented Optropic GS1-Compatible QR Infrastructure",
+          "EncryptorSeal™: Covert Smartphone-Verified Anti-Counterfeit Protection",
         ],
       },
       {
@@ -103,16 +101,16 @@ const BeeepStagingPage = () => {
           "Built for high-security asset workflows and premium stakeholder experiences",
         ],
         notes: [
-          "BEEEP™ Collect is designed for authenticated assets and high-trust markets where considered provenance continuity and stakeholder-specific workflows matter across long ownership horizons.",
+          "BEEEP™ Collect is designed for authenticated assets and high-trust markets where provenance continuity and stakeholder-specific workflows matter across long ownership horizons.",
           "For high-security assets, BEEEP™ Collect supports patented biometric authentication and patented AI-based visual and surface analysis, enabling non-invasive verification using inherent material characteristics—without introducing physical tags, markers, or codes.",
           "BEEEP™ Collect also supports patented automated royalty payments, enabling programmable, auditable economics that align creators, collectors, and marketplaces across resale and stewardship cycles.",
         ],
-        chips: [
-          "Optional EncryptorSeal™ deployment",
-          "Covert anti-counterfeit authentication (optional)",
-          "Patented biometric authentication (optional)",
-          "Patented AI surface analysis (optional)",
-          "Patented automated royalty payments (optional)",
+        securityTech: [
+          "Patented Optropic GS1-Compatible QR Infrastructure",
+          "EncryptorSeal™: Covert Smartphone-Verified Anti-Counterfeit Protection",
+          "Mark-Free Surface Fingerprint Authentication",
+          "High-Assurance Biometric Identity & Authorization",
+          "Immutable Ownership, Provenance, and Resale Integrity",
         ],
       },
       {
@@ -130,9 +128,9 @@ const BeeepStagingPage = () => {
           "BEEEP™ Metro integrates into civic, cultural, and place-based touchpoints to connect real-world participation with secure, role-specific digital experiences.",
           "Content can be updated at any time to support events, alerts, initiatives, education, and multilingual guidance without reprinting signage or materials.",
         ],
-        chips: [
-          "Role-specific delivery by permissions & context",
-          "Participation-powered value exchange (optional)",
+        securityTech: [
+          "Patented Optropic GS1-Compatible QR Infrastructure",
+          "High-Assurance Biometric Identity & Authorization",
         ],
       },
     ],
@@ -317,9 +315,9 @@ const BeeepStagingPage = () => {
                     </div>
                   </div>
 
-                  {/* Body (clean split: narrative vs benefits) */}
+                  {/* Body */}
                   <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {/* Left: unique narrative notes only */}
+                    {/* Left: How it works in practice */}
                     <div className="bg-background/40 border border-border/20 rounded-2xl p-5">
                       <div className="text-sm font-semibold text-foreground mb-3">
                         How it works in practice
@@ -336,41 +334,45 @@ const BeeepStagingPage = () => {
                       </ul>
                     </div>
 
-                    {/* Right: benefits only (no mechanism repetition) */}
-                    <div className="bg-background/60 border border-border/30 rounded-2xl p-5">
-                      <div className="text-sm font-semibold text-foreground mb-3">
-                        What you get
+                    {/* Right: stacked windows */}
+                    <div className="space-y-4">
+                      {/* What you get */}
+                      <div className="bg-background/60 border border-border/30 rounded-2xl p-5">
+                        <div className="text-sm font-semibold text-foreground mb-3">
+                          What you get
+                        </div>
+                        <ul className="space-y-2">
+                          {card.highlights.map((h, hIdx) => (
+                            <li
+                              key={hIdx}
+                              className="flex items-start gap-3 text-foreground/90"
+                            >
+                              <span className="mt-2 w-2 h-2 rounded-full bg-purple-500 flex-shrink-0" />
+                              <span className="text-sm">{h}</span>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
-                      <ul className="space-y-2">
-                        {card.highlights.map((h, hIdx) => (
-                          <li
-                            key={hIdx}
-                            className="flex items-start gap-3 text-foreground/90"
-                          >
-                            <span className="mt-2 w-2 h-2 rounded-full bg-purple-500 flex-shrink-0" />
-                            <span className="text-sm">{h}</span>
-                          </li>
-                        ))}
-                      </ul>
+
+                      {/* Security tech */}
+                      <div className="bg-background/60 border border-border/30 rounded-2xl p-5">
+                        <div className="text-sm font-semibold text-foreground mb-3">
+                          Security tech
+                        </div>
+                        <ul className="space-y-2">
+                          {card.securityTech.map((t, tIdx) => (
+                            <li
+                              key={tIdx}
+                              className="flex items-start gap-3 text-foreground/90"
+                            >
+                              <span className="mt-2 w-2 h-2 rounded-full bg-blue-500 flex-shrink-0" />
+                              <span className="text-sm">{t}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     </div>
                   </div>
-
-                  {/* Capabilities chips (preserves key points without wordy repetition) */}
-                  {card.chips?.length ? (
-                    <div className="mt-5 pt-5 border-t border-border/20">
-                      <div className="flex flex-wrap gap-2">
-                        {card.chips.map((chip, cIdx) => (
-                          <span
-                            key={cIdx}
-                            className="inline-flex items-center rounded-full px-3 py-1 text-xs sm:text-sm
-                                       bg-background/60 border border-border/30 text-foreground/90"
-                          >
-                            {chip}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  ) : null}
 
                   {idx < deploymentStackCards.length - 1 && (
                     <div className="mt-7 flex items-center gap-3 text-foreground/60">
