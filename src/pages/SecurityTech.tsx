@@ -29,8 +29,8 @@ const SecurityTech = () => {
         "Privacy-first entry point designed for long-term governance and control",
       ],
       body: [
-        "Traditional QR codes are pointers. They route users to a destination, then ask downstream systems to decide whether the interaction can be trusted.",
-        "Our QR layer flips that sequence. Verification and governed resolution happen first, so trust is established before engagement, content delivery, or data capture begins.",
+        "Traditional QR codes are simple pointers. They route users to destinations and rely on downstream systems to establish trust after the scan has already occurred.",
+        "This patented layer treats QR as security-relevant infrastructure. It enables intrinsic verification and governed resolution so trust is established before engagement, content delivery, or data capture.",
       ],
     },
     {
@@ -43,9 +43,9 @@ const SecurityTech = () => {
         "Real-time detection of authentic and counterfeit scans to brand-controlled systems",
       ],
       body: [
-        "When authenticity matters, covert protection delivers verification without changing the customer experience or disrupting operations.",
-        "Each scan becomes signal. Brands see legitimate engagement and counterfeit activity as it happens, through systems they control.",
-        "Paired with our QR infrastructure, EncryptorSeal™ adds a powerful layer for brand protection and gray market detection, building on technology long used to secure U.S. government documents.",
+        "Where authenticity matters, covert protection enables trusted verification without altering the customer experience or operational workflows.",
+        "Every scan can become actionable intelligence, revealing legitimate interaction and counterfeit activity in real time.",
+        "Combined with our patented QR infrastructure, EncryptorSeal™ forms an unparalleled system for brand protection and gray market detection, building on technology long used to secure U.S. government documents.",
       ],
     },
     {
@@ -58,9 +58,8 @@ const SecurityTech = () => {
         "Re-scan verification confirms object identity against secure reference data",
       ],
       body: [
-        "Some assets cannot be marked, or should not be marked. This layer verifies the object itself using its natural surface characteristics.",
-        "High-resolution imagery is enrolled once and converted into a compact digital fingerprint. Later scans can confirm identity against secure reference data.",
-        "Unlike AI-based brushstroke analysis used to evaluate artistic authorship, surface-based authentication verifies the physical identity of an object. It is built for ongoing provenance and lifecycle engagement, not one-time attribution.",
+        "Some assets are difficult to mark, or should not be marked. This layer verifies the physical identity of an object using its natural surface characteristics, converting high-resolution imagery into a compact digital fingerprint captured during enrollment.",
+        "Unlike AI-based brushstroke analysis used to evaluate artistic authorship, surface-based authentication technologies verify the physical identity of an object itself. This makes them suitable for ongoing provenance and lifecycle engagement rather than one-time attribution.",
       ],
     },
     {
@@ -73,8 +72,8 @@ const SecurityTech = () => {
         "Privacy-aligned verification options where minimal data is required",
       ],
       body: [
-        "In high-stakes moments, identity has to be provable. This patented layer confirms a real person is present without relying on passwords, tokens, or easily spoofed credentials.",
-        "It also supports minimal-data verification paths where appropriate, while maintaining high assurance.",
+        "When the stakes are high, identity must be provable. This patented layer helps confirm a real person is present without relying on passwords, tokens, or easily spoofed credentials.",
+        "It can support anonymous or minimal-data verification scenarios where appropriate, while still delivering high assurance.",
       ],
     },
     {
@@ -87,8 +86,8 @@ const SecurityTech = () => {
         "Optional automated royalty payments for lifecycle-aligned economics",
       ],
       body: [
-        "Engagement should not end after the first scan or first sale. When assets change hands, trust has to persist across platforms, marketplaces, and apps.",
-        "This patented layer provides a durable record of provenance and ownership continuity, reducing fraud and increasing confidence across secondary markets.",
+        "Engagement does not end at the first scan or first sale. For assets that change hands, trust must persist beyond platforms, marketplaces, and apps.",
+        "This patented layer creates a durable source of truth for provenance and ownership continuity, reducing fraud and increasing confidence across secondary markets.",
       ],
     },
   ];
@@ -98,19 +97,19 @@ const SecurityTech = () => {
       icon: Radar,
       title: "No intrinsic trust at the entry point",
       description:
-        "Most systems assume interactions are valid, then try to manage risk after engagement starts.",
+        "Most systems assume interactions are valid and try to manage risk downstream, after engagement begins.",
     },
     {
       icon: Lock,
       title: "No control over who sees what",
       description:
-        "Traditional QR and engagement tools often deliver the same experience to everyone, regardless of role, identity, or context.",
+        "Traditional QR and engagement tools typically deliver a uniform experience, regardless of role, identity, or context.",
     },
     {
       icon: Database,
       title: "No defensible data asset",
       description:
-        "Traffic-based engagement produces fragmented analytics, third-party dependence, and low-confidence signals that do not compound.",
+        "Traffic-based engagement creates fragmented analytics, third-party dependence, and low-confidence signals that do not compound.",
     },
   ];
 
@@ -196,9 +195,10 @@ const SecurityTech = () => {
                   The core shift
                 </div>
                 <p className="text-foreground/90 leading-relaxed">
-                  Most engagement stacks assume trust and then try to contain risk. We build trust into
-                  the infrastructure, so engagement, data capture, and monetization are anchored to
-                  verified interactions rather than assumptions.
+                  Most engagement technologies assume trust and attempt to manage risk downstream. Our
+                  architecture inverts that model by engineering trust into the infrastructure, so
+                  engagement, data, and monetization are built on verified interactions rather than
+                  assumptions.
                 </p>
               </div>
             </div>
@@ -215,8 +215,8 @@ const SecurityTech = () => {
               </h2>
               <p className="text-lg text-foreground/90 max-w-3xl mx-auto leading-relaxed">
                 Traditional QR codes, loyalty platforms, and engagement tools treat physical touchpoints
-                as traffic sources. That breaks down when counterfeits exist, access must be governed,
-                and privacy matters.
+                as traffic sources. That model breaks down when counterfeits exist, access must be
+                governed, and privacy matters.
               </p>
             </div>
 
@@ -251,7 +251,8 @@ const SecurityTech = () => {
                 </h2>
                 <p className="text-lg text-foreground/90 max-w-3xl mx-auto leading-relaxed">
                   Each layer answers a specific trust question. You don’t need every layer for every
-                  deployment. Mix and match based on risk, regulation, and use case.
+                  deployment. Each can stand alone or combine with others based on risk, regulation, and
+                  use case.
                 </p>
               </div>
 
@@ -336,8 +337,9 @@ const SecurityTech = () => {
                   The data flywheel
                 </h2>
                 <p className="text-lg text-foreground/90 max-w-3xl mx-auto leading-relaxed">
-                  Verified engagement changes the economics. Opt-in signals captured through this stack
-                  are clean, permission-based, and defensible, which makes them materially more useful.
+                  Because engagement is verified at the point of interaction, opt-in signals captured
+                  through this stack are clean, permission-based, and defensible. That changes the
+                  economics entirely.
                 </p>
               </div>
 
@@ -378,8 +380,8 @@ const SecurityTech = () => {
 
                   <div className="mt-6 bg-background/60 border border-border/30 rounded-2xl p-4">
                     <p className="text-foreground/90 leading-relaxed">
-                      Brands that own trusted, permission-based customer data infrastructure tend to
-                      command greater strategic leverage and higher acquisition value.
+                      Brands that own trusted, permission-based customer data infrastructure command
+                      greater strategic leverage and higher acquisition value.
                     </p>
                   </div>
                 </div>
@@ -390,8 +392,8 @@ const SecurityTech = () => {
                   The strategic advantage
                 </div>
                 <p className="text-foreground/90 leading-relaxed">
-                  This is infrastructure, not a feature bundle. It is designed to make trust explicit,
-                  treat privacy as a design principle, and convert physical engagement into a durable
+                  This is not a feature stack. It is infrastructure, engineered to make trust explicit,
+                  keep privacy as a design principle, and convert physical engagement into a durable
                   digital asset.
                 </p>
               </div>
