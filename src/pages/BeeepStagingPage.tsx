@@ -377,7 +377,7 @@ const BeeepStagingPage = () => {
                   {idx < deploymentStackCards.length - 1 && (
                     <div className="mt-7 flex items-center gap-3 text-foreground/60">
                       <div className="h-px flex-1 bg-border/40" />
-                      <ArrowRight className="w-4 h-4" />
+                     
                       <div className="h-px flex-1 bg-border/40" />
                     </div>
                   )}
