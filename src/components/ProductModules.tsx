@@ -49,7 +49,7 @@ const ProductModules = () => {
                   alt="Customer engaging with a secure QR touchpoint"
                   className="w-full max-w-[280px] h-auto object-contain rounded-2xl shadow-2xl"
                 />
-                <div className="mt-4 text-sm sm:text-base text-foreground font-semibold">
+                <div className="mt-4 text-base sm:text-lg text-foreground font-semibold">
                   Customer Engagement
                 </div>
               </div>
@@ -60,7 +60,7 @@ const ProductModules = () => {
                   alt="Collector engaging with an authenticated asset"
                   className="w-full max-w-[280px] h-auto object-contain rounded-2xl shadow-2xl"
                 />
-                <div className="mt-4 text-sm sm:text-base text-foreground font-semibold">
+                <div className="mt-4 text-base sm:text-lg text-foreground font-semibold">
                   Collector Engagement
                 </div>
               </div>
@@ -71,7 +71,7 @@ const ProductModules = () => {
                   alt="Community engagement through a place-based touchpoint"
                   className="w-full max-w-[280px] h-auto object-contain rounded-2xl shadow-2xl"
                 />
-                <div className="mt-4 text-sm sm:text-base text-foreground font-semibold">
+                <div className="mt-4 text-base sm:text-lg text-foreground font-semibold">
                   Community Engagement
                 </div>
               </div>
