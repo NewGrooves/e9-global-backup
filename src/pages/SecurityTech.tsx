@@ -30,7 +30,7 @@ const SecurityTech = () => {
       ],
       body: [
         "Traditional QR codes are simple pointers. They route users to destinations and rely on downstream systems to establish trust after the scan has already occurred.",
-        "This patented layer treats QR as security-relevant infrastructure. It enables intrinsic verification and governed resolution so trust is established before engagement, content delivery, or data collection.",
+        "This patented Optropic QR layer treats QR as security-relevant infrastructure. It enables intrinsic verification and governed resolution so trust is established before engagement, content delivery, or data collection.",
       ],
     },
     {
