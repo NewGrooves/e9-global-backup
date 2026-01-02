@@ -3,11 +3,7 @@ import Footer from "../components/Footer";
 import ProductModules from "../components/ProductModules";
 import ContactCTA from "../components/ContactCTA";
 import SEOHead from "../components/SEOHead";
-import {
-  ProductSchema,
-  VideoSchema,
-  BreadcrumbSchema,
-} from "../components/StructuredData";
+import { ProductSchema, VideoSchema, BreadcrumbSchema } from "../components/StructuredData";
 import { ShieldCheck, QrCode, Database, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -103,33 +99,13 @@ const HomeStaging = () => {
 
               {/* Subhead */}
               <p className="mt-6 text-lg sm:text-xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
-                Powered by BEEEP™*, our patented, data-centric, trust-first platform, we securely
-                connect physical and digital interactions at scale.
+                Powered by BEEEP™*, our patented, data-centric, trust-first platform, we securely connect
+                physical and digital interactions at scale.
               </p>
 
               <p className="mt-6 text-lg sm:text-xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
                 *Brand Experience, Engagement, Encryption Platform
               </p>
-
-              {/* Value bullets (consistent with dot formatting used elsewhere on the site) */}
-              <div className="mt-8 flex justify-center">
-                <ul className="space-y-3 text-foreground/90 text-base sm:text-lg">
-                  <li className="flex items-start gap-3">
-                    <span className="mt-2 w-2 h-2 rounded-full bg-blue-500 flex-shrink-0" />
-                    <span className="leading-relaxed">Authenticate what’s real</span>
-                  </li>
-
-                  <li className="flex items-start gap-3">
-                    <span className="mt-2 w-2 h-2 rounded-full bg-purple-500 flex-shrink-0" />
-                    <span className="leading-relaxed">Control who sees what</span>
-                  </li>
-
-                  <li className="flex items-start gap-3">
-                    <span className="mt-2 w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0" />
-                    <span className="leading-relaxed">Capture value with permission</span>
-                  </li>
-                </ul>
-              </div>
 
               {/* CTAs */}
               <div className="mt-9 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
@@ -227,7 +203,9 @@ const HomeStaging = () => {
                   <div className="font-playfair font-bold text-lg text-foreground mb-2">
                     {m.title}
                   </div>
-                  <div className="text-sm text-foreground/90 leading-relaxed">{m.description}</div>
+                  <div className="text-sm text-foreground/90 leading-relaxed">
+                    {m.description}
+                  </div>
                 </div>
               ))}
             </div>
