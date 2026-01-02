@@ -22,17 +22,23 @@ const ProductModules = () => {
           </p>
 
           {/* Strategic pill statements */}
-          <div className="mt-8 flex flex-wrap justify-center gap-3 sm:gap-4">
-            <span className="px-4 py-2 rounded-full text-sm sm:text-base font-medium bg-card/70 border border-border/30 backdrop-blur-sm text-foreground">
-              Authenticate what’s real
-            </span>
-            <span className="px-4 py-2 rounded-full text-sm sm:text-base font-medium bg-card/70 border border-border/30 backdrop-blur-sm text-foreground">
-              Control who sees what
-            </span>
-            <span className="px-4 py-2 rounded-full text-sm sm:text-base font-medium bg-card/70 border border-border/30 backdrop-blur-sm text-foreground">
-              Capture value with permission
-            </span>
-          </div>
+<div className="mt-8 flex flex-wrap justify-center gap-3 sm:gap-4">
+  <span className="px-4 py-2 rounded-full text-sm sm:text-base font-medium bg-card/70 border border-border/30 backdrop-blur-sm text-foreground flex items-center gap-2">
+    <span className="w-2 h-2 rounded-full bg-blue-500 flex-shrink-0" />
+    <span>Authenticate what’s real</span>
+  </span>
+
+  <span className="px-4 py-2 rounded-full text-sm sm:text-base font-medium bg-card/70 border border-border/30 backdrop-blur-sm text-foreground flex items-center gap-2">
+    <span className="w-2 h-2 rounded-full bg-purple-500 flex-shrink-0" />
+    <span>Control who sees what</span>
+  </span>
+
+  <span className="px-4 py-2 rounded-full text-sm sm:text-base font-medium bg-card/70 border border-border/30 backdrop-blur-sm text-foreground flex items-center gap-2">
+    <span className="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0" />
+    <span>Capture value with permission</span>
+  </span>
+</div>
+
 
           {/* Engagement imagery */}
           <div className="mt-12 max-w-6xl mx-auto">
