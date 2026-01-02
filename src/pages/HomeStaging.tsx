@@ -99,7 +99,7 @@ const HomeStaging = () => {
 
               {/* Subhead */}
               <p className="mt-6 text-lg sm:text-xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
-                Powered by BEEEP*, our patented, data-centric, trust-first platform, we securely connect
+                Powered by BEEEP™*, our patented, data-centric, trust-first platform, we securely connect
                 physical and digital interactions at scale.
               </p>
 
