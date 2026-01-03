@@ -12,9 +12,9 @@ import {
   Fingerprint,
   Layers,
   Database,
-  ArrowRight,
   Lock,
   Radar,
+  ArrowRight,
 } from "lucide-react";
 
 const SecurityTech = () => {
@@ -190,16 +190,25 @@ const SecurityTech = () => {
                 </Link>
               </div>
 
-              <div className="mt-10 max-w-4xl mx-auto bg-card/70 border border-border/30 rounded-2xl p-5 sm:p-6 shadow-lg text-left">
-                <div className="text-sm uppercase tracking-wide text-foreground/70 mb-2">
-                  The core shift
+              {/* MODULE 1: THE CORE SHIFT (enhanced emphasis only within existing card pattern) */}
+              <div className="mt-10 max-w-4xl mx-auto bg-card/70 border border-border/40 ring-1 ring-blue-400/15 rounded-2xl p-5 sm:p-6 shadow-xl text-left">
+                <div className="flex items-center gap-2 border-l-2 border-blue-400/40 pl-3 mb-3">
+                  <ArrowRight className="w-4 h-4 text-blue-300" />
+                  <div className="text-sm uppercase tracking-wide text-foreground/80 font-semibold">
+                    The core shift
+                  </div>
                 </div>
-                <p className="text-foreground/90 leading-relaxed">
-                  Most engagement technologies assume trust and attempt to manage risk downstream. Our
-                  architecture inverts that model by engineering trust into the infrastructure, so
-                  engagement, data, and monetization are built on verified interactions rather than
-                  assumptions.
-                </p>
+
+                <div className="text-foreground/90 leading-[1.8]">
+                  <p className="text-foreground font-semibold">
+                    Most engagement technologies assume trust and attempt to manage risk downstream.
+                  </p>
+                  <p className="mt-2 text-foreground/90">
+                    Our architecture inverts that model by engineering trust into the infrastructure,
+                    so engagement, data, and monetization are built on verified interactions rather than
+                    assumptions.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -256,11 +265,19 @@ const SecurityTech = () => {
                 </p>
               </div>
 
-              <div className="bg-card/70 border border-border/30 rounded-2xl p-5 sm:p-6 shadow-lg">
-                <div className="text-foreground/90 leading-relaxed">
-                  <span className="font-semibold text-foreground">The result:</span>{" "}
-                  trusted engagement, plus privacy-first, permission-based data that compounds into
-                  measurable ROI and long-term brand value.
+              {/* MODULE 2: THE RESULT (enhanced emphasis only within existing card pattern) */}
+              <div className="bg-card/70 border border-border/40 ring-1 ring-purple-400/15 rounded-2xl p-5 sm:p-6 shadow-xl">
+                <div className="text-foreground/90 leading-[1.8]">
+                  <span className="inline-flex items-center rounded-full px-3 py-1 text-sm font-semibold bg-purple-500/10 text-purple-200 border border-purple-400/20">
+                    The result
+                  </span>
+                  <span className="ml-2 text-foreground font-semibold">
+                    trusted engagement,
+                  </span>{" "}
+                  <span className="text-foreground/90">
+                    plus privacy-first, permission-based data that compounds into measurable ROI and
+                    long-term brand value.
+                  </span>
                 </div>
               </div>
 
@@ -316,7 +333,6 @@ const SecurityTech = () => {
                     {idx < stackCards.length - 1 && (
                       <div className="mt-7 flex items-center gap-3 text-foreground/60">
                         <div className="h-px flex-1 bg-border/40" />
-                       
                         <div className="h-px flex-1 bg-border/40" />
                       </div>
                     )}
@@ -387,15 +403,24 @@ const SecurityTech = () => {
                 </div>
               </div>
 
-              <div className="mt-8 bg-card/70 border border-border/30 rounded-2xl p-5 sm:p-6 shadow-lg">
-                <div className="text-sm uppercase tracking-wide text-foreground/70 mb-2">
-                  The strategic advantage
+              {/* MODULE 3: THE STRATEGIC ADVANTAGE (enhanced emphasis only within existing card pattern) */}
+              <div className="mt-8 bg-card/70 border border-border/40 ring-1 ring-blue-400/15 rounded-2xl p-5 sm:p-6 shadow-xl">
+                <div className="flex items-center gap-2 border-l-2 border-purple-400/40 pl-3 mb-3">
+                  <ArrowRight className="w-4 h-4 text-purple-200" />
+                  <div className="text-sm uppercase tracking-wide text-foreground/80 font-semibold">
+                    The strategic advantage
+                  </div>
                 </div>
-                <p className="text-foreground/90 leading-relaxed">
-                  This is not a feature stack. It is infrastructure, engineered to make trust explicit,
-                  keep privacy as a design principle, and convert physical engagement into a durable
-                  digital asset.
-                </p>
+
+                <div className="text-foreground/90 leading-[1.8]">
+                  <p className="text-foreground font-semibold">
+                    This is not a feature stack. It is infrastructure.
+                  </p>
+                  <p className="mt-2 text-foreground/90">
+                    Engineered to make trust explicit, keep privacy as a design principle, and convert
+                    physical engagement into a durable digital asset.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
