@@ -39,7 +39,7 @@ const HomeStaging = () => {
     <div className="min-h-screen bg-background text-foreground font-inter overflow-x-hidden">
       {/* SEO / Schema */}
       <SEOHead
-        title="E9 Global — Home (Staging)"
+        title="E9 Global | Brand Protection and Secure Engagement"
         description="E9 Global unifies covert anti-counterfeit protection with secure, role-based engagement and permission-based intelligence."
         keywords={[
           "E9 Global",
