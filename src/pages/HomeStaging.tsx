@@ -51,15 +51,19 @@ const HomeStaging = () => {
           "customer engagement",
         ]}
         ogImage="/og-image.png"
+        // IMPORTANT: prevent Google from indexing the staging route.
+        // This assumes SEOHead forwards `robots` to: <meta name="robots" content="..." />
+        robots="noindex,nofollow"
       />
 
       <ProductSchema product="encryptorseal" />
       <ProductSchema product="beeep" />
       <VideoSchema />
+
+      {/* IMPORTANT: remove "Home (Staging)" breadcrumb signal */}
       <BreadcrumbSchema
         items={[
           { name: "Home", url: "https://www.e9global.com/" },
-          { name: "Home (Staging)", url: "https://www.e9global.com/home-staging" },
         ]}
       />
 
