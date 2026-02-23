@@ -103,7 +103,7 @@ const BeeepStagingPage = () => {
         notes: [
           "BEEEP™ Assets is designed for authenticated assets and high-trust markets where provenance continuity and stakeholder-specific workflows matter across long ownership horizons.",
           "For high-security assets, BEEEP™ Assets supports patented biometric authentication and patented AI-based visual and surface analysis, enabling non-invasive verification using inherent material characteristics—without introducing physical tags, markers, or codes.",
-          "BEEEP™ Collect also supports patented automated royalty payments, enabling programmable, auditable economics that align creators, collectors, and marketplaces across resale and stewardship cycles.",
+          "BEEEP™ Assets also supports patented automated royalty payments, enabling programmable, auditable economics that align creators, collectors, and marketplaces across resale and stewardship cycles.",
         ],
         securityTech: [
           "Patented Optropic GS1-Compatible QR Infrastructure",
