@@ -3,11 +3,7 @@ import Footer from "../components/Footer";
 import ProductModules from "../components/ProductModules";
 import ContactCTA from "../components/ContactCTA";
 import SEOHead from "../components/SEOHead";
-import {
-  ProductSchema,
-  VideoSchema,
-  BreadcrumbSchema,
-} from "../components/StructuredData";
+import { ProductSchema, VideoSchema, BreadcrumbSchema } from "../components/StructuredData";
 import { ShieldCheck, QrCode, Database, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -15,27 +11,26 @@ const HomeStaging = () => {
   const successMetrics = [
     {
       icon: ShieldCheck,
-      title: "Verified Trust Layer",
+      title: "Secure by Design",
       description:
-        "Covert authentication and secure validation that protect what’s real—across products, assets, and environments.",
+        "Covert authentication protects what’s real — across products, assets, and environments.",
     },
     {
       icon: QrCode,
-      title: "Role-Based Access via Secure QR",
-      description:
-        "One touchpoint can serve different stakeholders with permissioned experiences—without adding user friction.",
+      title: "Role-Based Access via Patented QR",
+      description: "One code. Multiple permissioned experiences. No added friction.",
     },
     {
       icon: Users,
       title: "Measurable Engagement Outcomes",
       description:
-        "Turn real-world touchpoints into interactive moments that drive education, loyalty, and conversion—by design.",
+        "Turn real-world access into measurable moments that drive education, loyalty, participation, and conversion.",
     },
     {
       icon: Database,
       title: "Opt-In First-Party Signals",
       description:
-        "Capture permission-based relationship signals that brands and operators own—built for compliance and durability.",
+        "Capture permission-based relationship signals that organizations own — built for compliance, durability, and long-term value.",
     },
   ];
 
@@ -44,7 +39,7 @@ const HomeStaging = () => {
       {/* SEO / Schema */}
       <SEOHead
         title="E9 Global | Brand Protection and Secure Engagement"
-        description="E9 Global unifies covert anti-counterfeit protection with secure, role-based engagement and permission-based intelligence."
+        description="E9 Global secures physical-to-digital engagement at scale by embedding authentication and permission-native governance into real-world access points."
         keywords={[
           "E9 Global",
           "EncryptorSeal",
@@ -52,7 +47,9 @@ const HomeStaging = () => {
           "product authentication",
           "brand protection",
           "secure QR",
-          "customer engagement",
+          "role-based access",
+          "permission-based engagement",
+          "first-party data",
         ]}
         ogImage="/og-image.png"
         // IMPORTANT: prevent Google from indexing the staging route.
@@ -92,26 +89,36 @@ const HomeStaging = () => {
                 </div>
               </div>
 
-              {/* Headline (retain 2-line layout for visual separation from subhead) */}
+              {/* Headline (retain 2-line layout for visual separation) */}
               <h1
                 className="mt-9 sm:mt-10 font-playfair font-bold text-4xl sm:text-5xl md:text-6xl tracking-tight"
                 style={{ lineHeight: "1.06" }}
               >
                 Securing Physical-to-Digital
-                <span className="block">Engagement at Scale.</span>
+                <span className="block">Engagement at Scale</span>
               </h1>
 
-              {/* Subhead */}
+              {/* Subhead (revised) */}
               <p className="mt-6 text-lg sm:text-xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
-                Powered by BEEEP™*, our patented, data-centric, trust-first platform, we securely connect
-                physical and digital interactions at scale.
+                Through BEEEP™, our secure physical-to-digital engagement platform, E9 Global embeds
+                authentication at the moment a product, asset, or environment is accessed — transforming
+                engagement into governed, permission-native intelligence.
               </p>
 
+              <div className="mt-6 max-w-4xl mx-auto">
+                <ul className="text-lg sm:text-xl text-foreground/90 leading-relaxed space-y-2 text-left sm:text-center">
+                  <li>Scan data begins only after the code itself is verified.</li>
+                  <li>Personal information is collected only with permission.</li>
+                  <li>Built-in governance keeps engagement secure and controlled as it grows.</li>
+                </ul>
+              </div>
+
               <p className="mt-6 text-lg sm:text-xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
-                *Brand Experience, Engagement, Encryption Platform
+                The result: trusted first-party data, reduced risk, and measurable intelligence across products,
+                assets, and communities at scale.
               </p>
 
-              {/* CTAs */}
+              {/* CTAs (unchanged) */}
               <div className="mt-9 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
                 <Link
                   to="/beeep"
@@ -138,44 +145,99 @@ const HomeStaging = () => {
         <section className="py-10 sm:py-12">
           <div className="container mx-auto px-4 sm:px-6">
             <div className="mx-auto max-w-5xl">
-              <div className="text-center mb-8">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold">
-                  Built for trusted engagement across the physical world.
-                </h2>
-              </div>
-
               <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                 <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-border/20">
                   <div className="font-playfair font-bold text-lg mb-2">Who We Are</div>
                   <p className="text-sm text-foreground/90 leading-relaxed">
-                    E9 Global is a data-centric MarTech company. We recast products, collectible assets
-                    and real-world places as secure, data-rich engagement channels—creating meaningful
-                    connections while generating actionable intelligence and new revenue opportunities.
-                  </p>
-                </div>
-
-                <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-border/20">
-                  <div className="font-playfair font-bold text-lg mb-2">Why E9 Global</div>
-                  <p className="text-sm text-foreground/90 leading-relaxed">
-                    Because trust and security are what make unified engagement across physical
-                    touchpoints possible.
+                    E9 Global secures physical-to-digital engagement in the real world.
+                    We embed authentication and governance directly into products, assets, and environments —
+                    turning everyday access points into trusted digital entry points.
                   </p>
                 </div>
 
                 <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-border/20">
                   <div className="font-playfair font-bold text-lg mb-2">How We Do It</div>
                   <p className="text-sm text-foreground/90 leading-relaxed">
-                    Through BEEEP™, our trust-first engagement platform embedded into apps and real-world
-                    touchpoints—enabling cohesive, consent-based audience intelligence and monetization
-                    at scale.
+                    Through BEEEP™, our secure authentication architecture, embedded directly into apps,
+                    products, and real-world touchpoints.
                   </p>
+
+                  <div className="mt-4 text-sm text-foreground/90 leading-relaxed">
+                    Each engagement is:
+                    <ul className="mt-2 space-y-1">
+                      <li>• Verified at the source</li>
+                      <li>• Governed by permission</li>
+                      <li>• Structured for clarity</li>
+                      <li>• Compiled into centralized intelligence</li>
+                    </ul>
+                  </div>
+
+                  <p className="mt-4 text-sm text-foreground/90 leading-relaxed">
+                    No overlays. No fragmented QR tools. Security and control built in from the start.
+                  </p>
+                </div>
+
+                <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-border/20">
+                  <div className="font-playfair font-bold text-lg mb-2">Why E9 Global</div>
+                  <p className="text-sm text-foreground/90 leading-relaxed">
+                    Because digital intelligence built on fragmented, unverified activity creates risk.
+                    E9 Global verifies the code, structures the data, and applies governance before information
+                    moves beyond the first moment of access.
+                  </p>
+
+                  <div className="mt-4 text-sm text-foreground/90 leading-relaxed">
+                    <ul className="space-y-1">
+                      <li>• Scan data is generated immediately.</li>
+                      <li>• Personal data is collected only with permission.</li>
+                      <li>• Trust is built in — not layered on later.</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Touchpoint section */}
+        {/* From Touchpoint to Trustpoint */}
+        <section className="py-10 sm:py-12">
+          <div className="container mx-auto px-4 sm:px-6">
+            <div className="mx-auto max-w-5xl">
+              <div className="text-center mb-8">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold">
+                  From Touchpoint to Trustpoint
+                </h2>
+                <p className="mt-4 text-lg text-foreground/90 leading-relaxed max-w-4xl mx-auto">
+                  BEEEP™ transforms real-world touchpoints into secure digital entry points — ensuring every
+                  scan begins with verification and every outcome is governed by permission.
+                </p>
+              </div>
+
+              <div className="max-w-4xl mx-auto">
+                <ul className="text-lg text-foreground/90 leading-relaxed space-y-2">
+                  <li>• Verify at the source</li>
+                  <li>• Control access with built-in permissions</li>
+                  <li>• Generate structured, secure verified data</li>
+                </ul>
+              </div>
+
+              <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5">
+                <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-border/20">
+                  <div className="font-playfair font-bold text-lg">Product & Retail Environments</div>
+                </div>
+
+                <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-border/20">
+                  <div className="font-playfair font-bold text-lg">High-Value Asset Markets</div>
+                </div>
+
+                <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-6 shadow-lg border border-border/20">
+                  <div className="font-playfair font-bold text-lg">Shared & Institutional Environments</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Touchpoint section (kept) */}
         <section>
           <ProductModules />
         </section>
@@ -186,11 +248,14 @@ const HomeStaging = () => {
           <div className="container mx-auto relative">
             <div className="text-center mb-10">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-playfair font-bold mb-4 gradient-text-investor">
-                Outcomes you can measure—built on trust.
+                Outcomes You Can Measure
               </h2>
               <p className="text-lg text-foreground/90 max-w-3xl mx-auto leading-relaxed">
-                E9 Global connects authentication, engagement, and permission-based intelligence so
-                organizations can prove what’s real—and monetize what’s trusted.
+                Built on Security
+              </p>
+              <p className="mt-4 text-lg text-foreground/90 max-w-3xl mx-auto leading-relaxed">
+                E9 Global connects verification, permission, and structured data — so organizations can prove
+                what’s real and act on what’s trusted.
               </p>
             </div>
 
@@ -216,7 +281,22 @@ const HomeStaging = () => {
           </div>
         </section>
 
-        {/* CTA */}
+        {/* Footer copy (text only) + existing booking flow preserved via ContactCTA */}
+        <section className="py-10 sm:py-12">
+          <div className="container mx-auto px-4 sm:px-6">
+            <div className="mx-auto max-w-5xl text-center">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold">
+                Let’s Build Secure Engagement — Together.
+              </h2>
+              <p className="mt-4 text-lg text-foreground/90 leading-relaxed max-w-3xl mx-auto">
+                Talk with our team about BEEEP™ — the secure platform that connects physical access points
+                to governed digital engagement at scale.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA (unchanged booking flow / routing stays inside this component) */}
         <section>
           <ContactCTA />
         </section>
