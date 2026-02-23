@@ -3,7 +3,11 @@ import Footer from "../components/Footer";
 import ProductModules from "../components/ProductModules";
 import ContactCTA from "../components/ContactCTA";
 import SEOHead from "../components/SEOHead";
-import { ProductSchema, VideoSchema, BreadcrumbSchema } from "../components/StructuredData";
+import {
+  ProductSchema,
+  VideoSchema,
+  BreadcrumbSchema,
+} from "../components/StructuredData";
 import { ShieldCheck, QrCode, Database, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -61,11 +65,7 @@ const HomeStaging = () => {
       <VideoSchema />
 
       {/* IMPORTANT: remove "Home (Staging)" breadcrumb signal */}
-      <BreadcrumbSchema
-        items={[
-          { name: "Home", url: "https://www.e9global.com/" },
-        ]}
-      />
+      <BreadcrumbSchema items={[{ name: "Home", url: "https://www.e9global.com/" }]} />
 
       <Header />
 
@@ -92,13 +92,13 @@ const HomeStaging = () => {
                 </div>
               </div>
 
-              {/* Headline */}
+              {/* Headline (retain 2-line layout for visual separation from subhead) */}
               <h1
                 className="mt-9 sm:mt-10 font-playfair font-bold text-4xl sm:text-5xl md:text-6xl tracking-tight"
                 style={{ lineHeight: "1.06" }}
               >
-                Authentication Meets
-                <span className="block">Unified Audience Engagement</span>
+                Securing Physical-to-Digital
+                <span className="block">Engagement at Scale.</span>
               </h1>
 
               {/* Subhead */}
