@@ -26,17 +26,17 @@ scan begins with verification and every outcome is governed by permission.
 <div className="mt-8 flex flex-wrap justify-center gap-3 sm:gap-4">
   <span className="px-4 py-2 rounded-full text-sm sm:text-base font-medium bg-card/70 border border-border/30 backdrop-blur-sm text-foreground flex items-center gap-2">
     <span className="w-2 h-2 rounded-full bg-blue-500 flex-shrink-0" />
-    <span>Authenticate what’s real</span>
+    <span>Verify at the source</span>
   </span>
 
   <span className="px-4 py-2 rounded-full text-sm sm:text-base font-medium bg-card/70 border border-border/30 backdrop-blur-sm text-foreground flex items-center gap-2">
     <span className="w-2 h-2 rounded-full bg-purple-500 flex-shrink-0" />
-    <span>Control who sees what</span>
+    <span>Control access with built-in permissions</span>
   </span>
 
   <span className="px-4 py-2 rounded-full text-sm sm:text-base font-medium bg-card/70 border border-border/30 backdrop-blur-sm text-foreground flex items-center gap-2">
     <span className="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0" />
-    <span>Capture value with permission</span>
+    <span>Generate structured, secure verified data</span>
   </span>
 </div>
 
@@ -51,7 +51,7 @@ scan begins with verification and every outcome is governed by permission.
                   className="w-full max-w-[280px] h-auto object-contain rounded-2xl shadow-2xl"
                 />
                 <div className="mt-4 text-base sm:text-lg text-foreground font-semibold">
-                  Customer Engagement
+                  Product & Retail Environments
                 </div>
               </div>
 
@@ -62,7 +62,7 @@ scan begins with verification and every outcome is governed by permission.
                   className="w-full max-w-[280px] h-auto object-contain rounded-2xl shadow-2xl"
                 />
                 <div className="mt-4 text-base sm:text-lg text-foreground font-semibold">
-                  Collector Engagement
+                  High-Value Asset Markets
                 </div>
               </div>
 
@@ -73,7 +73,7 @@ scan begins with verification and every outcome is governed by permission.
                   className="w-full max-w-[280px] h-auto object-contain rounded-2xl shadow-2xl"
                 />
                 <div className="mt-4 text-base sm:text-lg text-foreground font-semibold">
-                  Community Engagement
+                  Shared & Institutional Environments
                 </div>
               </div>
             </div>
