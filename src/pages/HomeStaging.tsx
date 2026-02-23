@@ -180,12 +180,7 @@ const HomeStaging = () => {
                 </div>
               </div>
 
-              <div className="text-center mt-10">
-                <p className="text-lg sm:text-xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
-                  BEEEP™ transforms real-world touchpoints into secure digital entry points — ensuring every scan
-                  begins with verification and every outcome is governed by permission.
-                </p>
-              </div>
+              
             </div>
           </div>
         </section>
