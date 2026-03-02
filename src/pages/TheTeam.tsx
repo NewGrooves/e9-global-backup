@@ -68,7 +68,7 @@ const TheTeam = () => {
       id: 9,
       name: "Jay Samit",
       role: "Strategic Advisor",
-      description: "World-renowned tech disruption expert; former Vice Chair of Deloitte Digital and bestselling author on scaling innovation and transformation.",
+      description: "Former Vice Chairman of Deloitte Digital and serial NASDAQ CEO. Helped scale pre-IPO juggernauts like LinkedIn and eBay, raising over $800M for tech startups across his career.",
       image: "/lovable-uploads/7bf43a82-3a12-463b-a36f-75d2c622b00c.png"
     },
     {
