@@ -190,7 +190,7 @@ const TheTeam = () => {
       role: "Legal Advisor",
       description:
         "Technology, privacy, and corporate law specialist.",
-      image: "/lovable-uploads/f61a6c14-d2a0-4c7b-4c9c-a1a3-b38a800a4132.png",
+            image: "/lovable-uploads/f61a6c14-d2a0-4c9c-a1a3-b38a800a4132.png",
     },
   ];
 
