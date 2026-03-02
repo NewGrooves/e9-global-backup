@@ -132,7 +132,7 @@ const TheTeam = () => {
       role: "EdTech Partner (BEEEP Metro SPV)",
       description:
         "CEO of ExoDexa and former President of Two Bit Circus Foundation. Leah leverages deep expertise in gamified education and organizational leadership to scale BEEEP Metro's immersive learning and EdTech initiatives.",
-       image: "/lovable-uploads/Leah Profile Pic.png,
+       image: "/lovable-uploads/Leah Profile Pic.png",
     },
     {
       id: 12,
