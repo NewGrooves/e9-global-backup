@@ -98,7 +98,7 @@ const HomeStaging = () => {
               <p className="mt-6 text-lg sm:text-xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
                 Through BEEEP, our secure physical-to-digital engagement platform, E9 Global embeds
                 authentication at the moment a product, asset, or environment is accessed — transforming
-                engagement into governed, permission-native intelligence.
+                engagement into governed, permission-native, monetizable behavioral intelligence.
               </p>
 
               <div className="mt-9 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
