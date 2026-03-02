@@ -47,7 +47,7 @@ const TheTeam = () => {
       id: 6,
       name: "Cary Quinn",
       role: "Director of Encryption & Security",
-      description: "Security innovator engineering discreet, production-ready anti-counterfeiting and authentication technologies that withstand AI fraud, post-quantum threats, and real-world scale.",
+      description: "15+ years architecting digital and optical security systems. Key patent inventor exclusively invited to brief the U.S. Federal Reserve Board on counterfeit deterrence.",
       image: "/lovable-uploads/Cary Quinn headshot.png"
     },
     {
