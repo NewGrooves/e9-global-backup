@@ -33,7 +33,7 @@ const TheTeam = () => {
       id: 4,
       name: "Sean Entin",
       role: "Founder, Chief Relationship Officer",
-      description: "Serial entrepreneur and stroke survivor; builds high-impact partnerships across health, consumer goods, and government with authenticity, purpose, and trust.",
+      description: "Serial entrepreneur brokering high-impact deals, including a partnership with Shaquille O'Neal and the development of LA Center Studios. Leverages an elite global network to drive E9's commercial expansion.",
       image: "/lovable-uploads/ecb962ef-790d-478f-8f31-f05c061f3596.png"
     },
     {
