@@ -156,7 +156,7 @@ const TheTeam = () => {
       role: "Strategic Advisor (BEEEP Assets SPV)",
       description:
         "Elite combat sports coach who has trained a \"Who's Who\" of UFC Hall of Famers. Provides direct, high-trust access to the global sports and performance vertical.",
-      // image intentionally omitted (placeholder renders)
+      image: "/lovable-uploads/Kenny.png",
     },
     {
       id: 15,
