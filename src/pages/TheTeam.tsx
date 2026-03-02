@@ -140,7 +140,7 @@ const TheTeam = () => {
       role: "Strategic Advisor (BEEEP Assets SPV)",
       description:
         "Goldman Sachs alum and former Regional Managing Director at Christie's (NY/London). Brings 20+ years of elite institutional expertise navigating global art, auction, and high-value collectibles markets.",
-      image: "/lovable-uploads/Rachel.jpg",
+      image: "/lovable-uploads/Rachel profile pic.png",
     },
     {
       id: 13,
@@ -148,7 +148,7 @@ const TheTeam = () => {
       role: "Strategic Advisor (BEEEP Assets SPV)",
       description:
         "Holds the prestigious Master of Wine credential (one of <60 in the U.S.). Former Global Head of Wine Retail for Sotheby's, bringing unparalleled institutional expertise in high-stakes luxury auctions.",
-      // image intentionally omitted (placeholder renders)
+      image: "/lovable-uploads/Vanessa profile pic.png",
     },
     {
       id: 14,
