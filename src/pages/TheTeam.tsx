@@ -25,8 +25,8 @@ const TheTeam = () => {
     {
       id: 3,
       name: "Ron Seigel",
-      role: "Founder, Chief Alignment Officer",
-      description: "Seasoned operator and brand strategist; aligns culture, execution, and growth to scale mission-driven ventures with integrity and clarity.",
+      role: "Founder, Chief Marketing Officer",
+      description: "Ensures E9’s enterprise partnerships scale seamlessly. Brings decades of high-stakes commercial and luxury real estate marketing strategy, along side architecting corporate coaching and high-trust leadership training programs through UC Berkeley and USF.",
       image: "/lovable-uploads/97f8652a-35f5-46fe-9c8d-c33fa9d3cbc8.png"
     },
     {
