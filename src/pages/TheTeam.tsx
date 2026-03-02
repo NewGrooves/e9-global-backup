@@ -140,7 +140,7 @@ const TheTeam = () => {
       role: "Strategic Advisor (BEEEP Assets SPV)",
       description:
         "Goldman Sachs alum and former Regional Managing Director at Christie's (NY/London). Brings 20+ years of elite institutional expertise navigating global art, auction, and high-value collectibles markets.",
-      // image intentionally omitted (placeholder renders)
+      image: "/lovable-uploads/Rachel.jpg",
     },
     {
       id: 13,
