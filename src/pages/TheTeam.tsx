@@ -19,7 +19,7 @@ const TheTeam = () => {
       id: 2,
       name: "Sam Morris",
       role: "Founder, CEO",
-      description: "A "philosopher builder" driving E9's enterprise strategy, Sam aligns structural integrity with high-growth execution. He leverages over a decade of executive optimization and the global METAL network to scale resilient organizations.",
+      description: "A philosopher builder driving E9's enterprise strategy, Sam aligns structural integrity with high-growth execution. He leverages over a decade of executive optimization and the global METAL network to scale resilient organizations.",
       image: "/lovable-uploads/0e5167c5-8708-4988-be25-7382d458fbb3.png"
     },
     {
