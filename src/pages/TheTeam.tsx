@@ -54,7 +54,7 @@ const TheTeam = () => {
       id: 7,
       name: "Michael Buck",
       role: "Strategic Technology Partner",
-      description: "Former Dell global marketing executive; digital transformation leader and architect of the BEEEP platform and Optropic QR technology.",
+      description: "Former Executive Director at Dell and 10-year veteran at Hewlett-Packard. Lead architect of E9’s BEEEP platform and patented Optropic™ infrastructure, bridging physical security with enterprise data.",
       image: "/lovable-uploads/M Buck Profile pic.png"
     },
     {
