@@ -114,7 +114,7 @@ const TheTeam = () => {
       role: "EdTech Partner (BEEEP Metro SPV)",
       description:
         "Tech visionary and founder of Atari. Nolan leverages decades of pioneering interactive entertainment and gamified learning to aggressively drive our educational technology expansion.",
-      // image intentionally omitted (placeholder renders)
+      image: "/lovable-uploads/Nolan-bushnell.jpg",
       linkedin: "https://www.linkedin.com/in/nolanbushnell/",
     },
     {
