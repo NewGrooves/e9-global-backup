@@ -12,7 +12,7 @@ const TheTeam = () => {
       id: 1,
       name: "Dean Eaker",
       role: "Founder, Chairman, CSO",
-      description: "A serial entrepreneur who has built and exited multiple ventures, pioneering value creation in media publishing, digital platforms, and data monetization.",
+      description: "Serial entrepreneur with multiple exits, including the PC 411 IPO and the E3 trade show. Architected a 200M-record database monetized via LexisNexis, bringing deep expertise in commercializing patented anti-counterfeiting hardware.",
       image: "/lovable-uploads/508a01e0-2e33-4475-8618-cc2c328f5b91.png"
     },
     {
