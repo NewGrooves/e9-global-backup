@@ -40,7 +40,7 @@ const TheTeam = () => {
       id: 5,
       name: "Shawn Dreben",
       role: "Founder, SVP of Sales",
-      description: "20+ years leading high-performance sales in wellness and fitness; built category-defining go-to-market strategies for drug-free recovery and performance solutions.",
+      description: "With 20+ years driving revenue in health and wellness, Shawn leverages deep domain expertise and high-trust networks to capture E9’s combined $60M healthcare and sports enterprise targets.",
       image: "/lovable-uploads/a909c828-929f-40f7-a78d-2b1d35c7d3c6.png"
     },
     {
