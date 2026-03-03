@@ -66,32 +66,27 @@ const HomeStaging = () => {
       <Header />
 
       <main className="pt-24">
-  {/* HERO */}
-  <section className="relative overflow-hidden">
-    <div className="absolute inset-0 -z-10">
-      <div className="absolute -top-24 left-1/2 h-[460px] w-[460px] -translate-x-1/2 rounded-full bg-blue-500/10 blur-3xl" />
-      <div className="absolute -bottom-24 left-1/4 h-[460px] w-[460px] rounded-full bg-purple-500/10 blur-3xl" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_10%,rgba(255,255,255,0.06),transparent_55%)]" />
-    </div>
-
-    <div className="container mx-auto px-4 sm:px-6">
-      <div className="mx-auto max-w-5xl py-8 sm:py-11 lg:py-14 text-center">
-        <div className="flex justify-center">
-          {/* Reduced widths to 25% of original size */}
-          <div className="w-full max-w-[195px] sm:max-w-[240px] md:max-w-[275px]">
-            <img
-              src="/lovable-uploads/E9G logo White -Transparent.png"
-              alt="E9 Global"
-              className="w-full h-auto object-contain"
-              loading="eager"
-            />
+        {/* HERO */}
+        <section className="relative overflow-hidden">
+          <div className="absolute inset-0 -z-10">
+            <div className="absolute -top-24 left-1/2 h-[460px] w-[460px] -translate-x-1/2 rounded-full bg-blue-500/10 blur-3xl" />
+            <div className="absolute -bottom-24 left-1/4 h-[460px] w-[460px] rounded-full bg-purple-500/10 blur-3xl" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_10%,rgba(255,255,255,0.06),transparent_55%)]" />
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  {/* The rest of your page content follows below... */}
-</main>
+
+          <div className="container mx-auto px-4 sm:px-6">
+            <div className="mx-auto max-w-5xl py-8 sm:py-11 lg:py-14 text-center">
+              <div className="flex justify-center">
+                {/* Logo resized to 25% of original (75% reduction) */}
+                <div className="w-full max-w-[195px] sm:max-w-[240px] md:max-w-[275px]">
+                  <img
+                    src="/lovable-uploads/E9G logo White -Transparent.png"
+                    alt="E9 Global"
+                    className="w-full h-auto object-contain"
+                    loading="eager"
+                  />
+                </div>
+              </div>
 
               <h1
                 className="mt-9 sm:mt-10 font-playfair font-bold text-4xl sm:text-5xl md:text-6xl tracking-tight"
@@ -138,7 +133,7 @@ const HomeStaging = () => {
                   <div className="font-playfair font-bold text-lg mb-2">Who We Are</div>
                   <p className="text-sm text-foreground/90 leading-relaxed">
                     E9 Global secures physical-to-digital engagement in the real world.
-                    <br />
+                    <br /><br />
                     We embed authentication and governance directly into products, assets, and environments —
                     turning everyday access points into trusted digital entry points.
                   </p>
@@ -150,11 +145,11 @@ const HomeStaging = () => {
                     Because digital intelligence built on fragmented, unverified activity creates risk.
                     E9 Global verifies the code, structures the data, and applies governance before
                     information moves beyond the first moment of access.
-                    <br /><br />
+                    <br /><br /><br />
                     Scan data is generated immediately.
-                    <br />
+                    <br /><br />
                     Personal data is collected only with permission.
-                    <br />
+                    <br /><br />
                     Trust is built in — not layered on later.
                   </p>
                 </div>
@@ -177,16 +172,14 @@ const HomeStaging = () => {
 
                     <p className="mt-4">
                       No overlays.
-                      <br />
+                      <br /><br />
                       No fragmented QR tools.
-                      <br />
+                      <br /><br />
                       Security and control built in from the start.
                     </p>
                   </div>
                 </div>
               </div>
-
-              
             </div>
           </div>
         </section>
@@ -231,7 +224,6 @@ const HomeStaging = () => {
           </div>
         </section>
 
-        {/* Original CTA preserved */}
         <section>
           <ContactCTA />
         </section>
