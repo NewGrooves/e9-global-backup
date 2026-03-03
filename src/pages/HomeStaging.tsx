@@ -66,25 +66,32 @@ const HomeStaging = () => {
       <Header />
 
       <main className="pt-24">
-        {/* HERO */}
-        <section className="relative overflow-hidden">
-          <div className="absolute inset-0 -z-10">
-            <div className="absolute -top-24 left-1/2 h-[460px] w-[460px] -translate-x-1/2 rounded-full bg-blue-500/10 blur-3xl" />
-            <div className="absolute -bottom-24 left-1/4 h-[460px] w-[460px] rounded-full bg-purple-500/10 blur-3xl" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_10%,rgba(255,255,255,0.06),transparent_55%)]" />
-          </div>
+  {/* HERO */}
+  <section className="relative overflow-hidden">
+    <div className="absolute inset-0 -z-10">
+      <div className="absolute -top-24 left-1/2 h-[460px] w-[460px] -translate-x-1/2 rounded-full bg-blue-500/10 blur-3xl" />
+      <div className="absolute -bottom-24 left-1/4 h-[460px] w-[460px] rounded-full bg-purple-500/10 blur-3xl" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_10%,rgba(255,255,255,0.06),transparent_55%)]" />
+    </div>
 
-          <div className="flex justify-center">
-  {/* Each max-width has been reduced to 25% of its original value */}
-  <div className="w-full max-w-[195px] sm:max-w-[240px] md:max-w-[275px]">
-    <img
-      src="/lovable-uploads/E9G logo White -Transparent.png"
-      alt="E9 Global"
-      className="w-full h-auto object-contain"
-      loading="eager"
-    />
-  </div>
-</div>
+    <div className="container mx-auto px-4 sm:px-6">
+      <div className="mx-auto max-w-5xl py-8 sm:py-11 lg:py-14 text-center">
+        <div className="flex justify-center">
+          {/* Reduced widths to 25% of original size */}
+          <div className="w-full max-w-[195px] sm:max-w-[240px] md:max-w-[275px]">
+            <img
+              src="/lovable-uploads/E9G logo White -Transparent.png"
+              alt="E9 Global"
+              className="w-full h-auto object-contain"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {/* The rest of your page content follows below... */}
+</main>
 
               <h1
                 className="mt-9 sm:mt-10 font-playfair font-bold text-4xl sm:text-5xl md:text-6xl tracking-tight"
