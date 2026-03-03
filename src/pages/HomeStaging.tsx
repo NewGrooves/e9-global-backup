@@ -79,7 +79,7 @@ const HomeStaging = () => {
               <div className="flex justify-center">
                 <div className="w-full max-w-[780px] sm:max-w-[960px] md:max-w-[1100px]">
                   <img
-                    src="/lovable-uploads/E9 Global Website Heading Logo.png"
+                    src="/lovable-uploads/E9G logo White -Transparent.png"
                     alt="E9 Global"
                     className="w-full h-auto object-contain"
                     loading="eager"
