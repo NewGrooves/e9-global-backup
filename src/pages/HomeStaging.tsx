@@ -97,7 +97,7 @@ const HomeStaging = () => {
               </h1>
 
               <p className="mt-6 text-xl sm:text-2xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
-               We transform standard, unintelligent QR codes into a company’s most valuable asset for marketing and secure data intelligence.
+               We transform standard, unintelligent QR codes into a company’s most valuable asset for marketing and secure, monetizable data intelligence.
               </p>
 
               <div className="mt-9 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
