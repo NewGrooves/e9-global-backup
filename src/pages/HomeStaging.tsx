@@ -89,14 +89,14 @@ const HomeStaging = () => {
               </div>
 
               <h1
-                className="mt-9 sm:mt-10 font-playfair font-bold text-4xl sm:text-5xl md:text-6xl tracking-tight"
+                className="mt-9 sm:mt-10 font-playfair font-bold text-3xl sm:text-4xl md:text-5xl tracking-tight"
                 style={{ lineHeight: "1.06" }}
               >
                 Securing Physical-to-Digital
                 <span className="block">Engagement at Scale</span>
               </h1>
 
-              <p className="mt-6 text-lg sm:text-xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
+              <p className="mt-6 text-xl sm:text-2xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
                We transform standard, unintelligent QR codes into a company’s most valuable asset for marketing and secure data intelligence.
               </p>
 
