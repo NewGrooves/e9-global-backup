@@ -77,8 +77,8 @@ const HomeStaging = () => {
           <div className="container mx-auto px-4 sm:px-6">
             <div className="mx-auto max-w-5xl py-8 sm:py-11 lg:py-14 text-center">
               <div className="flex justify-center">
-                {/* Logo resized to 25% of original (75% reduction) */}
-                <div className="w-full max-w-[195px] sm:max-w-[240px] md:max-w-[275px]">
+                {/* Logo resized by another 10% reduction */}
+                <div className="w-full max-w-[176px] sm:max-w-[216px] md:max-w-[248px]">
                   <img
                     src="/lovable-uploads/E9G logo White -Transparent.png"
                     alt="E9 Global"
