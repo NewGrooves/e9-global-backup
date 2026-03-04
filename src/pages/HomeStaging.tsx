@@ -146,7 +146,7 @@ const HomeStaging = () => {
                     <br /><br /><br />
                     Scan data is generated immediately.
                     <br /><br />
-                    Personal data is collected only with permission.
+                    Behavioral data is collected only with permission.
                     <br /><br />
                     Trust is built in — not layered on later.
                   </p>
