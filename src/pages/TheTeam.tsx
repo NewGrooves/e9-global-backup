@@ -128,7 +128,7 @@ const TheTeam = () => {
     },
     {
       id: 11,
-      name: "Leah Hanes",
+      name: "Leah Hanes, Ph.D.",
       role: "EdTech Partner (BEEEP Metro SPV)",
       description:
         "CEO of ExoDexa and former President of Two Bit Circus Foundation. Leah leverages deep expertise in gamified education and organizational leadership to scale BEEEP Metro's immersive learning and EdTech initiatives.",
