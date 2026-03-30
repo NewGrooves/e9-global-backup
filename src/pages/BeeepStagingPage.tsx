@@ -144,7 +144,7 @@ const BeeepStagingPage = () => {
           "Captures real-time behavioral data across the full event lifecycle",
         ],
         notes: [
-          "BEEEP™ Live converts physical event environments into programmable engagement surfaces, allowing fans to interact with content, commerce, and experiences directly from their surroundings in real time.",
+          "BEEEP™ Live! converts physical event environments into programmable engagement surfaces, allowing fans to interact with content, commerce, and experiences directly from their surroundings in real time.",
           "Artists, venues, and sponsors are connected through a shared engagement layer, enabling direct fan interaction, measurable participation, and coordinated value creation across every event.",
           "Each interaction generates verified behavioral signals—capturing when, where, and how fans engage—unlocking new revenue streams and actionable intelligence without disrupting the live experience.",
         ],
