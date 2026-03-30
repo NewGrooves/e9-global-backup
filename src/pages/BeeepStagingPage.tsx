@@ -306,7 +306,7 @@ const BeeepStagingPage = () => {
               Multiple contexts. One infrastructure layer.
             </h2>
             <p className="text-lg text-foreground/90 max-w-3xl mx-auto leading-relaxed">
-              BEEEP™ adapts to brands, assets, and communities while preserving
+              BEEEP™ adapts to brands, assets communities and live events while preserving
               governance, permissions, and role-specific delivery.
             </p>
           </div>
