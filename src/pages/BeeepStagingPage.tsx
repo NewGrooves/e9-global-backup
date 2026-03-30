@@ -134,7 +134,7 @@ const BeeepStagingPage = () => {
         ],
       },
       {
-        title: "BEEEP™ Live",
+        title: "BEEEP™ Live!",
         subtitle:
           "Real-time engagement and monetization layer for live entertainment environments.",
         icon: Music,
