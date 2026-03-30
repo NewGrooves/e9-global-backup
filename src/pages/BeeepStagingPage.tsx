@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ContactCTA from "../components/ContactCTA";
-import { Building2, Gem, Users, ArrowRight } from "lucide-react";
+import { Building2, Gem, Users, Music } from "lucide-react";
 
 const BeeepStagingPage = () => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
@@ -131,6 +131,27 @@ const BeeepStagingPage = () => {
         securityTech: [
           "Patented Optropic GS1-Compatible QR Infrastructure",
           "High-Assurance Biometric Identity & Authorization",
+        ],
+      },
+      {
+        title: "BEEEP™ Live",
+        subtitle:
+          "Real-time engagement and monetization layer for live entertainment environments.",
+        icon: Music,
+        highlights: [
+          "Transforms concerts and events into interactive engagement surfaces",
+          "Enables frictionless commerce, auctions, and premium fan experiences",
+          "Captures real-time behavioral data across the full event lifecycle",
+        ],
+        notes: [
+          "BEEEP™ Live converts physical event environments into programmable engagement surfaces, allowing fans to interact with content, commerce, and experiences directly from their surroundings in real time.",
+          "Artists, venues, and sponsors are connected through a shared engagement layer, enabling direct fan interaction, measurable participation, and coordinated value creation across every event.",
+          "Each interaction generates verified behavioral signals—capturing when, where, and how fans engage—unlocking new revenue streams and actionable intelligence without disrupting the live experience.",
+        ],
+        securityTech: [
+          "Patented Optropic GS1-Compatible QR Infrastructure",
+          "Secure, Role-Based Experience Delivery",
+          "Real-Time Engagement Tracking & Behavioral Analytics",
         ],
       },
     ],
@@ -377,7 +398,6 @@ const BeeepStagingPage = () => {
                   {idx < deploymentStackCards.length - 1 && (
                     <div className="mt-7 flex items-center gap-3 text-foreground/60">
                       <div className="h-px flex-1 bg-border/40" />
-                     
                       <div className="h-px flex-1 bg-border/40" />
                     </div>
                   )}
