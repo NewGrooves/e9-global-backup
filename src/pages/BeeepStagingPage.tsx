@@ -134,7 +134,7 @@ const BeeepStagingPage = () => {
         ],
       },
       {
-        title: "BEEEP™ Live!",
+        title: "BEEEP™ Live",
         subtitle:
           "Real-time engagement and monetization layer for live entertainment environments.",
         icon: Music,
@@ -144,7 +144,7 @@ const BeeepStagingPage = () => {
           "Captures real-time behavioral data across the full event lifecycle",
         ],
         notes: [
-          "BEEEP™ Live! converts physical event environments into programmable engagement surfaces, allowing fans to interact with content, commerce, and experiences directly from their surroundings in real time.",
+          "BEEEP™ Live converts physical event environments into programmable engagement surfaces, allowing fans to interact with content, commerce, and experiences directly from their surroundings in real time.",
           "Artists, venues, and sponsors are connected through a shared engagement layer, enabling direct fan interaction, measurable participation, and coordinated value creation across every event.",
           "Each interaction generates verified behavioral signals—capturing when, where, and how fans engage—unlocking new revenue streams and actionable intelligence without disrupting the live experience.",
         ],
@@ -306,7 +306,7 @@ const BeeepStagingPage = () => {
               Multiple contexts. One infrastructure layer.
             </h2>
             <p className="text-lg text-foreground/90 max-w-3xl mx-auto leading-relaxed">
-              BEEEP™ adapts to brands, assets communities and live events while preserving
+              BEEEP™ adapts to brands, assets, and communities while preserving
               governance, permissions, and role-specific delivery.
             </p>
           </div>
@@ -405,6 +405,16 @@ const BeeepStagingPage = () => {
               );
             })}
           </div>
+
+          {/* Cosmic Data Image */}
+          <div className="flex justify-center mt-12">
+            <img
+              src="/lovable-uploads/BEEEP Cosmic Data.png"
+              alt="BEEEP Cosmic Data"
+              className="w-full max-w-4xl object-contain"
+            />
+          </div>
+
         </div>
       </section>
 
