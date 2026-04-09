@@ -10,7 +10,7 @@ const ContactCTA = () => {
             className="text-3xl sm:text-4xl md:text-5xl font-playfair font-bold mb-6 gradient-text-investor"
             style={{ lineHeight: "1.2" }}
           >
-            Let’s Build Trusted Engagement — Together.
+            Don't Let Trust End at the Hammer.
           </h2>
 
           <p className="text-xl text-secondary-foreground/90 mb-8 leading-relaxed max-w-5xl mx-auto">
