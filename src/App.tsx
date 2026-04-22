@@ -57,9 +57,10 @@ const App = () => {
                 {/* Team */}
                 <Route path="/the-team" element={<TheTeam />} />
 
-                {/* BEEEP Platform */}
-                <Route path="/beeep" element={<BeeepStagingPage />} />
-                <Route path="/beeep-staging" element={<BeeepStagingPage />} />
+                {/* E9 Engagement Platform */}
+                <Route path="/platform" element={<BeeepStagingPage />} />
+                <Route path="/beeep" element={<Navigate to="/platform" replace />} />
+                <Route path="/beeep-staging" element={<Navigate to="/platform" replace />} />
 
                 {/* Security Tech (canonical) */}
                 <Route path="/security-tech" element={<SecurityTech />} />
@@ -90,3 +91,4 @@ const App = () => {
 };
 
 export default App;
+
