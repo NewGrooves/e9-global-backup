@@ -7,8 +7,8 @@ type TeamMember = {
   name: string;
   role: string;
   description: string;
-  image?: string;     // optional: if omitted, we render initials placeholder
-  linkedin?: string;  // optional: used for a small link under the bio
+  image?: string;
+  linkedin?: string;
 };
 
 const getInitials = (name: string) => {
@@ -23,12 +23,6 @@ const TheTeam = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  /**
-   * ORDER MIRRORS PITCH DECK:
-   * 1) Core Team slide (Dean ‚Üí Sam ‚Üí Ron ‚Üí Sean ‚Üí Shawn ‚Üí Michael)
-   * 2) Tactical Partners slide (Cary ‚Üí Jay ‚Üí Nolan ‚Üí Ephraim ‚Üí Leah ‚Üí Rachel ‚Üí Vanessa ‚Üí Kenny ‚Üí Juanita)
-   * 3) Additional Strategic Advisors (Isaac ‚Üí John ‚Üí Mark)
-   */
   const teamMembers: TeamMember[] = [
     {
       id: 1,
@@ -44,7 +38,7 @@ const TheTeam = () => {
       name: "Michael Buck",
       role: "Strategic Technology Partner",
       description:
-        "Former Executive Director at Dell and 10-year veteran at Hewlett-Packard. Lead architect of E9's Engagement Platform and patented Optropic‚Ñ¢ infrastructure, bridging physical security with enterprise data.",
+        "Former Executive Director at Dell and 10-year veteran at Hewlett-Packard. Lead architect of E9's Engagement Platform and patented Optropic(TM) infrastructure, bridging physical security with enterprise data.",
       image: "/lovable-uploads/M%20Buck%20Profile%20pic.png",
       linkedin: "https://www.linkedin.com/in/mgbuck/",
     },
@@ -104,7 +98,6 @@ const TheTeam = () => {
 
       {/* Team Section */}
       <section className="py-20 px-3 sm:px-8 lg:px-6 bg-card/30 relative overflow-hidden">
-        {/* Background decoration */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_40%_20%,rgba(59,130,246,0.05),transparent_70%)]"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_60%_80%,rgba(147,51,234,0.05),transparent_70%)]"></div>
 
@@ -116,7 +109,6 @@ const TheTeam = () => {
                 className="bg-card/80 backdrop-blur-sm rounded-3xl p-8 text-center shadow-lg border border-border/20 overflow-hidden relative"
               >
                 <div className="relative z-10">
-                  {/* Profile Image OR Placeholder */}
                   <div className="w-40 h-48 mx-auto mb-6 rounded-2xl overflow-hidden shadow-lg flex items-center justify-center bg-gradient-to-br from-primary/20 to-secondary/20 border border-border/30">
                     {member.image ? (
                       <img
@@ -136,33 +128,29 @@ const TheTeam = () => {
                     )}
                   </div>
 
-                  {/* Name */}
                   <h3 className="text-2xl font-playfair font-bold mb-3 text-foreground">
                     {member.name}
                   </h3>
 
-                  {/* Role */}
                   <div className="mb-4">
                     <span className="inline-block bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
                       {member.role}
                     </span>
                   </div>
 
-                  {/* Description */}
                   <p className="text-foreground/80 text-sm leading-relaxed">
                     {member.description}
                   </p>
 
-                  {/* Optional LinkedIn */}
                   {member.linkedin ? (
                     <div className="mt-4">
-                      <a
+                      
                         href={member.linkedin}
                         target="_blank"
                         rel="noreferrer"
                         className="text-sm font-semibold text-primary hover:underline"
                       >
-                        LinkedIn ‚Üí
+                        LinkedIn ->
                       </a>
                     </div>
                   ) : null}
