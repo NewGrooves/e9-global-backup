@@ -127,9 +127,7 @@ const BeeepStagingPage = () => {
 
               <div className="space-y-5 text-lg text-foreground leading-relaxed">
                 <p className="text-xl sm:text-2xl font-semibold text-foreground">
-                  The E9 Global Engagement Platform is a patented, trust-first engagement platform that
-                  integrates directly into existing apps and real-world
-                  touchpoints.
+                  The E9 Engagement Platform is patented, trust-first, and integrates directly into existing apps and real-world touchpoints."
                 </p>
 
                 <p className="text-foreground/90">
