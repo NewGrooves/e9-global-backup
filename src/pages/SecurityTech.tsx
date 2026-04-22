@@ -35,7 +35,7 @@ const SecurityTech = () => {
     },
     {
       role: "PHYSICAL AUTHENTICITY",
-      title: "EncryptorSeal™: Covert Smartphone-Verified Anti-Counterfeit Protection",
+      title: "EncryptorSeal‚Ñ¢: Covert Smartphone-Verified Anti-Counterfeit Protection",
       icon: ShieldCheck,
       highlights: [
         "Invisible authentication embedded into packaging varnish or laser-engraved into products",
@@ -45,7 +45,7 @@ const SecurityTech = () => {
       body: [
         "Where authenticity matters, covert protection enables trusted verification without altering the customer experience or operational workflows.",
         "Every scan can become actionable intelligence, revealing legitimate interaction and counterfeit activity in real time.",
-        "Combined with our patented Optropic QR infrastructure, EncryptorSeal™ forms an unparalleled system for brand protection and gray market detection, building on technology long used to secure U.S. government documents.",
+        "Combined with our patented Optropic QR infrastructure, EncryptorSeal‚Ñ¢ forms an unparalleled system for brand protection and gray market detection, building on technology long used to secure U.S. government documents.",
       ],
     },
     {
@@ -74,20 +74,6 @@ const SecurityTech = () => {
       body: [
         "When the stakes are high, identity must be provable. This patented layer helps confirm a real person is present without relying on passwords, tokens, or easily spoofed credentials.",
         "It can support anonymous or minimal-data verification scenarios where appropriate, while still delivering high assurance.",
-      ],
-    },
-    {
-      role: "BLOCKCHAIN LIFECYCLE TRUST (OPTIONAL)",
-      title: "Immutable Ownership, Provenance, and Resale Integrity",
-      icon: Layers,
-      highlights: [
-        "Persistent digital identity for physical assets anchored to a tamper-resistant ledger",
-        "Origination, ownership, transfers, and resale events recorded across the full lifecycle",
-        "Optional automated royalty payments for lifecycle-aligned economics",
-      ],
-      body: [
-        "Engagement does not end at the first scan or first sale. For assets that change hands, trust must persist beyond platforms, marketplaces, and apps.",
-        "This patented layer creates a durable source of truth for provenance and ownership continuity, reducing fraud and increasing confidence across secondary markets.",
       ],
     },
   ];
@@ -123,7 +109,7 @@ const SecurityTech = () => {
   return (
     <div className="min-h-screen bg-background text-foreground font-inter overflow-x-hidden">
       <SEOHead
-        title="E9 Global — Security Tech"
+        title="E9 Global ‚Äî Security Tech"
         description="A layered trust architecture that establishes trust at the point of interaction, governs access, protects privacy, and turns verified engagement into permission-based first-party data."
         keywords={[
           "E9 Global",
@@ -182,7 +168,7 @@ const SecurityTech = () => {
                 </Link>
 
                 <Link
-                  to="/beeep"
+                  to="/platform"
                   className="inline-flex w-full sm:w-auto items-center justify-center rounded-2xl px-7 py-3.5 text-base font-semibold
                              bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg hover:opacity-95 transition"
                 >
@@ -259,7 +245,7 @@ const SecurityTech = () => {
                   Layered trust architecture
                 </h2>
                 <p className="text-lg text-foreground/90 max-w-3xl mx-auto leading-relaxed">
-                  Each layer answers a specific trust question. You don’t need every layer for every
+                  Each layer answers a specific trust question. You don‚Äôt need every layer for every
                   deployment. Each can stand alone or combine with others based on risk, regulation, and
                   use case.
                 </p>
@@ -435,3 +421,4 @@ const SecurityTech = () => {
 };
 
 export default SecurityTech;
+
