@@ -14,7 +14,7 @@ const ContactCTA = () => {
           </h2>
 
           <p className="text-xl text-secondary-foreground/90 mb-8 leading-relaxed max-w-5xl mx-auto">
-            Integrity Verification -- Contact us directly. Talk with our team about the E9 Engagement Platform,
+            Integrity Verification - Contact us directly. Talk with our team about the E9 Engagement Platform,
             connecting physical and digital interaction at scale.
           </p>
 
