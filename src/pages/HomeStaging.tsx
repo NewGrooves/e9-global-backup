@@ -13,7 +13,7 @@ const HomeStaging = () => {
       icon: ShieldCheck,
       title: "Secure by Design",
       description:
-        "Covert authentication protects what’s real — across products, assets, and environments.",
+        "Covert authentication protects what‚Äôs real ‚Äî across products, assets, and environments.",
     },
     {
       icon: QrCode,
@@ -31,7 +31,7 @@ const HomeStaging = () => {
       icon: Database,
       title: "Opt-In First-Party Signals",
       description:
-        "Capture permission-based relationship signals that organizations own — built for compliance, durability, and long-term value.",
+        "Capture permission-based relationship signals that organizations own ‚Äî built for compliance, durability, and long-term value.",
     },
   ];
 
@@ -43,7 +43,7 @@ const HomeStaging = () => {
         keywords={[
           "E9 Global",
           "EncryptorSeal",
-          "BEEEP",
+          "E9 Engagement Platform",
           "product authentication",
           "brand protection",
           "secure QR",
@@ -54,7 +54,6 @@ const HomeStaging = () => {
       />
 
       <ProductSchema product="encryptorseal" />
-      <ProductSchema product="beeep" />
       <VideoSchema />
 
       <BreadcrumbSchema
@@ -97,15 +96,15 @@ const HomeStaging = () => {
               </h1>
 
               <p className="mt-6 text-xl sm:text-2xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
-               We transform standard, unintelligent QR codes into a company’s most valuable asset for marketing and secure, monetizable data intelligence.
+               We transform standard, unintelligent QR codes into a company‚Äôs most valuable asset for marketing and secure, monetizable data intelligence.
               </p>
 
               <div className="mt-9 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
                 <Link
-                  to="/beeep"
+                  to="/platform"
                   className="inline-flex w-full sm:w-auto items-center justify-center rounded-2xl px-7 py-3.5 text-base font-semibold bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg hover:opacity-95 transition"
                 >
-                  Explore the BEEEP™ Platform
+                  Explore the E9 Engagement Platform
                 </Link>
 
                 <Link
@@ -132,7 +131,7 @@ const HomeStaging = () => {
                   <p className="text-sm text-foreground/90 leading-relaxed">
                     E9 Global secures physical-to-digital engagement in the real world.
                     <br /><br />
-                    We embed authentication and governance directly into products, assets, and environments —
+                    We embed authentication and governance directly into products, assets, and environments ‚Äî
                     turning everyday access points into trusted digital entry points.
                   </p>
                 </div>
@@ -148,7 +147,7 @@ const HomeStaging = () => {
                     <br /><br />
                     Behavioral data is collected only with permission.
                     <br /><br />
-                    Trust is built in — not layered on later.
+                    Trust is built in ‚Äî not layered on later.
                   </p>
                 </div>
 
@@ -156,16 +155,16 @@ const HomeStaging = () => {
                   <div className="font-playfair font-bold text-lg mb-2">How We Do It</div>
                   <div className="text-sm text-foreground/90 leading-relaxed">
                     <p>
-                      Through BEEEP™, our secure authentication architecture, embedded directly into apps,
+                      Through the E9 Engagement Platform, our secure authentication architecture, embedded directly into apps,
                       products, and real-world touchpoints.
                     </p>
 
                     <p className="mt-4">Each engagement is:</p>
                     <ul className="mt-2 space-y-1">
-                      <li>• Verified at the source</li>
-                      <li>• Governed by permission</li>
-                      <li>• Structured for clarity</li>
-                      <li>• Compiled into centralized intelligence</li>
+                      <li>‚Ä¢ Verified at the source</li>
+                      <li>‚Ä¢ Governed by permission</li>
+                      <li>‚Ä¢ Structured for clarity</li>
+                      <li>‚Ä¢ Compiled into centralized intelligence</li>
                     </ul>
 
                     <p className="mt-4">
@@ -192,11 +191,11 @@ const HomeStaging = () => {
           <div className="container mx-auto relative">
             <div className="text-center mb-10">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-playfair font-bold mb-4 gradient-text-investor">
-                Outcomes You Can Measure — Built on Security
+                Outcomes You Can Measure ‚Äî Built on Security
               </h2>
               <p className="text-lg text-foreground/90 max-w-3xl mx-auto leading-relaxed">
-                E9 Global connects verification, permission, and structured data — so organizations can prove
-                what’s real and act on what’s trusted.
+                E9 Global connects verification, permission, and structured data ‚Äî so organizations can prove
+                what‚Äôs real and act on what‚Äôs trusted.
               </p>
             </div>
 
@@ -233,3 +232,4 @@ const HomeStaging = () => {
 };
 
 export default HomeStaging;
+
