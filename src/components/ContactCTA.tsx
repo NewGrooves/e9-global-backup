@@ -10,12 +10,12 @@ const ContactCTA = () => {
             className="text-3xl sm:text-4xl md:text-5xl font-playfair font-bold mb-6 gradient-text-investor"
             style={{ lineHeight: "1.2" }}
           >
-            Don't Let Trust End at the Hammer.
+            Let's Talk
           </h2>
 
           <p className="text-xl text-secondary-foreground/90 mb-8 leading-relaxed max-w-5xl mx-auto">
-            Talk with our team about BEEEP™, the trust-first platform connecting physical and digital interaction at
-            scale.
+            Integrity Verification ‚Äî Contact us directly. Talk with our team about the E9 Engagement Platform,
+            connecting physical and digital interaction at scale.
           </p>
 
           <div className="flex justify-center">
@@ -38,3 +38,4 @@ const ContactCTA = () => {
 };
 
 export default ContactCTA;
+
