@@ -150,7 +150,7 @@ const TheTeam = () => {
                         rel="noreferrer"
                         className="text-sm font-semibold text-primary hover:underline"
                       >
-                        LinkedIn ->
+                        LinkedIn &rarr;
                       </a>
                     </div>
                   ) : null}
@@ -167,4 +167,3 @@ const TheTeam = () => {
 };
 
 export default TheTeam;
-
