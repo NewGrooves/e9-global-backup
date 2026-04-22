@@ -35,7 +35,7 @@ const BookDemo = () => {
     try {
       // Format the data for email
       const emailData = {
-        to: 'info@e9global.com',
+        to: 'Dean@E9Global.com',
         subject: `Contact Request from ${data.firstName} ${data.lastName} - ${data.subject}`,
         body: `
 Contact Request Details:
@@ -216,3 +216,4 @@ This request was submitted through the E9 Global website contact form.
 };
 
 export default BookDemo;
+
