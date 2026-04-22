@@ -79,7 +79,7 @@ const BeeepStagingPage = () => {
         ],
         securityTech: [
           "Patented Optropic GS1-Compatible QR Infrastructure",
-          "EncryptorSeal(TM): Covert Smartphone-Verified Anti-Counterfeit Protection",
+          "EncryptorSeal™: Covert Smartphone-Verified Anti-Counterfeit Protection",
         ],
       },
       {
