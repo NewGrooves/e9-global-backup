@@ -28,10 +28,10 @@ const Header = () => {
             </Link>
 
             <Link
-              to="/beeep"
+              to="/platform"
               className="text-gray-700 hover:text-primary transition-colors text-sm lg:text-base"
             >
-              BEEEP<span className="trademark-small">™</span> Platform
+              E9 Engagement Platform
             </Link>
 
             <Link
@@ -87,11 +87,11 @@ const Header = () => {
               </Link>
 
               <Link
-                to="/beeep"
+                to="/platform"
                 className="text-white hover:text-primary transition-colors text-base"
                 onClick={() => setIsMenuOpen(false)}
               >
-                BEEEP<span className="trademark-small">™</span> Platform
+                E9 Engagement Platform
               </Link>
 
               <Link
@@ -131,3 +131,4 @@ const Header = () => {
 };
 
 export default Header;
+
