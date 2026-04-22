@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
           {/* Copyright */}
           <div className="text-gray-700 text-sm">
-            © 2026 E9 Global, INC. All rights reserved.
+            ¬© 2026 E9 Global, INC. All rights reserved.
           </div>
 
           {/* Footer Navigation */}
@@ -20,10 +20,10 @@ const Footer = () => {
             </Link>
 
             <Link
-              to="/beeep"
+              to="/platform"
               className="text-gray-700 hover:text-cobalt-blue transition-colors text-sm"
             >
-              BEEEP<span className="trademark-small">™</span> Platform
+              E9 Engagement Platform
             </Link>
 
             <Link
@@ -47,3 +47,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
