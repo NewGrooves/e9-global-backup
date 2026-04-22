@@ -74,7 +74,6 @@ const TheTeam = () => {
     <div className="min-h-screen bg-background text-foreground font-inter overflow-x-hidden">
       <Header />
 
-      {/* Hero Section */}
       <section className="pt-32 pb-4 sm:pb-24 px-3 sm:px-8 lg:px-6 bg-background relative overflow-hidden">
         <div className="container mx-auto text-center relative">
           <h1 className="font-playfair font-bold mb-6 text-center" style={{ lineHeight: "1.5" }}>
@@ -96,7 +95,6 @@ const TheTeam = () => {
         </div>
       </section>
 
-      {/* Team Section */}
       <section className="py-20 px-3 sm:px-8 lg:px-6 bg-card/30 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_40%_20%,rgba(59,130,246,0.05),transparent_70%)]"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_60%_80%,rgba(147,51,234,0.05),transparent_70%)]"></div>
