@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ContactCTA from "../components/ContactCTA";
-import { Building2, Gem, Users, Music } from "lucide-react";
+import { Building2, Users } from "lucide-react";
 
 const BeeepStagingPage = () => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
@@ -71,7 +71,7 @@ const BeeepStagingPage = () => {
   const deploymentStackCards = useMemo(
     () => [
       {
-        title: "BEEEP™ Enterprise",
+        title: "E9 Enterprise",
         subtitle:
           "Embedded engagement infrastructure for brands and enterprise organizations.",
         icon: Building2,
@@ -81,40 +81,17 @@ const BeeepStagingPage = () => {
           "Designed for secure participation and permission-based intelligence",
         ],
         notes: [
-          "BEEEP™ Enterprise integrates directly into existing apps and real-world touchpoints to connect physical interaction with digital engagement at scale.",
-          "Role-specific delivery ensures that customers, partners, internal teams, and regulators can access different secure experiences from the same scan—based on identity, permissions, and context.",
-          "When users opt in, organizations capture permission-based signals they own—enabling data enrichment and monetization services that strengthen retention, operational performance, and long-term enterprise value.",
+          "E9 Enterprise integrates directly into existing apps and real-world touchpoints to connect physical interaction with digital engagement at scale.",
+          "Role-specific delivery ensures that customers, partners, internal teams, and regulators can access different secure experiences from the same scan‚Äîbased on identity, permissions, and context.",
+          "When users opt in, organizations capture permission-based signals they own‚Äîenabling data enrichment and monetization services that strengthen retention, operational performance, and long-term enterprise value.",
         ],
         securityTech: [
           "Patented Optropic GS1-Compatible QR Infrastructure",
-          "EncryptorSeal™: Covert Smartphone-Verified Anti-Counterfeit Protection",
+          "EncryptorSeal‚Ñ¢: Covert Smartphone-Verified Anti-Counterfeit Protection",
         ],
       },
       {
-        title: "BEEEP™ Assets",
-        subtitle:
-          "High-trust engagement and lifecycle continuity for authenticated assets.",
-        icon: Gem,
-        highlights: [
-          "Supports provenance continuity across resale, inheritance, and stewardship",
-          "Role-specific delivery for buyers, sellers, authenticators, and service partners",
-          "Built for high-security asset workflows and premium stakeholder experiences",
-        ],
-        notes: [
-          "BEEEP™ Assets is designed for authenticated assets and high-trust markets where provenance continuity and stakeholder-specific workflows matter across long ownership horizons.",
-          "For high-security assets, BEEEP™ Assets supports patented biometric authentication and patented AI-based visual and surface analysis, enabling non-invasive verification using inherent material characteristics—without introducing physical tags, markers, or codes.",
-          "BEEEP™ Assets also supports patented automated royalty payments, enabling programmable, auditable economics that align creators, collectors, and marketplaces across resale and stewardship cycles.",
-        ],
-        securityTech: [
-          "Patented Optropic GS1-Compatible QR Infrastructure",
-          "EncryptorSeal™: Covert Smartphone-Verified Anti-Counterfeit Protection",
-          "Mark-Free Surface Fingerprint Authentication",
-          "High-Assurance Biometric Identity & Authorization",
-          "Immutable Ownership, Provenance, and Resale Integrity",
-        ],
-      },
-      {
-        title: "BEEEP™ Metro",
+        title: "E9 Metro",
         subtitle:
           "Participation-centric engagement for cities, venues, destinations, and communities.",
         icon: Users,
@@ -124,34 +101,13 @@ const BeeepStagingPage = () => {
           "Designed for participation loops, learning, and value exchange",
         ],
         notes: [
-          "BEEEP™ Metro powers community-branded apps that serve as trusted gateways for participation, information, and engagement; designed to be adopted locally and used consistently.",
-          "BEEEP™ Metro integrates into civic, cultural, and place-based touchpoints to connect real-world participation with secure, role-specific digital experiences.",
+          "E9 Metro powers community-branded apps that serve as trusted gateways for participation, information, and engagement; designed to be adopted locally and used consistently.",
+          "E9 Metro integrates into civic, cultural, and place-based touchpoints to connect real-world participation with secure, role-specific digital experiences.",
           "Content can be updated at any time to support events, alerts, initiatives, education, and multilingual guidance without reprinting signage or materials.",
         ],
         securityTech: [
           "Patented Optropic GS1-Compatible QR Infrastructure",
           "High-Assurance Biometric Identity & Authorization",
-        ],
-      },
-      {
-        title: "BEEEP™ Live",
-        subtitle:
-          "Real-time engagement and monetization layer for live entertainment environments.",
-        icon: Music,
-        highlights: [
-          "Transforms concerts and events into interactive engagement surfaces",
-          "Enables frictionless commerce, auctions, and premium fan experiences",
-          "Captures real-time behavioral data across the full event lifecycle",
-        ],
-        notes: [
-          "BEEEP™ Live converts physical event environments into programmable engagement surfaces, allowing fans to interact with content, commerce, and experiences directly from their surroundings in real time.",
-          "Artists, venues, and sponsors are connected through a shared engagement layer, enabling direct fan interaction, measurable participation, and coordinated value creation across every event.",
-          "Each interaction generates verified behavioral signals—capturing when, where, and how fans engage—unlocking new revenue streams and actionable intelligence without disrupting the live experience.",
-        ],
-        securityTech: [
-          "Patented Optropic GS1-Compatible QR Infrastructure",
-          "Secure, Role-Based Experience Delivery",
-          "Real-Time Engagement Tracking & Behavioral Analytics",
         ],
       },
     ],
@@ -168,21 +124,18 @@ const BeeepStagingPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
             {/* Left */}
             <div className="text-left">
-              {/* Logo */}
+              {/* Heading */}
               <div className="mb-6">
-                <img
-                  src="/lovable-uploads/BEEEPWhiteLogo.png"
-                  alt="BEEEP™"
-                  className="w-56 sm:w-64 md:w-72 object-contain"
-                  loading="eager"
-                />
+                <h1 className="text-4xl sm:text-5xl font-playfair font-bold text-foreground">
+                  E9 Engagement Platform
+                </h1>
               </div>
 
               <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mb-6" />
 
               <div className="space-y-5 text-lg text-foreground leading-relaxed">
                 <p className="text-xl sm:text-2xl font-semibold text-foreground">
-                  BEEEP™ is a patented, trust-first engagement platform that
+                  E9 Global is a patented, trust-first engagement platform that
                   integrates directly into existing apps and real-world
                   touchpoints.
                 </p>
@@ -306,7 +259,7 @@ const BeeepStagingPage = () => {
               Multiple contexts. One infrastructure layer.
             </h2>
             <p className="text-lg text-foreground/90 max-w-3xl mx-auto leading-relaxed">
-              BEEEP™ adapts to brands, assets, and communities while preserving
+              The E9G Platform adapts to Community Engagement while preserving
               governance, permissions, and role-specific delivery.
             </p>
           </div>
@@ -406,14 +359,7 @@ const BeeepStagingPage = () => {
             })}
           </div>
 
-          {/* Cosmic Data Image */}
-          <div className="flex justify-center mt-12">
-            <img
-              src="/lovable-uploads/BEEEP Cosmic Data.png"
-              alt="BEEEP Cosmic Data"
-              className="w-full max-w-4xl object-contain"
-            />
-          </div>
+
 
         </div>
       </section>
@@ -425,3 +371,4 @@ const BeeepStagingPage = () => {
 };
 
 export default BeeepStagingPage;
+
