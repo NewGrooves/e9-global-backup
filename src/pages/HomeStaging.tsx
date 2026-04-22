@@ -13,7 +13,7 @@ const HomeStaging = () => {
       icon: ShieldCheck,
       title: "Secure by Design",
       description:
-        "Covert authentication protects what's real -- across products, assets, and environments.",
+        "Covert authentication protects what's real — across products, assets, and environments.",
     },
     {
       icon: QrCode,
@@ -31,7 +31,7 @@ const HomeStaging = () => {
       icon: Database,
       title: "Opt-In First-Party Signals",
       description:
-        "Capture permission-based relationship signals that organizations own -- built for compliance, durability, and long-term value.",
+        "Capture permission-based relationship signals that organizations own — built for compliance, durability, and long-term value.",
     },
   ];
 
@@ -95,7 +95,7 @@ const HomeStaging = () => {
               </h1>
 
               <p className="mt-6 text-xl sm:text-2xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
-               We transform standard, unintelligent QR codes into a company's most valuable asset for marketing and secure, monetizable data intelligence.
+                We transform standard, unintelligent QR codes into a company's most valuable asset for marketing and secure, monetizable data intelligence.
               </p>
 
               <div className="mt-9 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
@@ -130,7 +130,7 @@ const HomeStaging = () => {
                   <p className="text-sm text-foreground/90 leading-relaxed">
                     E9 Global secures physical-to-digital engagement in the real world.
                     <br /><br />
-                    We embed authentication and governance directly into products, assets, and environments --
+                    We embed authentication and governance directly into products, assets, and environments {"\u2014"}
                     turning everyday access points into trusted digital entry points.
                   </p>
                 </div>
@@ -141,12 +141,12 @@ const HomeStaging = () => {
                     Because digital intelligence built on fragmented, unverified activity creates risk.
                     E9 Global verifies the code, structures the data, and applies governance before
                     information moves beyond the first moment of access.
-                    <br /><br /><br />
+                    <br /><br />
                     Scan data is generated immediately.
                     <br /><br />
                     Behavioral data is collected only with permission.
                     <br /><br />
-                    Trust is built in -- not layered on later.
+                    Trust is built in {"\u2014"} not layered on later.
                   </p>
                 </div>
 
@@ -160,10 +160,10 @@ const HomeStaging = () => {
 
                     <p className="mt-4">Each engagement is:</p>
                     <ul className="mt-2 space-y-1">
-                      <li>- Verified at the source</li>
-                      <li>- Governed by permission</li>
-                      <li>- Structured for clarity</li>
-                      <li>- Compiled into centralized intelligence</li>
+                      <li>&bull; Verified at the source</li>
+                      <li>&bull; Governed by permission</li>
+                      <li>&bull; Structured for clarity</li>
+                      <li>&bull; Compiled into centralized intelligence</li>
                     </ul>
 
                     <p className="mt-4">
@@ -190,10 +190,10 @@ const HomeStaging = () => {
           <div className="container mx-auto relative">
             <div className="text-center mb-10">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-playfair font-bold mb-4 gradient-text-investor">
-                Outcomes You Can Measure -- Built on Security
+                Outcomes You Can Measure {"\u2014"} Built on Security
               </h2>
               <p className="text-lg text-foreground/90 max-w-3xl mx-auto leading-relaxed">
-                E9 Global connects verification, permission, and structured data -- so organizations can prove
+                E9 Global connects verification, permission, and structured data {"\u2014"} so organizations can prove
                 what's real and act on what's trusted.
               </p>
             </div>
