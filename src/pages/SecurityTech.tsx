@@ -35,7 +35,7 @@ const SecurityTech = () => {
     },
     {
       role: "PHYSICAL AUTHENTICITY",
-      title: "EncryptorSeal‚Ñ¢: Covert Smartphone-Verified Anti-Counterfeit Protection",
+      title: "EncryptorSeal\u2122: Covert Smartphone-Verified Anti-Counterfeit Protection",
       icon: ShieldCheck,
       highlights: [
         "Invisible authentication embedded into packaging varnish or laser-engraved into products",
@@ -45,7 +45,7 @@ const SecurityTech = () => {
       body: [
         "Where authenticity matters, covert protection enables trusted verification without altering the customer experience or operational workflows.",
         "Every scan can become actionable intelligence, revealing legitimate interaction and counterfeit activity in real time.",
-        "Combined with our patented Optropic QR infrastructure, EncryptorSeal‚Ñ¢ forms an unparalleled system for brand protection and gray market detection, building on technology long used to secure U.S. government documents.",
+        "Combined with our patented Optropic QR infrastructure, EncryptorSeal\u2122 forms an unparalleled system for brand protection and gray market detection, building on technology long used to secure U.S. government documents.",
       ],
     },
     {
@@ -109,7 +109,7 @@ const SecurityTech = () => {
   return (
     <div className="min-h-screen bg-background text-foreground font-inter overflow-x-hidden">
       <SEOHead
-        title="E9 Global ‚Äî Security Tech"
+        title="E9 Global \u2014 Security Tech"
         description="A layered trust architecture that establishes trust at the point of interaction, governs access, protects privacy, and turns verified engagement into permission-based first-party data."
         keywords={[
           "E9 Global",
@@ -176,7 +176,6 @@ const SecurityTech = () => {
                 </Link>
               </div>
 
-              {/* MODULE 1: THE CORE SHIFT (enhanced emphasis only within existing card pattern) */}
               <div className="mt-10 max-w-4xl mx-auto bg-card/70 border border-border/40 ring-1 ring-blue-400/15 rounded-2xl p-5 sm:p-6 shadow-xl text-left">
                 <div className="flex items-center gap-2 border-l-2 border-blue-400/40 pl-3 mb-3">
                   <ArrowRight className="w-4 h-4 text-blue-300" />
@@ -245,13 +244,12 @@ const SecurityTech = () => {
                   Layered trust architecture
                 </h2>
                 <p className="text-lg text-foreground/90 max-w-3xl mx-auto leading-relaxed">
-                  Each layer answers a specific trust question. You don‚Äôt need every layer for every
+                  Each layer answers a specific trust question. You don't need every layer for every
                   deployment. Each can stand alone or combine with others based on risk, regulation, and
                   use case.
                 </p>
               </div>
 
-              {/* MODULE 2: THE RESULT (enhanced emphasis only within existing card pattern) */}
               <div className="bg-card/70 border border-border/40 ring-1 ring-purple-400/15 rounded-2xl p-5 sm:p-6 shadow-xl">
                 <div className="text-foreground/90 leading-[1.8]">
                   <span className="inline-flex items-center rounded-full px-3 py-1 text-sm font-semibold bg-purple-500/10 text-purple-200 border border-purple-400/20">
@@ -267,7 +265,6 @@ const SecurityTech = () => {
                 </div>
               </div>
 
-              {/* STACK CARDS */}
               <div className="mt-10 space-y-6">
                 {stackCards.map((card, idx) => (
                   <div
@@ -389,7 +386,6 @@ const SecurityTech = () => {
                 </div>
               </div>
 
-              {/* MODULE 3: THE STRATEGIC ADVANTAGE (enhanced emphasis only within existing card pattern) */}
               <div className="mt-8 bg-card/70 border border-border/40 ring-1 ring-blue-400/15 rounded-2xl p-5 sm:p-6 shadow-xl">
                 <div className="flex items-center gap-2 border-l-2 border-purple-400/40 pl-3 mb-3">
                   <ArrowRight className="w-4 h-4 text-purple-200" />
@@ -421,4 +417,3 @@ const SecurityTech = () => {
 };
 
 export default SecurityTech;
-
