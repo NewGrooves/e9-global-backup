@@ -46,14 +46,6 @@ const BeeepStagingPage = () => {
         src: "/lovable-uploads/BEEEP-page-cosmetics.jpg",
         alt: "Consumer scanning product with smartphone",
       },
-      {
-        src: "/lovable-uploads/BEEEP page Rolex Guy Beeeping.png",
-        alt: "Healthcare professional scanning authenticated asset",
-      },
-      {
-        src: "/lovable-uploads/BEEEP page Woman Scanning at Concert.png",
-        alt: "Visitor engaging with authenticated cultural content",
-      },
     ],
     []
   );
