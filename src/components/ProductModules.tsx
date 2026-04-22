@@ -18,7 +18,7 @@ const ProductModules = () => {
 
           {/* Core positioning statement */}
           <p className="mt-6 text-lg sm:text-xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
-            BEEEP™ transforms real-world touchpoints into secure digital entry points — ensuring every
+            The E9 Engagement Platform transforms real-world touchpoints into secure digital entry points -- ensuring every
 scan begins with verification and every outcome is governed by permission.
           </p>
 
