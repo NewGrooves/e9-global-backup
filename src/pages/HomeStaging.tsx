@@ -13,7 +13,7 @@ const HomeStaging = () => {
       icon: ShieldCheck,
       title: "Secure by Design",
       description:
-        "Covert authentication protects what's real — across products, assets, and environments.",
+        "Covert authentication protects what's real \u2014 across products, assets, and environments.",
     },
     {
       icon: QrCode,
@@ -31,7 +31,7 @@ const HomeStaging = () => {
       icon: Database,
       title: "Opt-In First-Party Signals",
       description:
-        "Capture permission-based relationship signals that organizations own — built for compliance, durability, and long-term value.",
+        "Capture permission-based relationship signals that organizations own \u2014 built for compliance, durability, and long-term value.",
     },
   ];
 
