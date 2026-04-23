@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import ContactCTA from "../components/ContactCTA";
 import { Building2, Users } from "lucide-react";
 
-const BeeepStagingPage = () => {
+const BeeepStagingPageV2 = () => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -63,43 +63,65 @@ const BeeepStagingPage = () => {
   const deploymentStackCards = useMemo(
     () => [
       {
-        title: "E9 Enterprise",
+        title: "BEEEP™ Assets",
         subtitle:
-          "Embedded engagement infrastructure for brands and enterprise organizations.",
+          "Verification infrastructure for high-value collectibles, fine art, and authenticated assets.",
         icon: Building2,
         highlights: [
-          "Integrates into existing apps, web properties, and operational workflows",
-          "Role-specific delivery for customers, partners, internal teams, and regulators",
-          "Designed for secure participation and permission-based intelligence",
+          "Provenance continuity across ownership changes, resale, and stewardship",
+          "Role-specific access for buyers, sellers, authenticators, and service partners",
+          "Built for auction houses, galleries, and high-trust asset markets",
         ],
         notes: [
-          "E9 Enterprise integrates directly into existing apps and real-world touchpoints to connect physical interaction with digital engagement at scale.",
-          "Role-specific delivery ensures that customers, partners, internal teams, and regulators can access different secure experiences from the same scan--based on identity, permissions, and context.",
-          "When users opt in, organizations capture permission-based signals they own--enabling data enrichment and monetization services that strengthen retention, operational performance, and long-term enterprise value.",
+          "Auction houses establish trust at the point of sale. BEEEP preserves it indefinitely — ensuring provenance, permissions, and role-based information remain intact across the full ownership lifecycle.",
+          "Each scan verifies the asset before engagement begins, connecting the physical object to its verified digital record without introducing tags, markers, or codes.",
+          "Currently in pilot development with a major auction house, with applications across high-value collectibles, fine art, and authenticated luxury goods.",
         ],
         securityTech: [
           "Patented Optropic GS1-Compatible QR Infrastructure",
-          "EncryptorSeal™: Covert Smartphone-Verified Anti-Counterfeit Protection",
+          "Mark-Free Surface Fingerprint Authentication",
+          "Immutable Ownership, Provenance, and Resale Integrity",
         ],
       },
       {
-        title: "E9 Metro",
+        title: "BEEEP™ Culture",
         subtitle:
-          "Participation-centric engagement for cities, venues, destinations, and communities.",
+          "Engagement infrastructure for museums, cultural institutions, and place-based experiences.",
         icon: Users,
         highlights: [
-          "Supports residents, visitors, staff, local organizations, and partners",
-          "Dynamic content updates without reprinting signage or physical touchpoints",
-          "Designed for participation loops, learning, and value exchange",
+          "Transforms passive visits into measurable, data-generating engagement",
+          "Dynamic content delivery without reprinting signage or physical materials",
+          "New sponsorship and revenue models built on verified audience intelligence",
         ],
         notes: [
-          "E9 Metro powers community-branded apps that serve as trusted gateways for participation, information, and engagement; designed to be adopted locally and used consistently.",
-          "E9 Metro integrates into civic, cultural, and place-based touchpoints to connect real-world participation with secure, role-specific digital experiences.",
-          "Content can be updated at any time to support events, alerts, initiatives, education, and multilingual guidance without reprinting signage or materials.",
+          "Museums and cultural institutions struggle to engage younger, digital-native audiences and generate meaningful revenue. BEEEP provides the infrastructure layer that makes engagement measurable and monetizable.",
+          "Each physical touchpoint becomes a verified entry point — connecting real-world participation to secure, role-specific digital experiences that institutions own and control.",
+          "In collaboration with pioneers in interactive engagement, including Nolan Bushnell, Founder of Atari.",
         ],
         securityTech: [
           "Patented Optropic GS1-Compatible QR Infrastructure",
           "High-Assurance Biometric Identity & Authorization",
+        ],
+      },
+      {
+        title: "BEEEP™ Live",
+        subtitle:
+          "Real-time engagement infrastructure for live entertainment, concerts, and events.",
+        icon: Users,
+        highlights: [
+          "Converts anonymous crowds into known, engaged audiences",
+          "Connects artists, venues, and sponsors through a shared engagement layer",
+          "Opt-in, permission-based audience intelligence that sponsors can actually measure",
+        ],
+        notes: [
+          "Sponsors invest billions annually in live events with almost no measurable engagement. Artists and operators have no direct visibility into audience behavior. BEEEP changes that.",
+          "Secure QR interactions — embedded in wristbands, tickets, or physical touchpoints — verify engagement and unlock dynamic experiences in real time.",
+          "Each interaction generates verified behavioral signals that artists, venues, and sponsors own — unlocking new revenue streams without disrupting the live experience.",
+        ],
+        securityTech: [
+          "Patented Optropic GS1-Compatible QR Infrastructure",
+          "Secure, Role-Based Experience Delivery",
+          "Real-Time Engagement Tracking & Behavioral Analytics",
         ],
       },
     ],
@@ -116,10 +138,11 @@ const BeeepStagingPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
             {/* Left */}
             <div className="text-left">
+
               {/* Heading */}
               <div className="mb-6">
-                <h1 className="text-4xl sm:text-5xl font-playfair font-bold text-foreground">
-                  E9 Engagement Platform
+                <h1 className="text-3xl sm:text-4xl md:text-5xl font-playfair font-bold gradient-text-investor">
+                  The Verification Infrastructure Layer for the Physical World.
                 </h1>
               </div>
 
@@ -127,77 +150,79 @@ const BeeepStagingPage = () => {
 
               <div className="space-y-5 text-lg text-foreground leading-relaxed">
                 <p className="text-xl sm:text-2xl font-semibold text-foreground">
-                  The E9 Engagement Platform is patented, trust-first, and integrates directly into existing apps and real-world touchpoints.
+                  BEEEP is a patented, white-label infrastructure platform that enables
+                  auction houses, cultural institutions, and live event operators to
+                  verify physical objects and power secure engagement — without building
+                  the technology themselves.
                 </p>
 
                 <p className="text-foreground/90">
-                  It enables organizations to securely collect and monetize cohesive,
-                  consent-based behavioral audience intelligence, connecting real-world
-                  interaction and digital engagement at scale.
+                  Think of BEEEP the way you think of Stripe for payments — the
+                  infrastructure layer that powers trust behind the scenes. Partners
+                  integrate once. BEEEP handles verification, permissions, and
+                  engagement delivery. Brands keep their identity.
                 </p>
 
                 {/* AT A GLANCE */}
                 <div className="bg-card/70 border border-border/30 rounded-2xl p-5 shadow-lg">
                   <div className="text-sm uppercase tracking-wide text-foreground/70 mb-3">
-                    At a glance
+                    The infrastructure layer
                   </div>
 
                   <ul className="space-y-3 text-foreground/90 text-base">
                     <li className="flex items-start gap-3">
                       <span className="mt-2 w-2 h-2 rounded-full bg-blue-500 flex-shrink-0" />
                       <span>
-                        <strong>Scan-initiated engagement</strong> that connects real-world
-                        interaction to digital experiences
+                        <strong>Patented secure scan architecture</strong> that verifies
+                        the physical object itself before engagement begins
                       </span>
                     </li>
 
                     <li className="flex items-start gap-3">
                       <span className="mt-2 w-2 h-2 rounded-full bg-purple-500 flex-shrink-0" />
                       <span>
-                        <strong>Patented secure scan architecture</strong> that verifies
-                        authenticity at the physical code itself and can support offline
-                        verification when required
+                        <strong>White-label by design</strong> — partners integrate via
+                        SDK or API; BEEEP powers the trust layer invisibly
                       </span>
                     </li>
 
                     <li className="flex items-start gap-3">
                       <span className="mt-2 w-2 h-2 rounded-full bg-pink-500 flex-shrink-0" />
                       <span>
-                        <strong>Governed, role-specific access</strong> so each participant
-                        sees only what is relevant to them
+                        <strong>Governed, role-specific access</strong> so each
+                        stakeholder sees only what is relevant to their role
                       </span>
                     </li>
 
                     <li className="flex items-start gap-3">
                       <span className="mt-2 w-2 h-2 rounded-full bg-indigo-500 flex-shrink-0" />
                       <span>
-                        <strong>Dynamic content control</strong> with the ability to update
-                        experiences at any time
+                        <strong>Dynamic content control</strong> with the ability to
+                        update experiences at any time without reprinting materials
                       </span>
                     </li>
 
                     <li className="flex items-start gap-3">
                       <span className="mt-2 w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0" />
                       <span>
-                        <strong>
-                          Permission-based data enrichment and monetization services
-                        </strong>
+                        <strong>Permission-based audience intelligence</strong> that
+                        partners own — built for compliance and long-term durability
                       </span>
                     </li>
 
                     <li className="flex items-start gap-3">
                       <span className="mt-2 w-2 h-2 rounded-full bg-amber-500 flex-shrink-0" />
                       <span>
-                        <strong>High-assurance identity and authentication options</strong>{" "}
-                        including advanced biometric authentication when required
+                        <strong>Offline verification capability</strong> for high-security
+                        environments where connectivity cannot be assumed
                       </span>
                     </li>
 
                     <li className="flex items-start gap-3">
                       <span className="mt-2 w-2 h-2 rounded-full bg-rose-500 flex-shrink-0" />
                       <span>
-                        <strong>Trust at the point of interaction</strong> so confidence is
-                        established before downstream actions occur
+                        <strong>Trust established at the point of interaction</strong> —
+                        before any downstream action occurs
                       </span>
                     </li>
                   </ul>
@@ -223,8 +248,6 @@ const BeeepStagingPage = () => {
                   ))}
                 </div>
 
-                <div className="absolute -bottom-8 -right-8 w-20 h-20 bg-gradient-to-r from-blue-500/15 to-purple-500/15 rounded-3xl blur-lg transform rotate-12" />
-
                 <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
                   {heroImages.map((_, index) => (
                     <div
@@ -246,11 +269,12 @@ const BeeepStagingPage = () => {
         <div className="container mx-auto relative">
           <div className="text-center mb-10">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-playfair font-bold mb-3 gradient-text-investor">
-              Multiple contexts. One infrastructure layer.
+              One infrastructure layer. Three verified markets.
             </h2>
             <p className="text-lg text-foreground/90 max-w-3xl mx-auto leading-relaxed">
-              The E9G Platform adapts to Community Engagement while preserving
-              governance, permissions, and role-specific delivery.
+              BEEEP is purpose-built for high-trust verticals where physical verification
+              and secure engagement create measurable value — for partners and the
+              audiences they serve.
             </p>
           </div>
 
@@ -351,10 +375,10 @@ const BeeepStagingPage = () => {
         </div>
       </section>
 
-      <ContactCTA />
+      <ContactCTA heading="Let's Build the Category Together." />
       <Footer />
     </div>
   );
 };
 
-export default BeeepStagingPage;
+export default BeeepStagingPageV2;
