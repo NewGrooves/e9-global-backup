@@ -23,27 +23,26 @@ scan begins with verification and every outcome is governed by permission.
           </p>
 
           {/* Strategic pill statements */}
-<div className="mt-8 flex flex-wrap justify-center gap-3 sm:gap-4">
-  <span className="px-4 py-2 rounded-full text-sm sm:text-base font-medium bg-card/70 border border-border/30 backdrop-blur-sm text-foreground flex items-center gap-2">
-    <span className="w-2 h-2 rounded-full bg-blue-500 flex-shrink-0" />
-    <span>Verify at the source</span>
-  </span>
+          <div className="mt-8 flex flex-wrap justify-center gap-3 sm:gap-4">
+            <span className="px-4 py-2 rounded-full text-sm sm:text-base font-medium bg-card/70 border border-border/30 backdrop-blur-sm text-foreground flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-blue-500 flex-shrink-0" />
+              <span>Verify at the source</span>
+            </span>
 
-  <span className="px-4 py-2 rounded-full text-sm sm:text-base font-medium bg-card/70 border border-border/30 backdrop-blur-sm text-foreground flex items-center gap-2">
-    <span className="w-2 h-2 rounded-full bg-purple-500 flex-shrink-0" />
-    <span>Control access with built-in permissions</span>
-  </span>
+            <span className="px-4 py-2 rounded-full text-sm sm:text-base font-medium bg-card/70 border border-border/30 backdrop-blur-sm text-foreground flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-purple-500 flex-shrink-0" />
+              <span>Control access with built-in permissions</span>
+            </span>
 
-  <span className="px-4 py-2 rounded-full text-sm sm:text-base font-medium bg-card/70 border border-border/30 backdrop-blur-sm text-foreground flex items-center gap-2">
-    <span className="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0" />
-    <span>Generate structured, secure verified data</span>
-  </span>
-</div>
-
+            <span className="px-4 py-2 rounded-full text-sm sm:text-base font-medium bg-card/70 border border-border/30 backdrop-blur-sm text-foreground flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0" />
+              <span>Generate structured, secure verified data</span>
+            </span>
+          </div>
 
           {/* Engagement imagery */}
-          <div className="mt-12 max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-start">
+          <div className="mt-12 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 items-start justify-items-center">
               <div className="flex flex-col items-center">
                 <img
                   src="/lovable-uploads/Touchpoint-Enterprise.png"
@@ -52,17 +51,6 @@ scan begins with verification and every outcome is governed by permission.
                 />
                 <div className="mt-4 text-base sm:text-lg text-foreground font-semibold">
                   Product & Retail Environments
-                </div>
-              </div>
-
-              <div className="flex flex-col items-center">
-                <img
-                  src="/lovable-uploads/Touchpoint - Hermes.png"
-                  alt="Collector engaging with an authenticated asset"
-                  className="w-full max-w-[280px] h-auto object-contain rounded-2xl shadow-2xl"
-                />
-                <div className="mt-4 text-base sm:text-lg text-foreground font-semibold">
-                  High-Value Asset Markets
                 </div>
               </div>
 
