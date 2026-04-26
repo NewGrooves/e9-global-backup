@@ -25,15 +25,15 @@ const TheTeam = () => {
 
   /**
    * ORDER MIRRORS PITCH DECK:
-   * 1) Core Team slide (Dean ‚Üí Sam ‚Üí Ron ‚Üí Sean ‚Üí Shawn ‚Üí Michael)
-   * 2) Tactical Partners slide (Cary ‚Üí Jay ‚Üí Nolan ‚Üí Ephraim ‚Üí Leah ‚Üí Rachel ‚Üí Vanessa ‚Üí Kenny ‚Üí Juanita)
-   * 3) Additional Strategic Advisors (Isaac ‚Üí John ‚Üí Mark)
+   * 1) Core Team slide (Dean → Sam → Ron → Sean → Shawn → Michael)
+   * 2) Tactical Partners slide (Cary → Jay → Nolan → Ephraim → Leah → Rachel → Vanessa → Kenny → Juanita)
+   * 3) Additional Strategic Advisors (Isaac → John → Mark)
    */
   const teamMembers: TeamMember[] = [
     {
       id: 1,
       name: "Dean Eaker",
-      role: "Founder, Chair, CSO",
+      role: "Founder, CEO",
       description:
         "Serial entrepreneur with multiple exits, including the PC 411 IPO and the E3 trade show. Architected a 200M-record database monetized via LexisNexis, bringing deep expertise in commercializing patented anti-counterfeiting hardware.",
       image: "/lovable-uploads/508a01e0-2e33-4475-8618-cc2c328f5b91.png",
@@ -68,6 +68,14 @@ const TheTeam = () => {
     },
     {
       id: 5,
+      name: "Dominique Nguyen",
+      role: "Strategic Advisor",
+      description:
+        "Finance, investment, and technology leader with 18+ years transforming capital markets, forging global partnerships, and advancing sustainable, inclusive innovation through emerging technologies and conscious capital.",
+      image: "/lovable-uploads/Dominique profile pic.png",
+    },
+    {
+      id: 6,
       name: "Juanita Ramos",
       role: "Government Affairs Advisor",
       description:
@@ -179,4 +187,3 @@ const TheTeam = () => {
 };
 
 export default TheTeam;
-
