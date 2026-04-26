@@ -73,6 +73,7 @@ const TheTeam = () => {
       description:
         "Finance, investment, and technology leader with 18+ years transforming capital markets, forging global partnerships, and advancing sustainable, inclusive innovation through emerging technologies and conscious capital.",
       image: "/lovable-uploads/Dominique profile pic.png",
+      linkedin: "https://www.linkedin.com/in/dominiquenguyen/",
     },
     {
       id: 6,
@@ -81,6 +82,7 @@ const TheTeam = () => {
       description:
         "25+ years in public policy; forged high-impact alliances with DOJ and nonprofits to advance mission-driven innovation.",
       image: "/lovable-uploads/6876129a-e0ac-4878-90b0-84cc77dd399b.png",
+      linkedin: "https://www.linkedin.com/in/echo4global/",
     },
   ];
 
